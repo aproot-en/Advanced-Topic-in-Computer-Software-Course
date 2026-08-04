@@ -19,8 +19,8 @@ RAG-Project/
 │   ├── chunks.json                         # 541 text chunks with metadata
 │   ├── embeddings.npy                      # Embedding vectors
 │   ├── retrieval_results.json              # Top-k retrieval results
-│   ├── eval_retrieval.json                 **# Retrieval scores per configuration**
-│   └── eval_generation.json                **# Answer quality scores**
+│   ├── eval_retrieval.json                 ** # Retrieval scores per configuration **
+│   └── eval_generation.json                ** # Answer quality scores **
 │
 ├── vector_db/                              
 │   ├── document.index                      # FAISS index — dense - semantic search
