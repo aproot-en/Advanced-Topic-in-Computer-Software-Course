@@ -11,7 +11,7 @@ Build a complete RAG system in Python, from loading a knowledge base and splitti
 RAG-Project/
 │
 ├── data/                                   
-│   ├── sex_q_a.txt                         # Knowledge base — 391 Q&A pairs, 8 categories                                      
+│   ├── sex_q_a.txt                                                              
 │   └── golden_set.json                     # Evaluation set — 54 items x 4 query variants
 │
 ├── outputs/                                
