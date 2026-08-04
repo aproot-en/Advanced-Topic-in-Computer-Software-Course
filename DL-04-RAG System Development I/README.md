@@ -12,7 +12,7 @@ RAG-Project/
 │
 ├── data/                                   
 │   ├── sex_q_a.txt                                                              
-│   └── golden_set.json                     # Evaluation set — 54 items x 4 query variants
+│   └── golden_set.json                     # Evaluation set
 │
 ├── outputs/                                
 │   ├── extracted_text.json                 # Parsed Q&A pairs with line numbers
@@ -38,13 +38,12 @@ RAG-Project/
 │   └── lab07_complete_retrieval.py         # Complete retrieval pipeline
 │
 ├── src/                                    
-│   ├── __init__.py                         # Python package initialization
 │   ├── document_loader.py                  # File loading and text extraction
 │   ├── text_splitter.py                    # Text chunking
 │   ├── embedding_model.py                  # Embedding model
 │   ├── vector_store.py                     # FAISS vector database
 │   ├── index_meta.py                       # Detect when the index is stale vs the dataset
-│   ├── retriever.py                        # Dense-only retrieval (baseline)
+│   ├── retriever.py                        # Dense-only retrieval
 │   ├── hybrid_retriever.py                 # BM25 + dense + RRF fusion
 │   ├── rerankers.py                        # Cross-encoder reranking
 │   ├── query_transform.py                  # rewrite - multi-query - HyDE
@@ -54,7 +53,6 @@ RAG-Project/
 │   └── rag_pipeline.py                     # Orchestrator — wires every stage
 │
 ├── evaluation/                            
-│   ├── __init__.py
 │   ├── metrics.py                          # Hit@k, Recall@k, Precision@k, MRR, nDCG
 │   ├── build_golden_set.py                 # Generate the evaluation set
 │   ├── eval_retrieval.py                   # Compare retrieval configurations
