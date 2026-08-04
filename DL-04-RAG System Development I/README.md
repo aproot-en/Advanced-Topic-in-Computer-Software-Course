@@ -19,14 +19,14 @@ RAG-Project/
 │   ├── chunks.json                         # 541 text chunks with metadata
 │   ├── embeddings.npy                      # Embedding vectors
 │   ├── retrieval_results.json              # Top-k retrieval results
-│   ├── eval_retrieval.json                 # Retrieval scores per configuration
-│   └── eval_generation.json                # Answer quality scores
+│   ├── eval_retrieval.json                 **# Retrieval scores per configuration**
+│   └── eval_generation.json                **# Answer quality scores**
 │
 ├── vector_db/                              
 │   ├── document.index                      # FAISS index — dense - semantic search
-│   ├── bm25_index.pkl                      # BM25 index — exact-token search
+│   ├── bm25_index.pkl                      **# BM25 index — exact-token search**
 │   ├── chunk_store.json                    # Chunks + metadata, aligned with FAISS order
-│   └── index_meta.json                     # Fingerprint of the dataset this index was built from
+│   └── index_meta.json                     **# Fingerprint of the dataset this index was built from**
 │
 ├── labs/                                   
 │   ├── lab01_extract_text.py               # Extract text from the source file
@@ -42,21 +42,21 @@ RAG-Project/
 │   ├── text_splitter.py                    # Text chunking
 │   ├── embedding_model.py                  # Embedding model
 │   ├── vector_store.py                     # FAISS vector database
-│   ├── index_meta.py                       # Detect when the index is stale vs the dataset
+│   ├── index_meta.py                       **# Detect when the index is stale vs the dataset
 │   ├── retriever.py                        # Dense-only retrieval
-│   ├── hybrid_retriever.py                 # BM25 + dense + RRF fusion
-│   ├── rerankers.py                        # Cross-encoder reranking
-│   ├── query_transform.py                  # rewrite - multi-query - HyDE
-│   ├── prompt_templates.py                 # All prompts in one place
-│   ├── generator.py                        # LLM answer generation
-│   ├── memory.py                           # Conversation history
-│   └── rag_pipeline.py                     # Orchestrator — wires every stage
+│   ├── hybrid_retriever.py                 **# BM25 + dense + RRF fusion**
+│   ├── rerankers.py                        **# Cross-encoder reranking**
+│   ├── query_transform.py                  **# rewrite - multi-query - HyDE**
+│   ├── prompt_templates.py                 **# All prompts in one place**
+│   ├── generator.py                        **# LLM answer generation**
+│   ├── memory.py                           **# Conversation history**
+│   └── rag_pipeline.py                     **# Orchestrator — wires every stage**
 │
 ├── evaluation/                            
-│   ├── metrics.py                          # Hit@k, Recall@k, Precision@k, MRR, nDCG
-│   ├── build_golden_set.py                 # Generate the evaluation set
-│   ├── eval_retrieval.py                   # Compare retrieval configurations
-│   └── eval_generation.py                  # Score answer quality
+│   ├── metrics.py                          **# Hit@k, Recall@k, Precision@k, MRR, nDCG**
+│   ├── build_golden_set.py                 ** # Generate the evaluation set**
+│   ├── eval_retrieval.py                   **# Compare retrieval configurations**
+│   └── eval_generation.py                  **# Score answer quality**
 │
 ├── config.py                               # Project configuration — all settings here
 ├── build_index.py                          # Build all indexes in one command
