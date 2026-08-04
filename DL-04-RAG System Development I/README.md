@@ -7,28 +7,27 @@ Build a complete RAG system in Python, from loading a knowledge base and splitti
 # Structure
 
 ```text
-
 RAG-Project/
 │
-├── data/                                   
-│   ├── sex_q_a.txt                                                              
+├── data/
+│   ├── sex_q_a.txt
 │   └── golden_set.json                     # Evaluation set
 │
-├── outputs/                                
+├── outputs/
 │   ├── extracted_text.json                 # Parsed Q&A pairs with line numbers
 │   ├── chunks.json                         # 541 text chunks with metadata
 │   ├── embeddings.npy                      # Embedding vectors
 │   ├── retrieval_results.json              # Top-k retrieval results
-│   ├── eval_retrieval.json                 ** # Retrieval scores per configuration **
-│   └── eval_generation.json                ** # Answer quality scores **
+│   ├── eval_retrieval.json                 ⭐ Retrieval scores per configuration
+│   └── eval_generation.json                ⭐ Answer quality scores
 │
-├── vector_db/                              
-│   ├── document.index                      # FAISS index — dense - semantic search
-│   ├── bm25_index.pkl                      **# BM25 index — exact-token search**
+├── vector_db/
+│   ├── document.index                      # FAISS index — dense semantic search
+│   ├── bm25_index.pkl                      ⭐ BM25 index — exact-token search
 │   ├── chunk_store.json                    # Chunks + metadata, aligned with FAISS order
-│   └── index_meta.json                     **# Fingerprint of the dataset this index was built from**
+│   └── index_meta.json                     ⭐ Fingerprint of the dataset this index was built from
 │
-├── labs/                                   
+├── labs/
 │   ├── lab01_extract_text.py               # Extract text from the source file
 │   ├── lab02_chunking.py                   # Split text into chunks
 │   ├── lab03_create_embeddings.py          # Generate embeddings
@@ -37,32 +36,32 @@ RAG-Project/
 │   ├── lab06_similarity_search.py          # Retrieve top-k relevant chunks
 │   └── lab07_complete_retrieval.py         # Complete retrieval pipeline
 │
-├── src/                                    
+├── src/
 │   ├── document_loader.py                  # File loading and text extraction
 │   ├── text_splitter.py                    # Text chunking
 │   ├── embedding_model.py                  # Embedding model
 │   ├── vector_store.py                     # FAISS vector database
-│   ├── index_meta.py                       **# Detect when the index is stale vs the dataset
+│   ├── index_meta.py                       ⭐ Detect when the index is stale vs the dataset
 │   ├── retriever.py                        # Dense-only retrieval
-│   ├── hybrid_retriever.py                 **# BM25 + dense + RRF fusion**
-│   ├── rerankers.py                        **# Cross-encoder reranking**
-│   ├── query_transform.py                  **# rewrite - multi-query - HyDE**
-│   ├── prompt_templates.py                 **# All prompts in one place**
-│   ├── generator.py                        **# LLM answer generation**
-│   ├── memory.py                           **# Conversation history**
-│   └── rag_pipeline.py                     **# Orchestrator — wires every stage**
+│   ├── hybrid_retriever.py                 ⭐ BM25 + Dense + RRF Fusion
+│   ├── rerankers.py                        ⭐ Cross-Encoder Reranking
+│   ├── query_transform.py                  ⭐ Query Rewrite, Multi-Query, HyDE
+│   ├── prompt_templates.py                 ⭐ Prompt Templates
+│   ├── generator.py                        ⭐ LLM Answer Generation
+│   ├── memory.py                           ⭐ Conversation History
+│   └── rag_pipeline.py                     ⭐ End-to-End RAG Pipeline
 │
-├── evaluation/                            
-│   ├── metrics.py                          **# Hit@k, Recall@k, Precision@k, MRR, nDCG**
-│   ├── build_golden_set.py                 ** # Generate the evaluation set**
-│   ├── eval_retrieval.py                   **# Compare retrieval configurations**
-│   └── eval_generation.py                  **# Score answer quality**
+├── evaluation/
+│   ├── metrics.py                          ⭐ Hit@k, Recall@k, Precision@k, MRR, nDCG
+│   ├── build_golden_set.py                 ⭐ Generate the evaluation set
+│   ├── eval_retrieval.py                   ⭐ Compare retrieval configurations
+│   └── eval_generation.py                  ⭐ Evaluate answer quality
 │
-├── config.py                               # Project configuration — all settings here
-├── build_index.py                          # Build all indexes in one command
+├── config.py                               # Project configuration
+├── build_index.py                          # Build all indexes
 └── main.py                                 # Run the RAG system
-
 ```
+
 ## Summary
 
 This project is designed for learning how a RAG system works step by step. **Stage 1 (Labs 01–07)** covers the core pipeline, including loading a Q&A knowledge base, splitting text into chunks, generating embeddings, building a FAISS vector database, and performing semantic search. **Stage 2** improves retrieval quality by adding BM25 keyword search, hybrid retrieval, cross-encoder reranking, query transformation, LLM answer generation with citations, and conversation memory.
