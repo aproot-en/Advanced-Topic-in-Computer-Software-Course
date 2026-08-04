@@ -1,0 +1,13 @@
+{
+  "file": {
+    "size": 434781,
+    "mtime": 1784623080
+  },
+  "settings": {
+    "CHUNK_SIZE": 400,
+    "CHUNK_OVERLAP": 50,
+    "EMBEDDING_MODEL_NAME": "paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  "n_chunks": 541,
+  "source_file": "sex_q_a.txt"
+}
