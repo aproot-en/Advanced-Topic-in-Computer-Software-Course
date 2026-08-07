@@ -1,6 +1,6 @@
 # Advanced-Topics-in-Computer-Software
 
-This repository contains all course materials for the **Advanced Topics in Computer Software** course for **CPE students**. It includes lab exercises, source code, assignments, projects, and additional learning resources.
+This repository provides the course materials for **Advanced Topics in Computer Software**, designed for **Computer Engineering (CPE)** students at **Rajamangala University of Technology Thanyaburi (RMUTT)**. It includes lecture notes, laboratory exercises, source code, assignments, projects, and additional learning resources.
 
 ## Course Description 
 
