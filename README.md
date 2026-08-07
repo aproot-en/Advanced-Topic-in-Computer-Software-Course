@@ -6,7 +6,7 @@ This repository provides the course materials for **Advanced Topics in Computer 
 
 **New academic study in computer software.**
 
-The course follows the official  **course description ** and extends it with modern AI topics such as **LLM**, **RAG** and **Agentic AI**. It also includes hands-on labs, projects, and real-world applications. The complete list of topics is available in the **Course Contents** section.
+The course follows the official  **course description** and extends it with modern AI topics such as **LLM**, **RAG** and **Agentic AI**. It also includes hands-on labs, projects, and real-world applications. The complete list of topics is available in the **Course Contents** section.
 
 ## Course Contents
 
