@@ -309,9 +309,9 @@ Most LLMs generate text one token at a time — each new token gets added to the
 | **Temperature** | Controls how random vs. focused the token choices are | Standard sampling technique |
 | **Top-k** | Only samples from the k most likely tokens | [Fan et al., 2018](https://arxiv.org/abs/1805.04833) |
 | **Top-p** | Samples from the smallest group of tokens whose combined probability hits a set threshold | [Holtzman et al., 2019](https://arxiv.org/abs/1904.09751) |
-| **Max Tokens** | Caps how many tokens can be generated | Implementation setting |
-| **Repetition Penalty** | Discourages the model from repeating itself | Implementation setting |
-| **Stop Sequences** | Stops generation as soon as a chosen sequence shows up | Implementation setting |
+| **Max Tokens** | Caps how many tokens can be generated | --------------- |
+| **Repetition Penalty** | Discourages the model from repeating itself | --------------- |
+| **Stop Sequences** | Stops generation as soon as a chosen sequence shows up | --------------- |
 
 ### Example
 
