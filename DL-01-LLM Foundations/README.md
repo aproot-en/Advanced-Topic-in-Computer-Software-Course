@@ -49,17 +49,6 @@ Most LLMs today are built on the **Transformer architecture**, which lets them h
 | **Handles Many Tasks** | One model can be used for a wide range of language tasks | [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
 | **Scales Well** | Gets better as you throw more data, bigger models, and more compute at it | [Kaplan et al., 2020](https://arxiv.org/abs/2001.08361) |
 
-### Well-Known LLM Families
-
-| Model Family | Organization |
-| --- | --- |
-| **GPT** | OpenAI |
-| **Llama** | Meta |
-| **Gemini** | Google |
-| **Claude** | Anthropic |
-| **Mistral** | Mistral AI |
-| **DeepSeek** | DeepSeek |
-
 ---
 
 # 🕰️ 2. Evolution of NLP
