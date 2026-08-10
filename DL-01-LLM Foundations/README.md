@@ -26,7 +26,6 @@ The course follows the official course description and is enhanced with modern A
 | --- | --- |
 | **Python** | A widely used programming language for AI, machine learning, and data processing |
 | **TensorFlow** | An open-source framework for building and training machine learning and deep learning models |
-| **PyTorch** | A flexible deep learning framework commonly used for research and model development |
 | **Visual Studio Code** | A lightweight code editor with extensions and integrated development tools |
 
 ---
