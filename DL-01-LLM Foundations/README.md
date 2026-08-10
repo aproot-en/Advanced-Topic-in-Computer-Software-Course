@@ -24,19 +24,22 @@ Foundations and practical applications of Artificial Intelligence (AI) and Large
 | **Visual Studio Code** | Lightweight and powerful code editor with extensions and integrated development tools |
 ---
 
-🕰️ Historical Context
-Evolution of NLP Timeline
-Era	Stage	Main Idea
-1950s–1970s	Rule-Based NLP	The earliest era of NLP, using hand-written rules and linguistic expertise for language processing
-1980s–1990s	Statistical NLP	Uses statistical models and probability for analyzing data and generating language
-1990s–2000s	Machine Learning	ML methods are applied to NLP and become widely adopted
-2000s	Word Embedding	Words are represented as high-dimensional dense vectors to capture meaning and semantic relationships
-2000s–2010s	RNN (Recurrent Neural Network)	Sequential models process data while accounting for context and relationships between words
-2010s	LSTM	Improves RNNs' ability to retain long-term information, solving the forgetting problem
-2014	Attention Mechanism	Lets models focus efficiently on the important parts of the input
-2017	Transformer Architecture	Uses Self-Attention with massive data and compute — enables deeper language understanding (Vaswani et al., 2017)
-2018–present	Large Language Models (LLM)	The era of large-scale language models and their widespread application
+### 🕰️ NLP Timeline
+
+| Era | Stage | Main Idea | Reference |
+| --- | --- | --- | --- |
+| **1950s–1970s** | **Rule-Based NLP** | The earliest era of NLP, using hand-written rules and linguistic expertise for language processing | [Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433) |
+| **1980s–1990s** | **Statistical NLP** | Uses statistical models and probability for analyzing and processing natural language | [Manning & Schütze, 1999](https://nlp.stanford.edu/fsnlp/) |
+| **1990s–2000s** | **Machine Learning** | Machine learning methods are increasingly applied to NLP tasks and language processing | [Mitchell, 1997](https://www.cs.cmu.edu/~tom/mlbook.html) |
+| **2000s** | **Word Embedding** | Words are represented as dense numerical vectors to capture meaning and semantic relationships | [Bengio et al., 2003](https://www.jmlr.org/papers/v3/bengio03a.html) |
+| **2000s–2010s** | **RNN (Recurrent Neural Network)** | Sequential models process language while capturing dependencies between words over time | [Mikolov et al., 2010](https://www.fit.vut.cz/research/group/speech/public/publi/2010/mikolov_interspeech2010_IS100722.pdf) |
+| **2010s** | **LSTM** | Improves the ability of recurrent networks to learn long-term dependencies | [Hochreiter & Schmidhuber, 1997](https://doi.org/10.1162/neco.1997.9.8.1735) |
+| **2014** | **Attention Mechanism** | Allows a model to focus on relevant parts of an input sequence when generating an output | [Bahdanau et al., 2014](https://arxiv.org/abs/1409.0473) |
+| **2017** | **Transformer Architecture** | Uses Self-Attention to model relationships between tokens and enables highly parallel sequence processing | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
+| **2018–Present** | **Large Language Models (LLMs)** | Large-scale pretrained Transformer-based language models become widely developed and applied | [Devlin et al., 2018](https://arxiv.org/abs/1810.04805) / [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
+
 ---
+
 🧠 What is a Large Language Model?
 > A Large Language Model (LLM) is a type of AI model — built on the Transformer architecture — trained on massive amounts of text data to understand and generate human-like language.
 How an LLM Works
