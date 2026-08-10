@@ -1,8 +1,12 @@
-# DL-01-LLM Foundations
-LLM-01: Foundations of Large Language Models (LLM)
+# DL-01: LLM Foundations
 
-📘 Course Description
-Foundations and practical applications of Artificial Intelligence (AI) and Large Language Models (LLMs) — how language models evolved from traditional NLP, the Transformer architecture, tokenization, embeddings, Self-Attention, pretraining, fine-tuning, inference, real-world applications, and the limitations of modern LLMs.
+## 📘 Course Description
+
+Foundations and practical applications of **Artificial Intelligence (AI)** and **Large Language Models (LLMs)** — from the evolution of Natural Language Processing (NLP) to modern Transformer-based language models.
+
+This chapter covers **Language Models, Transformer architecture, tokenization, embeddings, Self-Attention, pretraining, fine-tuning, inference, applications, and limitations of LLMs**.
+
+---
 
 ## 📊 Assessment Methods
 
@@ -12,413 +16,303 @@ Foundations and practical applications of Artificial Intelligence (AI) and Large
 | **Hands-on Projects** | 30 | Practical work with LLMs and AI tools for programming tasks and mini-projects |
 | **Midterm Exam** | 30 | Tests understanding of key concepts, including LLMs, AI techniques, and applications |
 | **Final Exam** | 30 | Assesses overall learning outcomes and the ability to apply knowledge to solve problems |
-| **Total** | **100** |  |
+| **Total** | **100** | |
+
+---
 
 ## 🛠️ Software / Tools
 
 | Software / Tool | Description |
 | --- | --- |
-| **Python** | Versatile programming language with rich libraries for data science, AI, and machine learning |
-| **TensorFlow** | Open-source platform for building and deploying machine learning and deep learning models |
-| **PyTorch** | Flexible deep learning framework with strong support for AI research and model development |
-| **Visual Studio Code** | Lightweight and powerful code editor with extensions and integrated development tools |
----
-
-### 🕰️ NLP Timeline
-
-| Era | Stage | Main Idea | Reference |
-| --- | --- | --- | --- |
-| **1950s–1970s** | **Rule-Based NLP** | The earliest era of NLP, using hand-written rules and linguistic expertise for language processing | [Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433) |
-| **1980s–1990s** | **Statistical NLP** | Uses statistical models and probability for analyzing and processing natural language | [Manning & Schütze, 1999](https://nlp.stanford.edu/fsnlp/) |
-| **1990s–2000s** | **Machine Learning** | Machine learning methods are increasingly applied to NLP tasks and language processing | [Mitchell, 1997](https://www.cs.cmu.edu/~tom/mlbook.html) |
-| **2000s** | **Word Embedding** | Words are represented as dense numerical vectors to capture meaning and semantic relationships | [Bengio et al., 2003](https://www.jmlr.org/papers/v3/bengio03a.html) |
-| **2000s–2010s** | **RNN (Recurrent Neural Network)** | Sequential models process language while capturing dependencies between words over time | [Mikolov et al., 2010](https://www.fit.vut.cz/research/group/speech/public/publi/2010/mikolov_interspeech2010_IS100722.pdf) |
-| **2010s** | **LSTM** | Improves the ability of recurrent networks to learn long-term dependencies | [Hochreiter & Schmidhuber, 1997](https://doi.org/10.1162/neco.1997.9.8.1735) |
-| **2014** | **Attention Mechanism** | Allows a model to focus on relevant parts of an input sequence when generating an output | [Bahdanau et al., 2014](https://arxiv.org/abs/1409.0473) |
-| **2017** | **Transformer Architecture** | Uses Self-Attention to model relationships between tokens and enables highly parallel sequence processing | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
-| **2018–Present** | **Large Language Models (LLMs)** | Large-scale pretrained Transformer-based language models become widely developed and applied | [Devlin et al., 2018](https://arxiv.org/abs/1810.04805) / [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
+| **Python** | Programming language widely used for AI, machine learning, and data processing |
+| **TensorFlow** | Open-source framework for building and training machine learning models |
+| **PyTorch** | Deep learning framework widely used for research and model development |
+| **Visual Studio Code** | Lightweight code editor with extensions and integrated development tools |
 
 ---
 
-# 🧠 Large Language Model (LLM) Foundations
+# 🧠 1. Introduction to Large Language Models
 
-This chapter introduces the foundations of **Large Language Models (LLMs)**, including Language Models, Transformer architecture, model training, fine-tuning, inference, applications, and limitations.
+## What is a Large Language Model?
 
----
+A **Large Language Model (LLM)** is a neural language model trained on large-scale data to learn patterns and relationships in language. Modern LLMs are primarily based on the **Transformer architecture** and can perform a wide range of language-related tasks.
 
-## 🧠 What is a Large Language Model?
+### Key Characteristics
 
-> A **Large Language Model (LLM)** is a type of AI model built on the Transformer architecture and trained on massive amounts of text data to understand and generate human-like language.
+| Characteristic | Description |
+| --- | --- |
+| **Large-Scale Data** | Trained on large collections of text, code, documents, and other data |
+| **Large Number of Parameters** | Uses many trainable parameters to learn complex patterns |
+| **Transformer Architecture** | Uses Attention mechanisms to model relationships between tokens |
+| **General-Purpose Capability** | A single model can support many different language tasks |
+| **Scalability** | Capabilities can improve with appropriate increases in data, model capacity, and compute |
 
-### LLM: How It Works
-
-| Step | Stage | Description |
-| ---: | --- | --- |
-| **1** | **Training Data** | The model is trained on massive amounts of text from books, articles, websites, code, and other sources |
-| **2** | **Training Process** | The model learns language patterns, grammar, facts, and reasoning through prediction tasks |
-| **3** | **Understanding** | The model learns context and relationships between tokens |
-| **4** | **Generation** | Given an instruction, the model predicts and generates a response that fits the context |
-
-### LLM: Key Characteristics
-
-| # | Characteristic | Description |
-| ---: | --- | --- |
-| **1** | **Large-Scale Data** | Trained on massive collections of text, code, documents, and other data |
-| **2** | **Massive Parameters** | Contains large numbers of parameters that allow the model to learn complex language patterns |
-| **3** | **Transformer Architecture** | Uses Self-Attention to understand context and token relationships |
-| **4** | **Scaling Law** | Performance can improve as model size, training data, and compute increase |
-| **5** | **Diverse Capabilities** | Supports Q&A, writing, reasoning, summarization, coding, and many other tasks |
-
-### LLM: Example Models
+### Examples of LLMs
 
 | Model Family | Organization |
 | --- | --- |
 | **GPT** | OpenAI |
 | **Llama** | Meta |
 | **Gemini** | Google |
-| **Mistral** | Mistral AI |
 | **Claude** | Anthropic |
+| **Mistral** | Mistral AI |
 | **DeepSeek** | DeepSeek |
-
-### LLM: Common Use Cases
-
-| Application | Description |
-| --- | --- |
-| **Chatbot** | Natural-language conversation and question answering |
-| **Programming** | Generating, explaining, fixing, and improving code |
-| **Education** | Personalized tutoring, content creation, and learning support |
-| **Healthcare** | Supporting information processing and clinical document summarization |
-| **Translation** | Translating text while preserving meaning and context |
-| **Document Analysis** | Extracting, summarizing, and analyzing information from documents |
-| **Research Assistant** | Searching, summarizing, and compiling research information |
-| **Robotics** | Understanding instructions, planning tasks, and interacting with an environment |
-
-> **Key Takeaway:** LLMs combine large-scale data, massive parameters, Transformer architecture, and large-scale training to achieve powerful language understanding and generation.
 
 ---
 
-## 🕰️ Historical Context
+# 🕰️ 2. Evolution of NLP
 
-### Evolution of NLP Timeline
-
-Natural Language Processing has evolved from manually defined linguistic rules to large-scale Transformer-based models.
+Natural Language Processing has evolved from manually designed linguistic rules to large-scale neural language models.
 
 | Era | Stage | Main Idea | Reference |
 | --- | --- | --- | --- |
-| **1950s–1970s** | **Rule-Based NLP** | Uses manually designed rules and linguistic knowledge for language processing | [Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433) |
-| **1980s–1990s** | **Statistical NLP** | Uses statistical and probabilistic approaches for language processing | [Manning & Schütze, 1999](https://nlp.stanford.edu/fsnlp/) |
+| **1950s–1970s** | **Rule-Based NLP** | Uses manually designed rules and linguistic knowledge | [Turing, 1950](https://doi.org/10.1093/mind/LIX.236.433) |
+| **1980s–1990s** | **Statistical NLP** | Uses probability and statistical models for language processing | [Manning & Schütze, 1999](https://nlp.stanford.edu/fsnlp/) |
 | **1990s–2000s** | **Machine Learning** | Applies machine learning algorithms to NLP tasks | [Mitchell, 1997](https://www.cs.cmu.edu/~tom/mlbook.html) |
-| **2000s** | **Neural Language Models** | Uses neural networks to learn distributed representations of language | [Bengio et al., 2003](https://www.jmlr.org/papers/v3/bengio03a.html) |
-| **2000s–2010s** | **RNN** | Processes sequential information and learns dependencies over time | [Mikolov et al., 2010](https://www.fit.vut.cz/research/group/speech/public/publi/2010/mikolov_interspeech2010_IS100722.pdf) |
-| **2010s** | **LSTM** | Improves the ability of recurrent networks to learn long-term dependencies | [Hochreiter & Schmidhuber, 1997](https://doi.org/10.1162/neco.1997.9.8.1735) |
+| **2000s** | **Neural Language Models** | Neural networks learn distributed representations of language | [Bengio et al., 2003](https://www.jmlr.org/papers/v3/bengio03a.html) |
+| **2000s–2010s** | **RNN** | Models sequential information and dependencies over time | [Mikolov et al., 2010](https://www.fit.vut.cz/research/group/speech/public/publi/2010/mikolov_interspeech2010_IS100722.pdf) |
+| **2010s** | **LSTM** | Improves the learning of long-term dependencies | [Hochreiter & Schmidhuber, 1997](https://doi.org/10.1162/neco.1997.9.8.1735) |
 | **2014** | **Attention Mechanism** | Allows models to focus on relevant parts of an input sequence | [Bahdanau et al., 2014](https://arxiv.org/abs/1409.0473) |
-| **2017** | **Transformer Architecture** | Uses Self-Attention to model relationships between tokens | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
-| **2018–Present** | **Large Language Models** | Large-scale pretrained Transformer models enable general-purpose language capabilities | [Devlin et al., 2018](https://arxiv.org/abs/1810.04805) / [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
+| **2017** | **Transformer** | Uses Self-Attention as the core mechanism for sequence modeling | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
+| **2018–Present** | **Large Language Models** | Large-scale pretrained Transformer models support general-purpose language tasks | [Devlin et al., 2018](https://arxiv.org/abs/1810.04805) / [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
 
 ---
 
-## ❓ What is a Language Model?
+# 📖 3. Language Models
 
-> A **Language Model (LM)** is a mathematical model that estimates the probability of a sequence of words: **P(w₁, w₂, ..., wₙ)**
+## What is a Language Model?
 
-The goal of a Language Model is to use the previous context to predict the word or token most likely to come next.
+A **Language Model (LM)** estimates the probability of a sequence of words or tokens:
 
-### LM: How It Works
+**P(w₁, w₂, ..., wₙ)**
+
+A common use of a language model is to predict the next token based on the previous context.
+
+### How It Works
 
 | Step | Process | Description |
 | ---: | --- | --- |
-| **1** | **Input Sequence** | The model receives a sequence of words or tokens |
-| **2** | **Context Processing** | The model analyzes the previous tokens and their relationships |
-| **3** | **Probability Estimation** | Probabilities are calculated for possible next tokens |
-| **4** | **Prediction** | The model selects or predicts the next token |
-| **5** | **Continuation** | The predicted token becomes part of the context for further prediction |
+| **1** | **Input Sequence** | Receives a sequence of words or tokens |
+| **2** | **Context Processing** | Analyzes the previous tokens |
+| **3** | **Probability Estimation** | Calculates probabilities for possible next tokens |
+| **4** | **Prediction** | Selects or predicts the next token |
+| **5** | **Continuation** | Uses the generated token as part of the next context |
 
-### LM: Example
+### Example
 
-Given the input:
+Given:
 
 `I love machine`
 
-the model may estimate:
+the model might produce:
 
-| Possible Next Token | Example Probability |
+| Next Token | Probability |
 | --- | ---: |
-| **learning** | High |
-| **vision** | Medium |
-| **car** | Low |
+| **learning** | 0.70 |
+| **vision** | 0.20 |
+| **car** | 0.10 |
 
-> **Key Takeaway:** A Language Model learns patterns in language and uses the previous context to estimate what is likely to come next.
+The model therefore considers **learning** the most likely continuation in this simplified example.
 
 ---
 
-## ⚖️ Traditional NLP vs. Large Language Models
+# ⚖️ 4. Traditional NLP vs. LLMs
 
 | Feature | Traditional NLP | Large Language Models |
 | --- | --- | --- |
-| **Feature Design** | Requires manually designed features and domain expertise | Learns representations automatically |
-| **Vocabulary** | Often limited and affected by Out-of-Vocabulary (OOV) words | Handles broad vocabularies through tokenization |
-| **Context Understanding** | Often limited in capturing complex or long-range context | Provides stronger contextual modeling |
-| **Generalization** | Often requires task-specific systems | Can perform multiple tasks from instructions and examples |
-| **Output** | Rule-based or statistical output | Natural and fluent language generation |
+| **Feature Design** | Often requires manually designed features | Learns representations automatically |
+| **Vocabulary** | Can suffer from Out-of-Vocabulary (OOV) problems | Uses tokenization to represent a broad range of text |
+| **Context** | Often limited by the chosen method | Can model richer and longer contextual relationships |
+| **Task Design** | Usually built for specific tasks | Can support multiple tasks using one model |
+| **Adaptation** | Often requires a new model or pipeline | Can adapt through prompting or fine-tuning |
+| **Generation** | Limited natural-language generation | Can generate fluent, context-aware text |
 
 ### Why LLMs?
 
-**Advantages**
+LLMs are important because they can:
 
-- Understand complex context
-- Generate natural and fluent language
-- Support many tasks with the same model
-- Perform zero-shot and few-shot tasks
-- Benefit from scaling data, model size, and compute
-
-**Limitations**
-
-- May generate hallucinations
-- May reflect bias in training data
-- Internal knowledge may become outdated
-- Require significant computational resources
-- Raise privacy and security concerns
-- Can be difficult to explain
+- Learn language representations automatically
+- Capture complex contextual relationships
+- Perform multiple tasks with the same model
+- Support zero-shot and few-shot learning
+- Generate natural-language responses
+- Be adapted to specialized tasks and domains
 
 ---
 
-## 🧩 Core Components of an LLM System
+# 🧩 5. Core Components of LLMs
 
-An LLM system contains several important components, from text processing to final response generation.
+| Component | Purpose | Result |
+| --- | --- | --- |
+| **Tokenization** | Splits text into processable units | Tokens / Token IDs |
+| **Embedding** | Converts tokens into numerical vectors | Token representations |
+| **Positional Information** | Represents token order or position | Position-aware representations |
+| **Self-Attention** | Learns relationships between tokens | Contextual representations |
+| **Transformer Blocks** | Repeatedly transform contextual information | Deep language representations |
+| **Output Layer** | Produces scores or probabilities over tokens | Next-token probabilities |
 
-| Step | Component | Input / Learns | Output |
-| ---: | --- | --- | --- |
-| **01** | **Tokenization** | Raw text | Sequence of tokens |
-| **02** | **Embedding** | Tokens | Dense numerical vectors |
-| **03** | **Self-Attention** | Token relationships in context | Contextualized representations |
-| **04** | **Pretraining** | Large-scale training data | Foundation Model |
-| **05** | **Fine-Tuning** | Task/domain-specific data | Adapted Model |
-| **06** | **Inference** | User prompt | Generated text |
+### Tokenization
 
-### How the Components Work Together
+LLMs do not directly process raw text. A tokenizer converts text into smaller units called **tokens**.
 
-1. **Tokenization** converts raw text into tokens.
-2. **Embedding** converts tokens into numerical representations.
-3. **Self-Attention** learns relationships between tokens in context.
-4. **Pretraining** builds general language capabilities.
-5. **Fine-Tuning** adapts the model to specific tasks or domains.
-6. **Inference** uses the trained model to generate responses.
+Example:
 
-> **Key Takeaway:** LLM systems transform text into numerical representations, learn contextual relationships, build general capabilities through pretraining, and generate responses during inference.
+| Original Text | Possible Tokens |
+| --- | --- |
+| `Artificial intelligence is powerful` | `Artificial`, `intelligence`, `is`, `powerful` |
 
----
+Actual tokenization depends on the tokenizer used by each model.
 
-# 1️⃣ Transformer Architecture
+### Embedding
 
-> The **Transformer** uses an Encoder–Decoder structure with Attention mechanisms to process sequences. — **[Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)**
+Each token is converted into a numerical vector that can be processed by the neural network.
 
-## Transformer: Processing a Sequence
-
-| Step | Component | Function |
-| ---: | --- | --- |
-| **1** | **Input** | Receives the input text or sequence |
-| **2** | **Tokenization** | Converts the input text into tokens |
-| **3** | **Token Embedding** | Converts tokens into numerical vector representations |
-| **4** | **Positional Encoding** | Adds information about the position of each token |
-| **5** | **Encoder** | Extracts contextual information from the input |
-| **6** | **Decoder** | Generates the output using Encoder information and previously generated tokens |
-| **7** | **Output** | Produces the final output sequence |
+| Token | Example Representation |
+| --- | --- |
+| `cat` | `[0.21, 0.53, 0.18, ...]` |
+| `dog` | `[0.24, 0.49, 0.20, ...]` |
 
 ---
 
-## Transformer: The Problem It Solves
+# 🏗️ 6. Transformer Architecture
 
-RNNs process sequence elements one step at a time. This creates several challenges when processing long sequences.
+> The **Transformer** is a neural network architecture introduced by Vaswani et al. that relies primarily on Attention mechanisms for sequence modeling.  
+> **[Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)**
+
+## Why Transformer?
+
+Traditional recurrent models such as RNNs process sequences recurrently, which creates limitations for parallel computation and long-range dependency modeling.
 
 | RNN Limitation | Transformer Approach |
 | --- | --- |
-| **Sequential Processing** | Self-Attention allows token representations to be computed in parallel during training |
-| **Slow Training** | Parallel computation improves training efficiency |
-| **Long-Range Dependencies** | Attention directly connects information across different positions |
-| **Gradient Problems** | Avoids long recurrent computational paths |
-| **Limited Scalability** | Transformer architectures scale effectively to large models and datasets |
+| **Sequential computation** | Enables highly parallel computation during training |
+| **Long dependency paths** | Attention directly connects different token positions |
+| **Training efficiency** | Parallel processing improves hardware utilization |
+| **Long-range context** | Attention can model relationships between distant tokens |
+| **Scalability** | Architecture scales effectively to large models and datasets |
 
-### Transformer: Goals
-
-1. **Process in parallel** — process token representations efficiently using Self-Attention
-2. **Understand context holistically** — learn relationships among tokens
-3. **Capture long-range dependencies** — connect information across distant positions
-4. **Improve training efficiency** — reduce dependence on recurrent computation
-5. **Enable large-scale models** — support training with massive datasets and model sizes
-
----
-
-## Transformer: Key Components
+## Transformer Components
 
 | Component | Function |
 | --- | --- |
-| **Token Embedding** | Converts tokens into dense numerical vectors |
-| **Positional Encoding** | Adds information about token order and position |
-| **Multi-Head Self-Attention** | Allows the model to learn different relationships between tokens |
-| **Masked Multi-Head Self-Attention** | Prevents the decoder from attending to future tokens |
-| **Multi-Head Cross-Attention** | Allows the decoder to use information from the Encoder |
-| **Feed Forward Network** | Applies nonlinear transformations to token representations |
-| **Add & Norm** | Uses residual connections and normalization to support stable training |
+| **Token Embedding** | Converts tokens into numerical vectors |
+| **Positional Encoding** | Provides information about token position |
+| **Self-Attention** | Determines relationships between tokens in the same sequence |
+| **Multi-Head Attention** | Learns multiple attention relationships simultaneously |
+| **Feed Forward Network** | Applies nonlinear transformations to each token representation |
+| **Residual Connection** | Preserves information across layers |
+| **Layer Normalization** | Helps stabilize network training |
+| **Masked Attention** | Prevents access to future tokens during autoregressive generation |
+| **Cross-Attention** | Connects Decoder representations with Encoder outputs in Encoder–Decoder models |
 
-### Transformer: Main Architectures
+## Main Transformer Architectures
 
-| Architecture | Main Structure | Example |
-| --- | --- | --- |
-| **Encoder-Only** | Uses the Transformer Encoder | BERT |
-| **Decoder-Only** | Uses causal Transformer blocks for autoregressive generation | GPT-style models |
-| **Encoder–Decoder** | Uses both Encoder and Decoder | Original Transformer, T5 |
-
-### Transformer: Summary
-
-- Uses **Self-Attention** to learn relationships between tokens
-- Supports parallel computation during training
-- Captures long-range contextual relationships
-- Reduces dependence on sequential recurrent processing
-- Forms the foundation of many modern language models
+| Architecture | Structure | Typical Purpose | Example |
+| --- | --- | --- | --- |
+| **Encoder-Only** | Transformer Encoder | Understanding and representation | BERT |
+| **Decoder-Only** | Causal Transformer | Autoregressive text generation | GPT-style models |
+| **Encoder–Decoder** | Encoder + Decoder | Sequence-to-sequence tasks | T5 |
 
 ---
 
-# 2️⃣ LLM Training Pipeline
+# 🎯 7. Self-Attention
 
-> **LLM Training** uses large-scale data to build a general-purpose Foundation Model and can then adapt that model to specific tasks or domains through Fine-Tuning.
+**Self-Attention** allows each token to consider other tokens in the same sequence when building its contextual representation.
 
-## Training: From Data to Adapted Model
+For example, in the sentence:
 
-| Step | Stage | Description | Result |
-| ---: | --- | --- | --- |
-| **1** | **Training Data** | Collect large-scale text, code, documents, and other training data | Training corpus |
-| **2** | **Pretraining** | Train the model to learn general language patterns and knowledge | Learned parameters |
-| **3** | **Foundation Model** | General-purpose model obtained after pretraining | Base model |
-| **4** | **Fine-Tuning** | Adapt the model using task-, domain-, or instruction-specific data | Specialized capabilities |
-| **5** | **Adapted Model** | Model optimized for a particular application | Application-ready model |
+> `The animal didn't cross the street because it was tired.`
+
+the model needs contextual relationships to determine what **“it”** refers to.
+
+### Main Elements
+
+| Element | Purpose |
+| --- | --- |
+| **Query (Q)** | Represents what the current token is looking for |
+| **Key (K)** | Represents information available from other tokens |
+| **Value (V)** | Contains the information that can be passed to the output |
+| **Attention Score** | Measures how strongly tokens should attend to one another |
+| **Attention Weight** | Normalized importance assigned to each token |
+
+Self-Attention is one of the key mechanisms that allows Transformers to build contextual representations.
 
 ---
 
-## Training: Pretraining Process
+# 🏋️ 8. LLM Training
+
+LLM development commonly involves **Pretraining** followed by optional adaptation such as **Fine-Tuning**.
+
+## Pretraining
+
+Pretraining teaches the model general language patterns using large-scale datasets.
 
 | Step | Process | Description |
 | ---: | --- | --- |
-| **1** | **Training Data** | Collect large-scale training data |
-| **2** | **Tokenization** | Convert training text into token sequences |
-| **3** | **Model Processing** | Process token sequences through the Transformer |
-| **4** | **Prediction** | Produce predictions according to the training objective |
-| **5** | **Loss Calculation** | Measure the difference between predictions and targets |
-| **6** | **Backpropagation** | Calculate gradients through the neural network |
-| **7** | **Parameter Update** | Update model parameters using an optimizer |
-| **8** | **Repeat** | Repeat training across the dataset |
+| **1** | **Data Preparation** | Collect and prepare large-scale training data |
+| **2** | **Tokenization** | Convert text into token sequences |
+| **3** | **Forward Pass** | Process tokens through the model |
+| **4** | **Prediction** | Generate predictions according to the training objective |
+| **5** | **Loss Calculation** | Measure prediction error |
+| **6** | **Backpropagation** | Calculate gradients |
+| **7** | **Optimization** | Update model parameters |
 
-### Training: Goals
-
-1. **Learn general language knowledge** — learn grammar, patterns, semantics, and contextual relationships
-2. **Predict tokens accurately** — improve performance on the training objective
-3. **Build general capabilities** — create a reusable Foundation Model
-4. **Adapt to specific tasks** — specialize the model for target applications
-5. **Improve instruction following** — align responses with intended tasks and instructions
-
----
+The result of large-scale pretraining is commonly called a **Foundation Model**.
 
 ## Pretraining vs. Fine-Tuning
 
 | Feature | Pretraining | Fine-Tuning |
 | --- | --- | --- |
-| **Purpose** | Learn general language capabilities | Adapt the model to a particular task or domain |
-| **Data** | Large-scale general training data | Task-, domain-, or instruction-specific data |
-| **Starting Point** | Base neural network | Pretrained Foundation Model |
-| **Training Scale** | Very large | Usually smaller than pretraining |
+| **Purpose** | Learn general capabilities | Adapt existing capabilities |
+| **Data** | Large-scale general data | Specialized data |
+| **Starting Point** | Base model parameters | Pretrained model |
+| **Training Scale** | Very large | Usually smaller |
 | **Output** | Foundation Model | Adapted Model |
-| **Example Goal** | Next-token prediction | Instruction following or domain specialization |
 
----
-
-## Training: Popular Fine-Tuning Methods
+## Fine-Tuning Methods
 
 | Method | Purpose | Example |
 | --- | --- | --- |
-| **Instruction Tuning** | Teaches the model to follow instructions and generate appropriate responses | Instruction → Response |
-| **Domain Tuning** | Specializes the model in a particular domain | Medical, legal, financial |
-| **Task Tuning** | Adapts the model to a specific task objective | Classification, summarization |
-
-### Training: Real-World Applications
-
-| Domain | Example Applications |
-| --- | --- |
-| **Healthcare** | Medical Q&A, clinical document summarization |
-| **Legal** | Contract analysis, document processing |
-| **Finance** | Financial reporting, market and risk analysis |
-
-### Training: Summary
-
-- **Pretraining** builds general language capabilities
-- The result of pretraining is a **Foundation Model**
-- **Fine-Tuning** adapts the Foundation Model
-- Fine-tuning can focus on instructions, domains, or tasks
-- The result is an **Adapted Model**
-
-> **Key Takeaway:** Pretraining builds general capabilities, while Fine-Tuning adapts those capabilities to a specific purpose.
+| **Instruction Tuning** | Improve instruction-following behavior | Instruction–response datasets |
+| **Domain Tuning** | Adapt language knowledge to a domain | Medical, legal, finance |
+| **Task Tuning** | Optimize for a particular task | Classification, summarization |
 
 ---
 
-# 3️⃣ Inference Pipeline
+# ⚙️ 9. LLM Inference
 
-> **Inference** is the process of using a trained LLM to generate output from a user prompt.
+**Inference** is the process of using a trained model to generate an output from a prompt.
 
-## Inference: From Prompt to Generated Text
+## Inference Process
 
 | Step | Stage | Description |
 | ---: | --- | --- |
-| **1** | **Prompt** | The user provides an instruction or input text |
-| **2** | **Tokenizer** | Converts the prompt into tokens and token IDs |
-| **3** | **LLM Processing** | Processes the current context and predicts probabilities for the next token |
-| **4** | **Sampling** | Selects a token according to the generation strategy |
-| **5** | **Context Update** | Adds the selected token to the current context |
-| **6** | **Generation** | Repeats prediction and token selection |
-| **7** | **Decoding** | Converts generated tokens into readable text |
+| **1** | **Prompt** | User provides an instruction or input |
+| **2** | **Tokenization** | Prompt is converted into token IDs |
+| **3** | **Model Processing** | LLM processes the current context |
+| **4** | **Prediction** | Model produces probabilities for possible next tokens |
+| **5** | **Token Selection** | A generation strategy selects the next token |
+| **6** | **Context Update** | Generated token is added to the current context |
+| **7** | **Decoding** | Tokens are converted back into readable text |
 
----
+LLMs commonly generate text **autoregressively**: each generated token becomes part of the context used to predict the next token.
 
-## Inference: Token-by-Token Generation
-
-LLMs commonly generate text **autoregressively**, meaning that each generated token becomes part of the context for predicting the next token.
-
-| Generation Step | Current Context | Model Action |
-| ---: | --- | --- |
-| **1** | Original prompt | Predict the first new token |
-| **2** | Prompt + Token 1 | Predict Token 2 |
-| **3** | Prompt + Tokens 1–2 | Predict Token 3 |
-| **4** | Prompt + Tokens 1–3 | Predict Token 4 |
-| **...** | Updated context | Continue until a stopping condition |
-
-### Inference: Goals
-
-1. **Understand the prompt** — correctly process the user's input
-2. **Predict the next token** — compute probabilities over possible tokens
-3. **Select tokens appropriately** — use a suitable generation strategy
-4. **Maintain context** — use previously generated tokens as part of the current context
-5. **Generate coherent text** — produce fluent and contextually consistent output
-6. **Stop appropriately** — terminate generation when a stopping condition is reached
-
----
-
-## Inference: Popular Sampling Settings
+## Generation Settings
 
 | Setting | Function |
 | --- | --- |
-| **Temperature** | Controls randomness or creativity in token selection |
-| **Top-k** | Limits token selection to the k most probable candidates |
-| **Top-p** | Selects from the smallest token set whose cumulative probability reaches a threshold |
-| **Max Tokens** | Limits the maximum number of generated tokens |
-| **Repetition Penalty** | Discourages excessive repetition |
-| **Stop Sequences** | Defines sequences that terminate generation |
+| **Temperature** | Controls randomness in token selection |
+| **Top-k** | Restricts selection to the k highest-probability tokens |
+| **Top-p** | Restricts selection using cumulative probability |
+| **Max Tokens** | Sets the maximum generation length |
+| **Repetition Penalty** | Reduces excessive repetition |
+| **Stop Sequences** | Defines conditions that terminate generation |
 
-### Inference: Example
+### Example
 
-**Prompt**
+**Prompt:** `Artificial Intelligence is ...`
 
-> Artificial Intelligence is ...
-
-**Possible Next Tokens**
-
-| Token | Probability |
+| Candidate Token | Example Probability |
 | --- | ---: |
 | **a** | 0.42 |
 | **the** | 0.25 |
@@ -426,99 +320,73 @@ LLMs commonly generate text **autoregressively**, meaning that each generated to
 | **used** | 0.08 |
 | **Others** | 0.13 |
 
-The generation strategy selects one of the candidate tokens. The selected token is then added to the context before the model predicts the next token.
-
-### Inference: Summary
-
-- Receives a **Prompt**
-- Converts the prompt into **Tokens**
-- Predicts probabilities for the **Next Token**
-- Uses a sampling strategy to select a token
-- Adds each generated token back into the context
-- Continues until a stopping condition is reached
-- Decodes the generated tokens into readable text
+The selected token is added to the context, and the model repeats the prediction process until generation stops.
 
 ---
 
-# 📊 Transformer, Pretraining, Fine-Tuning & Inference
+# 🌍 10. Applications of LLMs
 
-| Feature | Transformer Architecture | Pretraining | Fine-Tuning | Inference |
-| --- | --- | --- | --- | --- |
-| **Input** | Tokens + positional information | Large-scale training data | Task/domain-specific data | User prompt |
-| **Core Mechanism** | Self-Attention | Training objective | Task/domain/instruction adaptation | Prediction and token selection |
-| **Main Goal** | Build contextual representations | Learn general capabilities | Adapt to a specific purpose | Generate a response |
-| **Model Parameters** | Defines the network architecture | Parameters are learned extensively | Parameters are adapted | Parameters are used for prediction |
-| **Output** | Contextual representations | Foundation Model | Adapted Model | Generated text |
-| **Example** | BERT / GPT-style Transformer | Base language model | Instruction-tuned model | Chatbot response |
-
----
-
-# 🌍 Applications of LLMs by Example
-
-| Example | Application | Input | Output |
+| Application | Example | Input | Output |
 | --- | --- | --- | --- |
-| **Customer Support Chatbot** | Chatbot | User question | Conversational answer |
-| **Code Generation Assistant** | Programming | Natural-language request | Generated or corrected code |
-| **Personalized Tutor** | Education | Student question or topic | Explanation or learning content |
-| **Clinical Document Summarizer** | Healthcare | Medical records | Document summary |
-| **English–Thai Translator** | Translation | Source-language text | Translated text |
-| **PDF Report Analyzer** | Document Analysis | Report or document | Extracted insights or summary |
-| **Literature Review Assistant** | Research Assistant | Research topic | Compiled and summarized findings |
-| **Instruction-Following Robot** | Robotics | Spoken or text instruction | Planned action sequence |
+| **Chatbot** | Customer Support | User question | Conversational answer |
+| **Programming** | Code Assistant | Programming request | Generated or corrected code |
+| **Education** | AI Tutor | Student question | Explanation or learning content |
+| **Healthcare** | Document Summarization | Clinical document | Summary |
+| **Translation** | English–Thai Translation | Source text | Translated text |
+| **Document Analysis** | Report Analyzer | Document | Extracted information |
+| **Research** | Research Assistant | Research question | Summarized information |
+| **Robotics** | Instruction Understanding | Natural-language instruction | Task representation or plan |
 
 ---
 
-# ⚠️ Limitations of LLMs
-
-## Major Challenges
+# ⚠️ 11. Limitations and Challenges
 
 | Challenge | Description | Why It Matters |
 | --- | --- | --- |
-| **Hallucination** | May generate incorrect or unsupported information | Outputs cannot always be treated as factual |
-| **Bias** | May reproduce biases present in training data | Can affect fairness and reliability |
-| **Knowledge Freshness** | Internal model knowledge may not contain recent information | Answers may become outdated |
-| **Computational Cost** | Large models require substantial compute | Increases training and deployment costs |
-| **Memory Requirements** | Large models require significant memory | Makes deployment on limited hardware difficult |
-| **Privacy** | Sensitive information requires careful handling | Important for private and confidential data |
-| **Security** | LLM applications can face attacks such as prompt injection | Can affect system reliability and safety |
-| **Explainability** | Model behavior can be difficult to fully interpret | Makes decisions harder to audit |
-| **Energy Consumption** | Training and inference require energy | Important for cost and sustainability |
+| **Hallucination** | May generate incorrect or unsupported information | Outputs require verification |
+| **Bias** | May reproduce patterns and biases in training data | Can affect fairness and reliability |
+| **Knowledge Freshness** | Internal knowledge may not include recent information | Responses can become outdated |
+| **Computational Cost** | Large models require significant compute | Increases training and deployment costs |
+| **Memory Requirements** | Large models require substantial memory | Limits deployment on smaller devices |
+| **Privacy** | Sensitive information requires careful handling | Important for confidential data |
+| **Security** | Applications may be vulnerable to attacks such as prompt injection | Can affect system integrity |
+| **Explainability** | Internal model behavior can be difficult to interpret | Makes auditing and analysis harder |
+| **Energy Consumption** | Training and inference consume computational resources | Affects cost and sustainability |
+
+### Open Challenges
+
+- Building **smaller and more efficient LLMs**
+- Improving **accuracy and reliability**
+- Improving **reasoning capabilities**
+- Reducing **hallucination and bias**
+- Improving **privacy and security**
+- Developing new **real-world LLM applications**
 
 ---
 
-## LLM Challenges
+# ✅ 12. Summary
 
-1. How can we build **smaller, faster, and more efficient LLMs** without losing quality?
-2. How can we make LLMs **more accurate and reliable**?
-3. How can we improve **reasoning capabilities**?
-4. How can we reduce **hallucinations and bias**?
-5. How can we ensure LLM systems are **private, secure, and responsible**?
-6. What new applications can we build using LLM technologies?
+| Topic | Key Idea |
+| --- | --- |
+| **Language Model** | Predicts probabilities over language sequences and tokens |
+| **Tokenization** | Converts text into tokens |
+| **Embedding** | Represents tokens as numerical vectors |
+| **Transformer** | Core architecture behind many modern LLMs |
+| **Self-Attention** | Models contextual relationships between tokens |
+| **Pretraining** | Builds general language capabilities from large-scale data |
+| **Fine-Tuning** | Adapts a pretrained model to specific needs |
+| **Inference** | Uses a trained model to generate responses |
+| **Applications** | Applies LLMs to language, coding, education, research, and other tasks |
+| **Limitations** | Includes hallucination, bias, cost, privacy, security, and explainability |
 
----
+### Key Takeaways
 
-# ✅ Summary
-
-## Conclusion
-
-In this chapter:
-
-- We learned what **Large Language Models** are and how they work
-- We explored the evolution of **NLP to modern LLMs**
-- We learned the role of **Transformer and Self-Attention**
-- We studied **Pretraining and Fine-Tuning**
-- We explored the **Inference Pipeline**
-- We examined real-world **LLM applications**
-- We discussed important **limitations and challenges**
-
-## Key Takeaways
-
-| Topic | Input | Main Process | Result |
-| --- | --- | --- | --- |
-| **Transformer** | Tokens | Self-Attention | Contextual representations |
-| **Pretraining** | Large-scale data | Model training | Foundation Model |
-| **Fine-Tuning** | Task/domain data | Model adaptation | Adapted Model |
-| **Inference** | User prompt | Token prediction and generation | Generated response |
+- Modern LLMs are primarily built using **Transformer architectures**
+- **Self-Attention** is a central mechanism for learning contextual relationships
+- **Pretraining** produces general-purpose Foundation Models
+- **Fine-Tuning** adapts pretrained models to particular tasks or domains
+- **Inference** generates responses from prompts, often token by token
+- LLM outputs must be evaluated with awareness of their **limitations**
 
 ---
 
@@ -530,14 +398,16 @@ In this chapter:
 | **2** | **Prompt Engineering** | Designing effective LLM instructions |
 | **3** | **RAG** | Connecting LLMs with external knowledge |
 | **4** | **Fine-Tuning** | Adapting models to specific tasks and domains |
-| **5** | **AI Agents** | LLM-based reasoning, tools, and actions |
+| **5** | **AI Agents** | Reasoning, tools, and actions |
 | **6** | **Multimodal AI** | Combining text, image, audio, and other modalities |
 
 ---
 
-👤 Instructor
-Anuruk Prommakhot (P'Ball), Ph.D.
-📧 anuruk.p@en.rmutt.ac.th
-🏢 Signal Processing Research Laboratory (SPRL), Rajamangala University of Technology Thanyaburi (RMUTT)
-🔬 Research Areas: Optimization Algorithms, Machine Learning, AI Vision, RAG Systems, Agentic AI
+## 👤 Instructor
 
+**Anuruk Prommakhot (P'Ball), Ph.D.**  
+📧 anuruk.p@en.rmutt.ac.th  
+🏢 Signal Processing Research Laboratory (SPRL)  
+Rajamangala University of Technology Thanyaburi (RMUTT)
+
+**Research Areas:** Optimization Algorithms, Machine Learning, AI Vision, RAG Systems, Agentic AI
