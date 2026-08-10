@@ -5,6 +5,7 @@
 New academic study in computer software.
 
 The course follows the official course description and is enhanced with modern AI topics, including Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Agentic AI. It also features hands-on laboratories, projects, and real-world applications. A complete list of topics is provided in the Course Contents section.
+
 ---
 
 ## 📊 Assessment Methods
