@@ -201,7 +201,7 @@ The **Transformer** is the neural network architecture introduced by Vaswani et 
 | --- | --- | --- | --- | --- |
 | **Encoder-Only** | Transformer Encoder | Understanding and representing text | BERT | [Devlin et al., 2018](https://arxiv.org/abs/1810.04805) |
 | **Decoder-Only** | Causal Transformer | Generating text one token at a time | GPT-3 | [Brown et al., 2020](https://arxiv.org/abs/2005.14165) |
-| **Encoder–Decoder** | Encoder + Decoder | Sequence-to-sequence tasks like translation | Original Transformer | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
+| **Encoder–Decoder** | Encoder + Decoder | Sequence-to-sequence tasks like translation | Transformer | [Vaswani et al., 2017](https://arxiv.org/abs/1706.03762) |
 
 ---
 
