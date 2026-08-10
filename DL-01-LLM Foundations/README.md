@@ -108,7 +108,7 @@ In this simplified example, **learning** is the model's best guess.
 
 ---
 
-# ⚖️ 4. Traditional NLP vs. LLMs
+# ⚖️ 4. NLP vs. LLMs
 
 | Feature | Traditional NLP | Large Language Models | Reference |
 | --- | --- | --- | --- |
@@ -250,7 +250,7 @@ Pretraining teaches the model general language skills using massive datasets.
 
 The result of all this large-scale pretraining is usually called a **Foundation Model**.
 
-## Pretraining vs. Fine-Tuning
+## Pre-training vs. Fine-Tuning
 
 | Feature | Pretraining | Fine-Tuning | Reference |
 | --- | --- | --- | --- |
@@ -317,7 +317,7 @@ Whichever token gets picked is added to the context, and the model keeps predict
 
 ---
 
-# 🌍 10. Applications of LLMs
+# 🌍 10. Applications
 
 | Application | Example | Input | Output |
 | --- | --- | --- | --- |
