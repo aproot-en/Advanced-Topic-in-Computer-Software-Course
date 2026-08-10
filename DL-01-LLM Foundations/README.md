@@ -337,7 +337,7 @@ Whichever token gets picked is added to the context, and the model keeps predict
 | Challenge | Description | Why It Matters | Reference |
 | --- | --- | --- | --- |
 | **Hallucination** | The model can produce answers that sound convincing but are actually wrong | Important info should always be double-checked | [Ji et al., 2022](https://arxiv.org/abs/2202.03629) |
-| **Bias** | The model can pick up unwanted patterns or bias baked into its training data | Affects fairness and how much you can trust the output | [Bender et al., 2021](https://doi.org/10.1145/3442188.3445922) |
+| **Bias** | The model can pick up unwanted patterns or bias baked into its training data | Affects fairness and how much you can trust the output | [Sheng et al., 2019](https://arxiv.org/abs/1909.01326) |
 | **Knowledge Freshness** | The model has no idea about anything that happened after its training data was collected | Answers can end up outdated | [Lewis et al., 2020](https://arxiv.org/abs/2005.11401) |
 | **Computational Cost** | Big models need a lot of computing power | Drives up training and deployment costs | [Kaplan et al., 2020](https://arxiv.org/abs/2001.08361) |
 | **Memory Requirements** | Big models can eat up a huge amount of memory | Makes it hard to run on smaller hardware | [Dettmers et al., 2022](https://arxiv.org/abs/2208.07339) |
