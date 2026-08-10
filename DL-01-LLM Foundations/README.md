@@ -4,8 +4,6 @@
 
 Foundations and practical applications of **Artificial Intelligence (AI)** and **Large Language Models (LLMs)** — from the evolution of Natural Language Processing (NLP) to modern Transformer-based language models.
 
-This chapter covers **Language Models, Transformer architecture, tokenization, embeddings, Self-Attention, pretraining, fine-tuning, inference, applications, and limitations of LLMs**.
-
 ---
 
 ## 📊 Assessment Methods
@@ -46,19 +44,6 @@ A **Large Language Model (LLM)** is a neural language model trained on large-sca
 | **Transformer Architecture** | Uses Attention mechanisms to model relationships between tokens |
 | **General-Purpose Capability** | A single model can support many different language tasks |
 | **Scalability** | Capabilities can improve with appropriate increases in data, model capacity, and compute |
-
-### Examples of LLMs
-
-| Model Family | Organization |
-| --- | --- |
-| **GPT** | OpenAI |
-| **Llama** | Meta |
-| **Gemini** | Google |
-| **Claude** | Anthropic |
-| **Mistral** | Mistral AI |
-| **DeepSeek** | DeepSeek |
-
----
 
 # 🕰️ 2. Evolution of NLP
 
@@ -353,15 +338,6 @@ The selected token is added to the context, and the model repeats the prediction
 | **Explainability** | Internal model behavior can be difficult to interpret | Makes auditing and analysis harder |
 | **Energy Consumption** | Training and inference consume computational resources | Affects cost and sustainability |
 
-### Open Challenges
-
-- Building **smaller and more efficient LLMs**
-- Improving **accuracy and reliability**
-- Improving **reasoning capabilities**
-- Reducing **hallucination and bias**
-- Improving **privacy and security**
-- Developing new **real-world LLM applications**
-
 ---
 
 # ✅ 12. Summary
@@ -379,35 +355,4 @@ The selected token is added to the context, and the model repeats the prediction
 | **Applications** | Applies LLMs to language, coding, education, research, and other tasks |
 | **Limitations** | Includes hallucination, bias, cost, privacy, security, and explainability |
 
-### Key Takeaways
-
-- Modern LLMs are primarily built using **Transformer architectures**
-- **Self-Attention** is a central mechanism for learning contextual relationships
-- **Pretraining** produces general-purpose Foundation Models
-- **Fine-Tuning** adapts pretrained models to particular tasks or domains
-- **Inference** generates responses from prompts, often token by token
-- LLM outputs must be evaluated with awareness of their **limitations**
-
 ---
-
-## 🚀 What's Next?
-
-| Chapter | Topic | Main Focus |
-| ---: | --- | --- |
-| **1** | **LLM Foundations** | Transformer, training, and inference |
-| **2** | **Prompt Engineering** | Designing effective LLM instructions |
-| **3** | **RAG** | Connecting LLMs with external knowledge |
-| **4** | **Fine-Tuning** | Adapting models to specific tasks and domains |
-| **5** | **AI Agents** | Reasoning, tools, and actions |
-| **6** | **Multimodal AI** | Combining text, image, audio, and other modalities |
-
----
-
-## 👤 Instructor
-
-**Anuruk Prommakhot (P'Ball), Ph.D.**  
-📧 anuruk.p@en.rmutt.ac.th  
-🏢 Signal Processing Research Laboratory (SPRL)  
-Rajamangala University of Technology Thanyaburi (RMUTT)
-
-**Research Areas:** Optimization Algorithms, Machine Learning, AI Vision, RAG Systems, Agentic AI
