@@ -50,7 +50,7 @@ Most LLMs today are built on the **Transformer architecture**, which lets them h
 
 ---
 
-# 🕰️ 2. Evolution of NLP
+# 🕰️ 2. Historical Context 
 
 NLP has come a long way — from hand-written language rules to massive neural models that can understand and write text on their own.
 
