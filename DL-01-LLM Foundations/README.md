@@ -132,7 +132,7 @@ LLMs are useful because they can:
 
 ---
 
-# 🧩 5. Core Components of LLMs
+# 🧩 5. LLM Components
 
 | Component | Purpose | Result | Reference |
 | --- | --- | --- | --- |
