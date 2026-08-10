@@ -306,7 +306,7 @@ Most LLMs generate text one token at a time — each new token gets added to the
 
 | Setting | Function | Reference |
 | --- | --- | --- |
-| **Temperature** | Controls how random vs. focused the token choices are | Standard sampling technique |
+| **Temperature** | Controls how random vs. focused the token choices are | --------------- |
 | **Top-k** | Only samples from the k most likely tokens | [Fan et al., 2018](https://arxiv.org/abs/1805.04833) |
 | **Top-p** | Samples from the smallest group of tokens whose combined probability hits a set threshold | [Holtzman et al., 2019](https://arxiv.org/abs/1904.09751) |
 | **Max Tokens** | Caps how many tokens can be generated | --------------- |
