@@ -44,6 +44,7 @@ RAG-Project/
 │   ├── index_meta.py                       ⭐ Detect when the index is stale vs the dataset
 │   ├── retriever.py                        # Dense-only retrieval
 │   ├── hybrid_retriever.py                 ⭐ BM25 + Dense + RRF Fusion
+│   ├── retrieval_utils.py                  ⭐ Thai tokenization + weighted RRF helpers
 │   ├── rerankers.py                        ⭐ Cross-Encoder Reranking
 │   ├── query_transform.py                  ⭐ Query Rewrite, Multi-Query, HyDE
 │   ├── prompt_templates.py                 ⭐ Prompt Templates
@@ -57,6 +58,9 @@ RAG-Project/
 │   ├── eval_retrieval.py                   ⭐ Compare retrieval configurations
 │   └── eval_generation.py                  ⭐ Evaluate answer quality
 │
+├── tests/
+│   └── test_retrieval_quality.py           # Retrieval and grounding regression tests
+│
 ├── config.py                               # Project configuration
 ├── build_index.py                          # Build all indexes
 └── main.py                                 # Run the RAG system
@@ -69,6 +73,19 @@ This project is designed for learning how a RAG system works step by step. **Sta
 All features can be enabled or disabled in **config.py**, making it easy to experiment with different RAG configurations. The project also includes an evaluation module that compares retrieval performance using **Hit@k, MRR, and nDCG**, allowing you to measure how much each technique improves the results.
 
 The knowledge base contains **391 Thai sexual-health Q&A pairs (541 text chunks)**. The project runs without an API key by default and supports **Ollama, OpenAI, and Gemini** through a single interface.
+
+## Accuracy safeguards
+
+- BM25 candidates with a score of zero are excluded before RRF, so non-matches cannot displace relevant dense results.
+- Dense, BM25, and generated-query weights are configurable in `config.py`. The original query receives full weight while generated alternatives are downweighted to limit query drift.
+- Thai slang expansion keeps the user's original wording and adds formal medical terms instead of replacing exact-match terms.
+- Prompt context keeps each source question and answer together, and the no-LLM fallback returns the highest-ranked answer with a valid citation.
+
+Run the regression tests from `04-RAG-Project`:
+
+```bash
+python -m unittest discover -s tests -v
+```
 
 
 

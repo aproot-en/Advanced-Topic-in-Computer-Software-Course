@@ -10,51 +10,17 @@
 
 import os
 import pickle
-import re
 
 from rank_bm25 import BM25Okapi
 
 import config
 from src.embedding_model import EmbeddingModel
+from src.retrieval_utils import (
+    reciprocal_rank_fusion,
+    tokenize,
+    top_positive_scores,
+)
 from src.vector_store import VectorStore, load_chunk_store
-
-
-#step 1: ตัดคำภาษาไทย
-# Thai text has no spaces between words, so split() does not work.
-# Tokenize the text with PyThaiNLP before building the BM25 index.
-# This enables accurate keyword matching.
-
-THAI_PATTERN = re.compile(r"[ก-๙]+")            # ตัวอักษรไทยติดกัน
-ENGLISH_PATTERN = re.compile(r"[A-Za-z0-9]+")   # คำอังกฤษหรือตัวเลข
-
-
-def tokenize(text):
-# Tokenize text for BM25.
-# Convert English words to lowercase for case-insensitive matching.
-# Example: "PrEP กับ PEP ต่างกันยังไง" → ['prep', 'pep', 'กับ', 'ต่างกัน', 'ยังไง']
-
-    tokens = []
-
-    # คำอังกฤษ / ตัวเลข — เก็บทั้งคำ
-    for match in ENGLISH_PATTERN.finditer(text):
-        tokens.append(match.group().lower())
-
-    # คำไทย — ต้องตัดคำก่อน
-    for thai_text in THAI_PATTERN.findall(text):
-        tokens.extend(tokenize_thai(thai_text))
-
-    return tokens
-
-
-def tokenize_thai(text):  #ตัดคำไทยด้วย pythainlp ถ้าไม่ได้ติดตั้งไว้ จะใช้วิธีสำรองที่คุณภาพแย่กว่า
-    try:
-        from pythainlp.tokenize import word_tokenize
-
-        return [word for word in word_tokenize(text, engine="newmm") if word.strip()]
-    except ImportError:
-        # วิธีสำรอง: ตัดทีละ 3 ตัวอักษรแบบเหลื่อมกัน ("สวัสดี" → สวั, วัส, ัสด, สดี)
-        # ใช้ได้แต่แย่กว่าชัดเจน — แนะนำให้ pip install pythainlp
-        return [text[i:i + 3] for i in range(max(1, len(text) - 2))]
 
 
 # Step 2: BM25 
@@ -88,25 +54,6 @@ def load_bm25(chunks):
     return bm25
 
 
-# Step 3: RRF — รวมผลจากหลายวิธี
-def reciprocal_rank_fusion(ranked_lists):
-# Merge multiple ranked lists into a single ranking.
-# Uses Reciprocal Rank Fusion (RRF) to combine retrieval results.
-# Higher-ranked items receive higher scores.
-# Items found by multiple methods receive a score boost.
-# Example: 
-# Dense=[12,5,88], 
-# BM25=[5,300,12] → 5 ranks above 12.
-
-    scores = {}
-    for ranked in ranked_lists:
-        for rank, position in enumerate(ranked, start=1):
-            scores[position] = scores.get(position, 0.0) + 1.0 / (config.RRF_K + rank)
-
-    # เรียงจากคะแนนมากไปน้อย
-    return sorted(scores.items(), key=lambda item: item[1], reverse=True)
-
-
 # Step 4: The Retriever
 
 class HybridRetriever:
@@ -129,15 +76,9 @@ class HybridRetriever:
         if self.bm25 is None:
             return []
 
-        # get_scores คืนคะแนนของ "ทุก chunk" มา ต้องเรียงเองแล้วตัดเอา top_k
+        # คะแนนศูนย์หมายถึงไม่มีคำตรงกัน จึงไม่ควรได้รับอันดับ RRF เหมือนผลจริง
         all_scores = self.bm25.get_scores(tokenize(query))
-        best_positions = sorted(
-            range(len(all_scores)),
-            key=lambda i: all_scores[i],
-            reverse=True,
-        )[:top_k]
-
-        return [(position, float(all_scores[position])) for position in best_positions]
+        return top_positive_scores(all_scores, top_k)
 
 
 
@@ -152,21 +93,30 @@ class HybridRetriever:
 
         # ค้นด้วยทุกวิธี เก็บเป็นรายการอันดับ 
         ranked_lists = []
+        rank_weights = []
         dense_scores = {}
         bm25_scores = {}
 
-        for one_query in queries:
+        for query_index, one_query in enumerate(queries):
+            query_weight = 1.0 if query_index == 0 else config.EXTRA_QUERY_RRF_WEIGHT
+
             dense_hits = self.dense_search(one_query, config.CANDIDATE_K)
-            ranked_lists.append([position for position, _ in dense_hits])
-            dense_scores.update(dense_hits)
+            if dense_hits:
+                ranked_lists.append([position for position, _ in dense_hits])
+                rank_weights.append(config.DENSE_RRF_WEIGHT * query_weight)
+                for position, score in dense_hits:
+                    dense_scores[position] = max(dense_scores.get(position, score), score)
 
             if config.USE_HYBRID:
                 bm25_hits = self.bm25_search(one_query, config.CANDIDATE_K)
-                ranked_lists.append([position for position, _ in bm25_hits])
-                bm25_scores.update(bm25_hits)
+                if bm25_hits:
+                    ranked_lists.append([position for position, _ in bm25_hits])
+                    rank_weights.append(config.BM25_RRF_WEIGHT * query_weight)
+                    for position, score in bm25_hits:
+                        bm25_scores[position] = max(bm25_scores.get(position, score), score)
 
         # รวมอันดับด้วย RRF 
-        fused = reciprocal_rank_fusion(ranked_lists)
+        fused = reciprocal_rank_fusion(ranked_lists, rank_weights)
 
         # ถ้าจะ rerank ต่อ ต้องส่งผู้เข้ารอบให้มันมากกว่า top_k
         keep = config.CANDIDATE_K if self.reranker else top_k

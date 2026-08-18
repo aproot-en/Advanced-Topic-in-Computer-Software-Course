@@ -16,7 +16,7 @@
 # Two levels are available:
 #
 # Level 1 — normalize_query()
-#     No AI required. Replaces slang using a lookup table.
+#     No AI required. Expands slang with formal terms using a lookup table.
 #     Fast, free, and always enabled.
 #
 # Level 2 — transform()
@@ -49,6 +49,21 @@ SLANG_MAP = {
     "มีอะไรกัน": "มีเพศสัมพันธ์",
     "โรคจากเซ็กส์": "โรคติดต่อทางเพศสัมพันธ์",
     "เมนส์": "ประจำเดือน",
+    "เพร็พ": "PrEP ยาป้องกันเอชไอวีก่อนสัมผัสเชื้อ",
+    "ผัว": "สามี คู่สมรส",
+    "เมีย": "ภรรยา คู่สมรส",
+    "ควย": "อวัยวะเพศชาย",
+    "น้ำเงี่ยน": "น้ำอสุจิ",
+    "เงี่ยน": "ความต้องการทางเพศ",
+    "ฟิน": "ความพึงพอใจทางเพศ จุดสุดยอด",
+    "เย็ดตูด": "เพศสัมพันธ์ทางทวารหนัก",
+    "เย็ด": "เพศสัมพันธ์",
+    "กะเทย": "คนข้ามเพศ",
+    "แข็งค้าง": "อวัยวะเพศแข็งตัวค้าง priapism",
+    "ไม่ขึ้น": "อวัยวะเพศไม่แข็งตัว",
+    "เสร็จ": "ถึงจุดสุดยอด",
+    "น้ำแตก": "หลั่งน้ำอสุจิ",
+    "เชื้ออ่อน": "คุณภาพอสุจิ",
 }
 
 # คำลงท้ายที่ไม่ช่วยในการค้นหา
@@ -59,14 +74,21 @@ def normalize_query(query):
     """
     ปรับคำถามแบบไม่ใช้ AI — เร็วและฟรี
 
-        "เป็นแผลที่น้องชายครับ"  →  "เป็นแผลที่อวัยวะเพศชาย"
+        "เป็นแผลที่น้องชายครับ"  →  "เป็นแผลที่น้องชาย อวัยวะเพศชาย"
     """
     text = re.sub(r"\s+", " ", query).strip()       # ตัดช่องว่างซ้ำซ้อน
 
-    for slang, formal in SLANG_MAP.items():
-        text = text.replace(slang, formal)
-
     text = ENDING_WORDS.sub("", text)
+
+    # เก็บคำเดิมไว้เพื่อให้ BM25 ยังจับคำตรงได้ แล้วเติมศัพท์ทางการเพื่อช่วย
+    # dense retrieval และเอกสารที่ใช้คนละสำนวนกับผู้ใช้
+    expansions = []
+    for slang, formal in SLANG_MAP.items():
+        if slang in text and formal not in text:
+            expansions.append(formal)
+
+    if expansions:
+        text = f"{text} {' '.join(dict.fromkeys(expansions))}"
     return text.strip() or query.strip()            # ถ้าตัดจนหมด ใช้ของเดิม
 
 

@@ -46,15 +46,20 @@ class NoLLM:
     def chat(self, messages):
         user_message = messages[-1]["content"]
 
-        # ดึงเนื้อหาบล็อก [1] ออกมาจาก prompt
-        parts = user_message.split("reference data :")
-        if len(parts) < 2:
+        # ดึงคำตอบจากบล็อก [1] ของ prompt ภาษาไทย
+        context_match = re.search(
+            r"ข้อมูลอ้างอิง:\s*(.*?)\n\nคำถามของผู้ใช้:",
+            user_message,
+            flags=re.DOTALL,
+        )
+        if not context_match:
             return config.NO_CONTEXT_MESSAGE
 
-        context = parts[1].split("Q of user")[0].strip()
-        first_block = context.split("\n\n")[0].replace("[1]", "").strip()
+        first_block = context_match.group(1).split("\n\n[2]", 1)[0]
+        answer_match = re.search(r"คำตอบ:\s*(.*)", first_block, flags=re.DOTALL)
+        answer = answer_match.group(1).strip() if answer_match else ""
 
-        return f"{first_block} [1]" if first_block else config.NO_CONTEXT_MESSAGE
+        return f"{answer} [1]" if answer else config.NO_CONTEXT_MESSAGE
 
 
 def get_llm():
@@ -89,7 +94,7 @@ class Generator:
             answer = self.llm.chat(messages)
         except Exception as error:
             #print(f"[llm] เรียกไม่สำเร็จ ({error}) — แสดงข้อมูลที่ค้นได้แทน")
-            answer = chunks[0]["answer"]
+            answer = f"{chunks[0]['answer']} [1]"
 
         if config.DISCLAIMER not in answer:
             answer = f"{answer}\n\n{config.DISCLAIMER}"
