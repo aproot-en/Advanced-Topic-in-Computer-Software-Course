@@ -25,8 +25,8 @@ import re
 
 import config
 from evaluation.eval_retrieval import load_golden_set
-from src.hybrid_retriever import tokenize
 from src.prompt_templates import format_context
+from src.retrieval_utils import tokenize
 
 # กี่ข้อ — การเรียก LLM ช้า จึงตั้งไว้น้อย
 LIMIT = 20

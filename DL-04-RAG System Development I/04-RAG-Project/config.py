@@ -61,6 +61,12 @@ TOP_K = 3               # ส่งกี่ chunk ให้ LLM เขียน
 CANDIDATE_K = 20        # ดึง TOP_K
 RRF_K = 60              # ค่าคงที่ของสูตร RRF 
 
+# น้ำหนักตอนรวมอันดับ — golden set ของโปรเจกต์มีสัญญาณคำตรงที่แม่นมาก
+# จึงให้ BM25 นำ dense เล็กน้อย และลดน้ำหนัก query ที่ LLM สร้างเพิ่มเพื่อลด query drift
+DENSE_RRF_WEIGHT = 1.0
+BM25_RRF_WEIGHT = 1.25
+EXTRA_QUERY_RRF_WEIGHT = 0.70
+
 RERANK_MODEL_NAME = "BAAI/bge-reranker-v2-m3"   # ใช้เมื่อ USE_RERANK = True
 
 QUERY_TRANSFORM_MODE = "multi_query"   # rewrite | multi_query | hyde

@@ -17,7 +17,8 @@ SYSTEM_PROMPT = """คุณคือผู้ช่วยให้ข้อม�
 3. อ้างอิงหมายเลขแหล่งข้อมูลแบบ [1] [2] ท้ายประโยคที่ใช้ข้อมูลนั้น
 4. ใช้ภาษาสุภาพ ตรงไปตรงมา ไม่ตัดสิน
 5. ถ้าเป็นอาการรุนแรงหรือฉุกเฉิน ให้แนะนำพบแพทย์ทันที
-6. ตอบกระชับ ไม่เกิน 5-6 ประโยค"""
+6. ถ้าแหล่งข้อมูลขัดแย้งกัน ให้บอกว่าข้อมูลไม่สอดคล้องกัน ห้ามรวมเป็นข้อสรุปใหม่
+7. ตอบเฉพาะสิ่งที่คำถามถาม และตอบกระชับไม่เกิน 5-6 ประโยค"""
 
 USER_PROMPT = """{history}ข้อมูลอ้างอิง:
 {context}
@@ -36,11 +37,14 @@ def format_context(chunks, max_chars=6000):
     """
     blocks, used = [], 0
     for i, chunk in enumerate(chunks, start=1):
-        block = f"[{i}] {chunk.get('answer') or chunk.get('text', '')}"
+        answer = chunk.get("answer") or chunk.get("text", "")
+        block = f"[{i}]\nคำถามในฐานข้อมูล: {chunk.get('question', '')}\nคำตอบ: {answer}"
         if used + len(block) > max_chars:
+            if not blocks:
+                blocks.append(block[:max_chars])
             break
         blocks.append(block)
-        used += len(block)
+        used += len(block) + 2
     return "\n\n".join(blocks)
 
 
