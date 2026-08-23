@@ -2,7 +2,7 @@
 
 This project demonstrates 10 common problems in LLM and RAG (Retrieval-Augmented Generation) systems. All simulations use the same real dataset, sex_q_a.txt, which is a Thai sexual health question-answer knowledge base. This allows each problem to be tested with real data instead of isolated sample data.
 
-# Structure
+# Structure:
 
 ```text
 RAG-Project/
@@ -37,9 +37,7 @@ Q: <question>
 A: <answer>
 
 ```
-# Summary
-
-## Summary
+# Summary:
 
 | # | Problem | Main Idea |
 |---|---------|-----------|
