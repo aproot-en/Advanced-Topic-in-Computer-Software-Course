@@ -1,5 +1,5 @@
 
-## DL-04-RAG System Development I
+# DL-04-RAG System Development I
 
 Build a complete RAG system in Python, from loading a knowledge base and splitting text into chunks to retrieving relevant information and generating answers.
 
