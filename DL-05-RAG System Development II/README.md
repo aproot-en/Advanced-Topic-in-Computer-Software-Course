@@ -17,8 +17,7 @@ RAG-Project/
 ├── problem06_reranking.py         # Top-k / Re-ranking
 ├── problem07_generation.py        # Correct Retrieval but incorrect Generation
 ├── problem08_config.py            # RAG Configuration
-├── problem09_evaluation.py        # Chunk & Retrieval Evaluation
-└── problem10_debug_scripts.py     # Debug RAG Pipeline by Stage
+└── problem09_evaluation.py        # Chunk & Retrieval Evaluation
 ```
 
 # Dataset:
@@ -50,7 +49,6 @@ A: <answer>
 | 7 | Faithfulness | Retrieval is correct, but generation changes important information. |
 | 8 | RAG Configuration | Configuration controls which RAG components are active. |
 | 9 | Evaluation | Measure chunking and retrieval with numerical metrics. |
-| 10 | Debugging | Debug the RAG pipeline stage by stage. |
 
 All ten simulations use the same real Knowledge Base through `data_loader.py`. 
 This allows different LLM and RAG problems to be tested using the same dataset and pipeline.
