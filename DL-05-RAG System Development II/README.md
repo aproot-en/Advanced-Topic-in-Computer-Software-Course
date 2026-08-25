@@ -1,6 +1,6 @@
 # DL-05-RAG System Development II
 
-This project demonstrates 10 common problems in LLM and RAG (Retrieval-Augmented Generation) systems. All simulations use the same real dataset, sex_q_a.txt, which is a Thai sexual health question-answer knowledge base. This allows each problem to be tested with real data instead of isolated sample data.
+This project demonstrates 9 common problems in LLM and RAG (Retrieval-Augmented Generation) systems. All simulations use the same real dataset, sex_q_a.txt, which is a Thai sexual health question-answer knowledge base. This allows each problem to be tested with real data instead of isolated sample data.
 
 # Structure:
 
