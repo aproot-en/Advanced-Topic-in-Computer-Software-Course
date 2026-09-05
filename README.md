@@ -15,10 +15,8 @@ The course follows the official course description and is enhanced with modern A
 - DL-03: LLM Retrieval System
 - DL-04: RAG System Development I
 - DL-05: RAG System Development II
-- DL-06: RAG Application System
-- DL-07: Agentic AI I
-- DL-08: Agentic AI II
-- DL-09: Agentic AI III
+- DL-06: Agentic AI System I
+- DL-07: Agentic AI System II
 
 ## Repository Includes
 
