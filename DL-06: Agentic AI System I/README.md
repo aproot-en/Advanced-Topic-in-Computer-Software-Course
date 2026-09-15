@@ -55,7 +55,7 @@ Design and document a complete multi-agent RAG system for a university, from the
 
 ## Core Recommendations
 
-The system settles on **one primary response type** per query:
+The system settles on one primary response type per query:
 
 - **Answer directly** — General AI, for non-university questions
 - **Answer with citations** — University RAG, for regulations/announcements/course info
@@ -63,7 +63,6 @@ The system settles on **one primary response type** per query:
 - **Ask for clarification** — when confidence is too low to answer safely
 - **Decline and refer to staff** — for out-of-scope or unsafe requests
 
-Every response also carries: **engine used**, **confidence**, **source citations**, **data freshness**, and any **degraded/unavailable services**.
 ----
 
 ## How to Run
