@@ -52,6 +52,24 @@ Design and document a complete multi-agent RAG system for a university, from the
     └── 03_process.txt
 ```
 
+## Core Recommendations
+
+For every user query, the system (via **03_ai_router_agent** and **06_llm_generation**) settles on **one primary response type**, based on the classified intent, retrieval confidence, safety filtering, and which engines are currently available:
+
+- **Answer directly (General AI)** — The question is general knowledge (writing, summarizing, general Q&A) and doesn't need university-specific data.
+- **Answer with citations (University RAG)** — The question concerns regulations, announcements, or course info; the answer is grounded in retrieved documents and must cite its sources.
+- **Run a local task (Local AI Model)** — The request is a classification/prediction task (e.g. academic-risk prediction); the system runs the local model and explains the result in plain language.
+- **Ask for clarification** — The query is ambiguous, or retrieval confidence is too low to answer safely; the system asks a follow-up question instead of guessing.
+- **Decline and refer to staff** — The question is outside the system's scope (e.g. disciplinary cases, legal/medical/mental-health matters, or content blocked by the safety filter); the system declines and points to the correct university office or emergency contact.
+
+Every response should also carry:
+- the **engine used** — General AI / University RAG / Local AI Model
+- a **confidence level** for the intent classification and/or retrieval
+- the **reasoning** behind the chosen response type (the router's decision log)
+- **source citations** (document, page, date) whenever the answer is grounded in retrieved data
+- the **data freshness** of the knowledge base (when it was last indexed)
+- **related/alternative resources** (a related FAQ, or the right office/contact) when a direct answer isn't available
+- any **degraded or unavailable services** (e.g. an external LLM API is down and the system fell back to a cached or local model), so the user knows the answer may be less complete than usual
 
 ## How to Run
 
