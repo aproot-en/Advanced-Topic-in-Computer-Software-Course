@@ -1,0 +1,21 @@
+Module: Web App
+Main workflow
+
+1. The user enters the origin, destination, travel date and time, preferences, and a question.
+2. The app checks required fields, date format, and location data.
+3. The app converts place names into coordinates when needed.
+4. The user confirms the locations on a map.
+5. The app sends a TravelRequest to the backend with an access token and request_id.
+6. The app shows progress, such as checking weather, transport, and disaster alerts.
+7. The app receives a JSON response or live stream from the backend.
+8. The app shows the risk level, main action, reasons, routes, sources, and update time.
+9. The app clearly displays one action: travel normally, change route, delay travel, or avoid travel.
+10. For high risk, the app also shows emergency steps and official contact details.
+11. A follow-up question uses the same conversation_id and enters the feedback loop.
+
+Main outputs
+- A validated TravelRequest
+- A clear recommendation page
+- Maps, risk details, and source links
+- A feedback event for the next request
+

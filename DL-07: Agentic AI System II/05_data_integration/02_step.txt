@@ -1,0 +1,21 @@
+Module: Data Integration
+Main workflow
+
+1. Receive canonical records with source and timestamp metadata.
+2. Validate the schema. Send invalid records to quarantine or a dead-letter queue.
+3. Normalize units, time, language, place names, coordinates, and severity.
+4. Remove duplicates by event ID or by spatial and time similarity.
+5. Handle conflicts by source priority, freshness, and confidence.
+6. Keep all original evidence even when sources disagree.
+7. Add administrative area, geocoding, route corridor, and travel time window.
+8. Match weather and disaster events to the complete route corridor.
+9. Create quality flags such as missing, stale, conflicting, inferred, and incomplete.
+10. Build a versioned IntegratedTravelContext snapshot.
+11. Save or cache the snapshot and send it to the Local Risk Model.
+
+Main outputs
+- Clean data in one common schema
+- Features ready for risk prediction
+- Route and event evidence with source lineage
+- A data-quality summary for the Decision Agent and Web App
+

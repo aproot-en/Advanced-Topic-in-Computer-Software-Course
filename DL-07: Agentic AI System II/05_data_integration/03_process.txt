@@ -1,0 +1,20 @@
+Module: Data Integration
+Process and techniques
+
+Data Integration combines many sources into one consistent snapshot. Time and location must be correct. A forecast must match the travel time, and hazards must be checked along the whole route, not only at the start and end.
+
+Key techniques
+- Use a canonical data model with schema and meaning versions.
+- Keep event time separate from ingestion time to handle late data.
+- Use idempotent upserts and content hashes to prevent duplicates.
+- Use EPSG:4326 as the storage coordinate system.
+- Change to a metric projection when calculating distance.
+- Create a route-corridor buffer and use spatial intersection to measure exposure.
+- Keep source lineage for every record and important field.
+- Run a quality gate before model inference.
+- Add a degraded flag when an important field is missing or stale.
+- Reuse the same feature code for training and online inference to reduce training-serving skew.
+- Monitor data contracts and schema drift between producers and consumers.
+
+Success means a snapshot is repeatable, versioned, fresh, and traceable to every original source.
+

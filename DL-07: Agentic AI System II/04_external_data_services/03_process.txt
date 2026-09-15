@@ -1,0 +1,19 @@
+Module: External Data Services
+Process and techniques
+
+This module hides differences between external providers. Each connector converts its provider format into one shared format. Business logic should not depend on a provider-specific response.
+
+Key techniques
+- Give each connector the same interface and error contract.
+- Keep real provider samples as regression-test fixtures.
+- Set separate connection, read, and total timeouts.
+- Retry only 408, 429, and temporary 5xx errors. Follow the Retry-After header.
+- Use circuit breakers and backup providers.
+- Use different cache times for alerts, forecasts, and static route data.
+- Calculate a quality score from freshness, coverage, and completeness.
+- Use bounding boxes or geohashes for fast searches, then check the real distance.
+- Store raw responses only when the license and retention policy allow it.
+- Monitor quota, latency, errors, schema changes, and disagreement between providers.
+
+Official disaster sources should have higher priority than general sources. Every record must keep its provenance so the final answer can show where the information came from.
+

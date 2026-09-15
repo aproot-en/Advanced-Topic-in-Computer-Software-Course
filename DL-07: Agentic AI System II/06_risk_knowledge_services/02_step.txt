@@ -1,0 +1,20 @@
+Module: Risk and Knowledge Services
+Main workflow
+
+1. Receive IntegratedTravelContext and check the feature schema version.
+2. Build features for weather, disaster, transport, location, route, and time.
+3. Run the risk model and return a probability or score with uncertainty.
+4. Convert the score to LOW, MEDIUM, or HIGH using approved versioned thresholds.
+5. Create risk reason codes or model explanations.
+6. Build a Disaster RAG query from hazard, location, risk level, and language.
+7. Retrieve only current documents using metadata filters.
+8. Use hybrid search and reranking to select the best evidence.
+9. Calculate available and alternative routes.
+10. Remove routes that are closed or break a safety rule.
+11. Return RiskAssessment, RetrievedEvidence, and RouteOptions with sources and versions.
+12. If a service fails, use conservative rules or official warnings and mark the result as degraded.
+
+Offline lifecycle
+- Data review -> labeling -> time/location split -> training -> calibration -> safety evaluation -> approval -> model registry -> canary deployment -> monitoring and rollback
+- Document review -> parsing -> chunking -> embedding -> indexing -> retrieval evaluation -> collection release
+

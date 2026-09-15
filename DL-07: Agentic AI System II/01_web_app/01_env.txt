@@ -1,0 +1,33 @@
+Module: Web App
+
+Recommended environment
+- Node.js 20 LTS or newer
+- Next.js, React, and TypeScript
+- Tailwind CSS or Material UI for responsive pages
+- React Hook Form and Zod for form validation
+- TanStack Query for API calls, caching, and retries
+- MapLibre GL JS or Leaflet for maps and route layers
+- WebSocket or Server-Sent Events (SSE) for live alerts
+- Vitest, Testing Library, and Playwright for testing
+
+Required configuration
+- NEXT_PUBLIC_API_BASE_URL: backend API address
+- NEXT_PUBLIC_MAP_TILE_URL: map tile address
+- NEXT_PUBLIC_MAP_TOKEN: public map token, if required
+- DEFAULT_LOCALE=th-TH
+- DEFAULT_TIMEZONE=Asia/Bangkok
+- NEXT_PUBLIC_SENTRY_DSN: browser error monitoring, optional
+
+Important requirements
+- Support current desktop and mobile browsers.
+- Use HTTPS and UTF-8.
+- Never place private API keys in frontend code.
+- Follow WCAG 2.1 AA accessibility guidance.
+- Show every risk level with text and an icon, not color alone.
+
+Example installation
+- Create the app: npx create-next-app@latest web-app --typescript --tailwind --eslint --app
+- Runtime packages: npm install @tanstack/react-query react-hook-form zod @hookform/resolvers maplibre-gl
+- Test packages: npm install -D vitest jsdom @testing-library/react @testing-library/jest-dom @playwright/test
+
+Keep Python data and AI dependencies inside their own backend services, not in the frontend project.

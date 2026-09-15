@@ -1,0 +1,21 @@
+Module: External Data Services
+Main workflow
+
+1. Receive a standard query with coordinates, area, travel time, travel mode, and requested fields.
+2. Select a provider by country coverage, freshness, quota, and current health.
+3. Check the cache using location, time, provider, and schema version.
+4. Call weather, transport, and disaster providers in parallel.
+5. Check the HTTP status, signature when available, schema, unit, and timestamp.
+6. Convert each provider response into a canonical record.
+7. Convert time and units to UTC, Celsius, km/h, and a common severity scale.
+8. Remove duplicate alerts and events.
+9. Attach source, fetched_at, observed_at, and expires_at to every record.
+10. If the main provider fails, use a backup provider or clearly marked stale cache.
+11. Send validated data to Data Integration without choosing the final recommendation.
+
+Main outputs
+- WeatherObservation and WeatherForecast
+- TransportStatus and RouteCandidate
+- DisasterEvent and OfficialAlert
+- ProviderHealth and DataQuality metadata
+

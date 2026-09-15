@@ -1,0 +1,33 @@
+Module: Data Integration
+
+Recommended environment
+- Python 3.12 or newer
+- NumPy for numerical arrays and feature calculations
+- Pydantic for online records
+- Pandas or Polars for batch processing
+- tqdm for progress tracking in long batch jobs
+- PostgreSQL and PostGIS for geospatial data
+- Redis for recent data and event deduplication
+- Kafka or Redpanda for high-volume events, if needed
+- Shapely, GeoPandas, pyproj, and H3 for geospatial work
+- Pandera or Great Expectations for data-quality tests
+- OpenTelemetry and Prometheus for monitoring
+
+Required configuration
+- DATABASE_URL, REDIS_URL, and optional EVENT_BROKER_URL
+- CANONICAL_SCHEMA_VERSION
+- DEFAULT_CRS=EPSG:4326
+- Freshness limits and quality-score weights for each data type
+- Retention time, encryption settings, and dead-letter queue settings
+
+Separate the fast online pipeline from the offline training and analytics pipeline. Add database migrations, backups, restore tests, and scheduled cleanup jobs.
+
+Example installation
+- Data processing: pip install numpy pandas polars pydantic tqdm
+- Database and cache: pip install sqlalchemy asyncpg geoalchemy2 redis
+- Geospatial tools: pip install shapely geopandas pyproj h3
+- Data quality: pip install pandera great-expectations
+- Monitoring: pip install opentelemetry-sdk prometheus-client
+- Optional event streaming: pip install confluent-kafka
+
+Use either Pandas or Polars as the main dataframe engine after testing the expected data size. Kafka or Redpanda is optional and is only needed for a high-volume event stream.

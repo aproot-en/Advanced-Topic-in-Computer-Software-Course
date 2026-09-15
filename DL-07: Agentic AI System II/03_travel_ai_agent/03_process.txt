@@ -1,0 +1,21 @@
+Module: Travel AI Agent
+Process and techniques
+
+The Travel AI Agent understands the request, creates a plan, selects tools, and manages context. It should not decide a safety level from free text alone. Safety-critical scores must come from tested models and rules.
+
+AgentState should contain the request, plan, observations, data quality, risk result, evidence, route options, errors, and remaining budget.
+
+Key techniques
+- Use a state graph instead of an unlimited agent loop.
+- Use structured tool calling and an approved tool allowlist.
+- Never allow the agent to create arbitrary URLs or system commands.
+- Call independent services in parallel and combine their results later.
+- Retry only temporary failures with exponential backoff and jitter.
+- Use circuit breakers and bulkheads to stop one provider from blocking the system.
+- Limit steps, tool calls, tokens, cost, and total execution time.
+- Treat API and RAG content as untrusted data, not as instructions.
+- Save prompt, tool, model, and policy versions for replay and regression tests.
+- Escalate serious or conflicting cases to a human operator when required.
+
+Success means every recommendation can be traced to tools and evidence, and the agent cannot run forever.
+

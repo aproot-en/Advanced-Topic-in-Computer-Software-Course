@@ -1,0 +1,35 @@
+Module: Decision and LLM Engine
+
+Recommended environment
+- Python 3.12 or newer
+- FastAPI and Pydantic v2
+- A version-controlled rules engine or Python decision tables
+- An LLM SDK with JSON Schema structured output
+- Jinja2 or another prompt-template manager
+- JSON Schema validation and content-safety filters
+- Redis for short-term cache
+- PostgreSQL for policy and prompt versions
+- OpenTelemetry or Langfuse for tracing and evaluation
+- pytest, golden test cases, and Hypothesis for property-based tests
+
+Required configuration
+- LLM_API_KEY and LLM_MODEL_EXPLAINER
+- TEMPERATURE=0
+- DECISION_POLICY_VERSION and PROMPT_VERSION
+- MAX_INPUT_TOKENS, MAX_OUTPUT_TOKENS, and LLM_TIMEOUT
+- ESCALATION_RULES and SUPPORTED_LOCALES
+
+Important requirements
+- Every policy change must be reviewed, approved, versioned, and reversible.
+- The LLM cannot lower an official warning or change the selected action.
+- Use a fixed fallback template when the LLM is unavailable.
+
+Example installation
+- Decision API: pip install fastapi "uvicorn[standard]" pydantic pydantic-settings
+- Rules and output validation: pip install jsonschema jinja2
+- LLM and retry tools: pip install openai httpx tenacity
+- Storage: pip install redis sqlalchemy asyncpg
+- Monitoring: pip install structlog opentelemetry-sdk prometheus-client
+- Testing: pip install pytest pytest-asyncio hypothesis
+
+This module receives prepared evidence from Module 06, so retrieval dependencies stay inside the knowledge service.

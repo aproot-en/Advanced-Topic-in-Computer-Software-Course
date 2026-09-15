@@ -1,0 +1,21 @@
+Module: API and Backend
+Main workflow
+
+1. Receive a request at POST /v1/travel/recommendations or through WebSocket/SSE.
+2. Check authentication, user permission, rate limit, and request schema.
+3. Create a request_id and correlation_id for logs and traces.
+4. Normalize the timezone, language, coordinates, and travel preferences.
+5. Send the request to the Travel AI Agent.
+6. Use a job queue if the task cannot finish in a short HTTP request.
+7. Send progress events to the Web App.
+8. Validate the agent response and remove sensitive information.
+9. Return the recommendation with data freshness and service status.
+10. Save only the data required by the retention policy.
+11. Connect follow-up questions by using conversation_id.
+
+Error handling
+- Return 4xx for invalid input or missing permission.
+- Return 429 with Retry-After when the rate limit is reached.
+- Return 503 or partial_result when an important dependency is unavailable.
+- Return a stable error code, but never expose a stack trace or secret.
+

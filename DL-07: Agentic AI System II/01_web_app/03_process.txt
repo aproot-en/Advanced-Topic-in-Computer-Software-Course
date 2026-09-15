@@ -1,0 +1,21 @@
+Module: Web App
+Process and techniques
+
+The Web App is the presentation layer. It collects user input and shows the result. It must not calculate the final safety level because important decision rules belong on the server.
+
+Main data contract
+- Input: origin, destination, departure_time, preferences, question, locale, request_id, and conversation_id
+- Output: recommendation_code, risk_level, confidence, summary, reasons, routes, alerts, sources, and updated_at
+
+Key techniques
+- Use schema validation in the browser for fast feedback. The backend must validate the same data again.
+- Use progressive disclosure. Show the main action first, then allow the user to open risk details and sources.
+- Cancel old API requests when the user changes the route.
+- Prevent duplicate form submission.
+- Show data freshness and a degraded-service message when an API is unavailable.
+- Sanitize all Markdown or HTML created by the LLM to prevent cross-site scripting.
+- Use loading, empty, error, and partial-result states.
+- Collect location analytics only with consent and follow the data-retention policy.
+
+Success means the interface is fast, accessible, easy to understand, and still useful when one data service fails.
+

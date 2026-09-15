@@ -1,0 +1,26 @@
+Module: API and Backend
+Process and techniques
+
+The backend is the trust boundary between the user and the AI system. It controls API contracts, security, request flow, and operational limits.
+
+Recommended design
+- Router: receives HTTP requests.
+- Application service: controls the use case.
+- Domain layer: contains business types and rules.
+- Repository and client layer: connects to databases and other services.
+
+Key techniques
+- Use Pydantic models as versioned API contracts.
+- Use OAuth2 or OpenID Connect with short-lived JWT tokens.
+- Use role-based or attribute-based access control for admin tools.
+- Apply rate limits by user, IP address, and endpoint.
+- Pass timeout and cancellation signals to every downstream service.
+- Use correlation_id in every log and trace.
+- Remove tokens, personal data, and exact locations from logs when they are not needed.
+- Use Idempotency-Key to make retries safe.
+- Cache only data that is still fresh. Include location, time, and language in the cache key.
+- Publish OpenAPI documentation and use contract tests.
+- Add health, readiness, metrics, and trace endpoints.
+
+Success means the API is secure, observable, stable, and able to return a useful partial result when one service fails.
+

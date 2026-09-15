@@ -1,0 +1,19 @@
+Module: Decision and LLM Engine
+Main workflow
+
+1. Receive the risk result, weather and transport summary, route options, RAG evidence, and data-quality report.
+2. Check that all data matches the same request, route, and travel time.
+3. Apply deterministic policy rules to select one action:
+   - NORMAL: low risk and no active restriction
+   - CHANGE_ROUTE: a clearly safer route is available
+   - DELAY: the risk depends on time and may become lower later
+   - AVOID: high risk, an official closure, or no safe route
+4. Give official warnings and closures the highest priority.
+5. Calculate confidence and an escalation flag from uncertainty, missing data, and conflicts.
+6. Build an evidence package with only validated facts and citations.
+7. Lock the action code before calling the LLM.
+8. Ask the LLM to explain the action in simple natural language.
+9. Validate the JSON output, citations, numbers, safety text, and action code.
+10. Retry a limited number of times or use a fixed template if validation fails.
+11. Return the result with policy, model, prompt, and data versions.
+

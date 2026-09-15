@@ -1,0 +1,22 @@
+Module: Travel AI Agent
+Main workflow
+
+1. Receive a normalized request and approved conversation context.
+2. Classify the intent: plan a trip, check safety, ask for information, or continue a conversation.
+3. Extract locations, coordinates, date and time, travel mode, and user limits.
+4. Ask for missing information instead of guessing important details.
+5. Create an execution plan and select tools from an allowlist.
+6. Call weather, transport, and disaster services in parallel when possible.
+7. Send the results to Data Integration.
+8. Call the risk, RAG, and route services in the required order.
+9. Check freshness, confidence, quality flags, and tool errors.
+10. Send a clean evidence package to the Decision and LLM Engine.
+11. Validate the final schema before returning the result to the backend.
+12. Save a small checkpoint for follow-up questions.
+
+Stop conditions
+- Finish when enough valid evidence is available.
+- Ask a question when important input is missing.
+- Return a degraded result when a service times out.
+- Stop when the step, tool, token, cost, or time budget is reached.
+

@@ -1,0 +1,26 @@
+Module: Risk and Knowledge Services
+Process and techniques
+
+This module provides three types of evidence: risk prediction, emergency knowledge, and route options. The LLM must not guess these results.
+
+Risk model techniques
+- Start with an explainable baseline and rule-based safety overrides.
+- Split evaluation data by time and location to prevent data leakage.
+- Focus on recall and false negatives for HIGH-risk cases.
+- Calibrate probability scores.
+- Use SHAP or reason codes for explanation, but do not describe them as proof of cause.
+- Monitor model drift by location, season, and hazard type.
+
+Disaster RAG techniques
+- Use hybrid retrieval with BM25 and vector search, followed by reranking.
+- Split documents by topic and procedure. Do not cut an emergency step in the middle.
+- Filter by authority, geography, language, effective date, and expiry date.
+- Return document_id, page, and section with each passage.
+- Say that evidence was not found when retrieval confidence is too low.
+
+Route techniques
+- Calculate several route options and an exposure score for the full route.
+- Treat official closures and evacuation routes as hard constraints.
+- Treat delay and weather as weighted costs.
+- Show time, distance, risk, and freshness for each option.
+

@@ -1,0 +1,34 @@
+Module: Travel AI Agent
+
+Recommended environment
+- Python 3.12 or newer
+- LangGraph or another state-machine agent framework
+- An LLM SDK with structured output and tool calling
+- Pydantic v2 for AgentState and tool schemas
+- httpx and Tenacity for service calls and controlled retries
+- Redis or PostgreSQL for checkpoints and conversation state
+- OpenTelemetry or Langfuse for traces and evaluation
+- pytest with mock tool services for repeatable tests
+
+Required configuration
+- LLM_MODEL_PLANNER and LLM_API_KEY
+- LLM_TIMEOUT_SECONDS
+- MAX_AGENT_STEPS and MAX_TOOL_CALLS
+- AGENT_TOTAL_TIMEOUT
+- Service URLs for external data, integration, risk, RAG, route, and decision modules
+- PROMPT_VERSION and POLICY_VERSION
+
+Important requirements
+- Every tool must have a JSON schema, timeout, permission, and error contract.
+- Keep system instructions separate from user content.
+- Run the Docker container as a non-root user.
+- Allow network access only to approved services.
+
+Example installation
+- Agent core: pip install langgraph langchain-core pydantic pydantic-settings
+- LLM provider: pip install openai
+- Service and retry tools: pip install httpx tenacity
+- State storage: pip install redis "psycopg[binary]"
+- Tracing and tests: pip install opentelemetry-sdk langfuse pytest pytest-asyncio respx
+
+Replace the OpenAI package when another LLM provider is selected. Retrieval and model dependencies stay inside Module 06 because the agent calls that module through its service API.

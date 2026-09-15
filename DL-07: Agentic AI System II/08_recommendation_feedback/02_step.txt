@@ -1,0 +1,21 @@
+Module: Recommendation and Feedback
+Main workflow
+
+1. Receive a validated final decision from the Decision and LLM Engine.
+2. Build the response with action, risk, explanation, route, emergency steps, sources, and freshness.
+3. Show information in this order: immediate action, reason, options, and detailed sources.
+4. Check the schema, language, contact details, and accessibility text.
+5. Send the result to the backend and Web App.
+6. Send a live update when conditions change, but only with user consent.
+7. Let the user open details, change the plan, ask a question, or send feedback.
+8. Store explicit feedback separately from automatic telemetry.
+9. Use a pseudonymous ID and follow the retention policy.
+10. Start a new data and risk check for every updated travel plan.
+11. Send unsafe or incorrect reports to a human safety-review queue.
+12. Use reviewed feedback for evaluation or retraining. Do not learn directly from live feedback.
+
+Feedback loop
+- New question -> Travel AI Agent
+- Updated route or time -> New data collection and risk assessment
+- Unsafe report -> Safety review and operator alert
+

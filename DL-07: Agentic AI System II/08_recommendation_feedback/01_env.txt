@@ -1,0 +1,31 @@
+Module: Recommendation and Feedback
+
+Recommended environment
+- Python 3.12 or newer
+- A separate FastAPI service or the backend application layer
+- Pydantic and JSON Schema for RecommendationResponse
+- PostgreSQL for recommendation metadata and approved feedback
+- Redis with WebSocket or SSE for live updates
+- Email, SMS, or push notification provider, if the user gives consent
+- OpenTelemetry, Prometheus, Grafana, and error monitoring
+- An analytics system with pseudonymization
+- pytest, schema snapshot tests, and end-to-end tests
+
+Required configuration
+- RECOMMENDATION_SCHEMA_VERSION
+- FEEDBACK_RETENTION_DAYS
+- ALERT_REFRESH_INTERVAL
+- NOTIFICATION_PROVIDER_KEYS
+- EMERGENCY_CONTACT_DIRECTORY_VERSION
+- Feature flags and rollout percentage
+
+Emergency text and contact numbers must match the user's location and have a valid effective date. The system also needs opt-in, opt-out, data deletion, an incident runbook, and a rollback process.
+
+Example installation
+- Response API: pip install fastapi "uvicorn[standard]" pydantic pydantic-settings jsonschema
+- Storage and live updates: pip install sqlalchemy asyncpg redis
+- Notification clients: pip install httpx
+- Monitoring: pip install structlog opentelemetry-sdk prometheus-client
+- Testing: pip install pytest pytest-asyncio httpx
+
+Install a provider-specific email, SMS, or push SDK only after a provider is selected. This service formats and delivers results, so it does not need ML or vector-search packages.

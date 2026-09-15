@@ -1,0 +1,32 @@
+Module: API and Backend
+
+Recommended environment
+- Python 3.12 or newer
+- FastAPI with Uvicorn or Gunicorn
+- Pydantic v2 and pydantic-settings for schemas and configuration
+- SQLAlchemy 2 and Alembic for database access and migrations
+- PostgreSQL with PostGIS for user, route, and geospatial data
+- Redis for caching, sessions, rate limits, and task status
+- Celery, RQ, or Arq for background jobs; choose one
+- httpx for asynchronous service calls
+- Authlib or python-jose for OAuth2, OpenID Connect, and JWT
+- OpenTelemetry, Prometheus, and structured logging
+- pytest, pytest-asyncio, respx, and Testcontainers
+
+Required configuration
+- DATABASE_URL and REDIS_URL
+- JWT_ISSUER and JWT_AUDIENCE
+- AGENT_SERVICE_URL and CORS_ALLOWED_ORIGINS
+- OTEL_EXPORTER_OTLP_ENDPOINT and LOG_LEVEL
+
+Store secrets in a secret manager. A local .env file may be used for development, but it must not be committed.
+
+Example installation
+- Core API: pip install fastapi "uvicorn[standard]" pydantic pydantic-settings
+- Database and cache: pip install sqlalchemy alembic asyncpg geoalchemy2 redis
+- Authentication and service calls: pip install authlib "python-jose[cryptography]" httpx
+- Background jobs: pip install celery
+- Monitoring: pip install structlog opentelemetry-sdk prometheus-client
+- Testing: pip install pytest pytest-asyncio respx testcontainers
+
+Use Celery only when background jobs are needed. Do not install RQ or Arq at the same time unless the design requires more than one queue system.

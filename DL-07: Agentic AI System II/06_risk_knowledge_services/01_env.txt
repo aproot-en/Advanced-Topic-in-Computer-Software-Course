@@ -1,0 +1,38 @@
+Module: Risk and Knowledge Services
+
+Risk model environment
+- Python 3.12 or newer
+- NumPy for feature arrays and model input
+- scikit-learn, XGBoost, LightGBM, or PyTorch
+- MLflow for experiments and model registry
+- FastAPI with ONNX Runtime or BentoML for model serving, if needed
+- Evidently and Prometheus for drift and prediction monitoring
+- tqdm for model evaluation and offline indexing progress
+
+RAG environment
+- PostgreSQL with pgvector, or another approved vector database
+- sentence-transformers with a multilingual embedding model for Thai and English
+- faiss-cpu for local vector indexing and similarity search
+- LlamaIndex or LangChain for retrieval, if useful
+- Document parser, text splitter, BM25 search, and reranker
+
+Route environment
+- PostGIS with pgRouting, or an external routing API
+- Map, road closure, and travel restriction data with a clear license
+
+Required configuration
+- MODEL_URI, MODEL_VERSION, and FEATURE_SCHEMA_VERSION
+- EMBEDDING_MODEL, COLLECTION_VERSION, TOP_K, and RERANK_TOP_N
+- RISK_THRESHOLDS, ROUTE_BUFFER_KM, and KNOWLEDGE_CUTOFF
+- Approved safety guides with authority, location, effective date, and expiry date
+
+Example installation
+- Shared numerical tools: pip install numpy pandas tqdm
+- Baseline risk model: pip install scikit-learn mlflow evidently
+- Optional model families: pip install xgboost lightgbm torch onnxruntime
+- RAG and embeddings: pip install sentence-transformers faiss-cpu rank-bm25 pypdf
+- Vector database client: pip install pgvector "psycopg[binary]"
+- Model service: pip install fastapi "uvicorn[standard]" pydantic
+- Route and spatial tools: pip install shapely geoalchemy2
+
+Start with scikit-learn as the baseline. Add XGBoost, LightGBM, or PyTorch only after evaluation shows a clear benefit. Use FAISS for a local prototype and pgvector when the index must be shared by several service instances.

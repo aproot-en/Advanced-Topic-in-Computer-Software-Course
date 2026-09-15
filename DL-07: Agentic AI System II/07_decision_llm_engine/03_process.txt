@@ -1,0 +1,20 @@
+Module: Decision and LLM Engine
+Process and techniques
+
+The Decision Agent and the LLM have different jobs. The Decision Agent chooses the action from tested rules and evidence. The LLM only explains that action. This design reduces hallucination and makes safety decisions auditable.
+
+Key techniques
+- Store decision rules in a versioned decision table.
+- Test every threshold boundary and rule combination.
+- Use monotonic safety: a higher risk or official warning must not create a weaker action without an approved rule.
+- Give the LLM only validated evidence.
+- Use structured output for summary, reasons, instructions, citations, and uncertainty.
+- Use low temperature and fixed token limits.
+- Check every citation and number after generation.
+- Confirm that the LLM did not change the locked action code.
+- Separate retrieved text from system instructions to reduce prompt injection risk.
+- Never send secrets or unnecessary personal data to the LLM.
+- Test with golden scenarios and red-team cases, including conflicting data and disasters.
+
+Save an audit trace with input versions, rules fired, selected action, evidence IDs, and validation results. Do not store personal data unless it is required.
+
