@@ -19,39 +19,39 @@ ProJ-Agent-II/
 │   └── 03_process.txt                       # UI architecture, validation, security, and UX
 │
 ├── 02_api_backend/                          # Secure API and request-management layer
-│   ├── 01_env.txt                           # FastAPI, database, cache, authentication, and tests
-│   ├── 02_step.txt                          # Request validation, agent calls, and error workflow
-│   └── 03_process.txt                       # API contracts, security, tracing, and resilience
+│   ├── 01_env.txt                          
+│   ├── 02_step.txt                          
+│   └── 03_process.txt                       
 │
 ├── 03_travel_ai_agent/                      # Agent orchestration and tool selection
-│   ├── 01_env.txt                           # Agent framework, LLM SDK, state, and tracing tools
-│   ├── 02_step.txt                          # Intent, planning, tool execution, and fallback flow
-│   └── 03_process.txt                       # State graph, tool safety, budgets, and checkpoints
+│   ├── 01_env.txt                           
+│   ├── 02_step.txt                         
+│   └── 03_process.txt                       
 │
 ├── 04_external_data_services/               # Real-time external data adapters
-│   ├── 01_env.txt                           # Weather, transport, disaster, and geocoding APIs
-│   ├── 02_step.txt                          # Provider selection, API calls, and normalization
-│   └── 03_process.txt                       # Caching, retries, circuit breakers, and provenance
+│   ├── 01_env.txt                          
+│   ├── 02_step.txt                          
+│   └── 03_process.txt                       
 │
 ├── 05_data_integration/                     # Multi-source and geospatial data processing
-│   ├── 01_env.txt                           # PostGIS, Redis, validation, and geospatial packages
-│   ├── 02_step.txt                          # Clean, combine, enrich, and quality-check workflow
-│   └── 03_process.txt                       # Canonical schema, spatial joins, lineage, and freshness
+│   ├── 01_env.txt                           
+│   ├── 02_step.txt                          
+│   └── 03_process.txt                       
 │
 ├── 06_risk_knowledge_services/              # Risk prediction, Disaster RAG, and route analysis
-│   ├── 01_env.txt                           # ML stack, vector database, RAG, and routing tools
-│   ├── 02_step.txt                          # Risk inference, retrieval, and route-option workflow
-│   └── 03_process.txt                       # Model evaluation, hybrid retrieval, and route safety
+│   ├── 01_env.txt                           
+│   ├── 02_step.txt                          
+│   └── 03_process.txt                       
 │
 ├── 07_decision_llm_engine/                  # Safety decision and natural-language explanation
-│   ├── 01_env.txt                           # Rules engine, LLM, guardrails, and evaluation setup
-│   ├── 02_step.txt                          # Action selection, safety override, and LLM workflow
-│   └── 03_process.txt                       # Deterministic policy, grounded generation, and audit
+│   ├── 01_env.txt                           
+│   ├── 02_step.txt                          
+│   └── 03_process.txt                       
 │
-├── 08_recommendation_feedback/              # Final advice, alerts, and continuous feedback loop
-    ├── 01_env.txt                           # Response, notification, monitoring, and feedback tools
-    ├── 02_step.txt                          # Recommendation delivery and follow-up workflow
-    └── 03_process.txt                       # Output design, feedback governance, and safety metrics
+└── 08_recommendation_feedback/              # Final advice, alerts, and continuous feedback loop
+    ├── 01_env.txt                           
+    ├── 02_step.txt                          
+    └── 03_process.txt                       
 
 ```
 
