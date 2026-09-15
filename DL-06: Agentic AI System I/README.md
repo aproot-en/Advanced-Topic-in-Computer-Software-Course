@@ -10,13 +10,10 @@ Design and document a complete multi-agent RAG system for a university, from the
 ```text
 06-ProJ-Agent I/
 │
-├── proJ-6.txt                              # Original ASCII architecture diagram (text)
-├── proposed-agent-i.png                    # Proposed architecture diagram (image)
-│
 ├── 01_web_app/                             # Frontend — Chat / Upload / Dashboard
 │   ├── 01_env.txt                          # Environment & requirements
 │   ├── 02_step.txt                         # Workflow steps
-│   └── 03_process.txt                      # Process & techniques (README-style)
+│   └── 03_process.txt                      # Process & techniques
 │
 ├── 02_api_backend/                         # API / Backend — FastAPI / Flask
 │   ├── 01_env.txt
