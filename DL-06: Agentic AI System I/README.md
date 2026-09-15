@@ -55,13 +55,23 @@ Design and document a complete multi-agent RAG system for a university, from the
 
 ## How to Run
 
-This repo is currently at the **design/documentation stage** — each `01-08` folder holds planning notes (`01_env.txt`, `02_step.txt`, `03_process.txt`), not runnable code yet. Once implementation starts, avoid a single all-in-one script such as `proJ-run-all-script.py` to launch everything: the stack mixes languages and runtimes — `01_web_app` is Node.js/Next.js, while `02-08` are separate Python/FastAPI services — so one Python process can't cleanly start, network, and hot-reload all of them together.
+This project is currently at the **design/documentation stage**. The `01-08` folders contain planning and process files; runnable services will be added during implementation.
 
-Instead, orchestrate the system the way **`08_monitoring_deployment`** already plans to:
+Once implementation starts, the complete system will be managed using **Docker Compose** rather than a single run-all script. Each module runs as an independent service/container, allowing different technologies such as Next.js, Python, FastAPI, AI models, and databases to work together.
 
-- **`docker-compose.yml`** at the project root — one service block per stage (`web_app`, `api_backend`, `ai_router_agent`, `ai_model_selection`, `retrieval_knowledge`, `llm_generation`, `response_logging`), each built from its own `Dockerfile`, wired together on an internal Docker network. `docker compose up -d` starts the whole system with one command, regardless of each service's language.
-- A lightweight **`Makefile`** (or `justfile`) on top of Compose for convenience, e.g. `make up`, `make down`, `make logs`, `make rebuild` — optional, but nicer than remembering raw `docker compose` flags.
-- For local development **without Docker**, a small **dev-only** helper script (e.g. `scripts/dev_run_all.py`, using `subprocess`) can start each Python service with `uvicorn --reload` plus `npm run dev` for the frontend — but this should stay a convenience wrapper for developers, not the system's real orchestrator; Docker Compose remains the source of truth for how the services actually run together in staging/production.
+* **`docker-compose.yml`** — the main system orchestrator. It builds, starts, connects, and manages all service containers through the Docker network.
+* **`Dockerfile`** — each service can have its own Dockerfile defining its runtime, dependencies, and environment.
+* **`Makefile`** *(optional)* — provides shortcuts such as `make up`, `make down`, `make logs`, and `make rebuild`.
+* **`scripts/dev_run_all.py`** *(optional)* — can be used to start services without Docker during local development.
+
+To start the complete system:
+
+```bash
+docker compose up -d
+```
+
+Docker Compose remains the **main orchestrator** for running and connecting all services in the project.
+
   
 ## Summary
 
