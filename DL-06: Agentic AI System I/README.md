@@ -1,6 +1,6 @@
 
 
-# 06-ProJ: AI Smart University Assistant
+# 06-ProJ: AI smart university assistant
 
 Design and document a complete multi-agent RAG system for a university, from the chat frontend and API gateway to AI routing across General AI / University RAG / Local AI models, retrieval, generation, logging, and deployment.
 
