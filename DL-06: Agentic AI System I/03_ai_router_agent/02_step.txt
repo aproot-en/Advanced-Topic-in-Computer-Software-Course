@@ -1,0 +1,20 @@
+### 03_ai_router_agent — Workflow Steps
+
+1. Receive the query + context (user profile, history, extracted file text) from the API/Backend.
+2. Understand intent:
+   - use an LLM with function-calling, or a classifier, to categorize the question, e.g.
+     "general", "university-specific", or "classification/prediction task"
+3. Select a route based on the classification result:
+   - general questions / writing / summarizing → send to General AI (Gemini/OpenAI)
+   - questions about regulations / announcements / course info → send to University RAG
+   - specialized classification/prediction tasks → send to Local AI Model
+   - some cases may need more than one route (e.g. RAG + General AI together)
+4. Plan and execute:
+   - decide the order of tool/service calls needed
+   - send sub-queries to the chosen service(s) (async call)
+5. Manage context/memory:
+   - trim or summarize the conversation history if it exceeds MAX_CONTEXT_TOKENS
+   - attach relevant context to every sub-query
+6. Aggregate the results returned from every service that was called.
+7. Pass the combined result to the LLM Generation stage (06_llm_generation).
+8. Log the decision (which tool was used, and why) for debugging and monitoring.

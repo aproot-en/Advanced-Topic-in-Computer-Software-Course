@@ -1,0 +1,17 @@
+### 01_web_app — Workflow Steps
+
+1. The user (Student/User) opens the web app over HTTPS.
+2. The system checks login status (auth check). If not logged in, redirect to the university Login/SSO page first.
+3. After login, show the Dashboard / Chat Interface with existing conversation history fetched from the backend.
+4. The user types a question, or uploads a file (PDF / image / document).
+   4.1 If a file is attached, validate its type and size on the client side before sending.
+5. The frontend sends a request (HTTP/HTTPS) to the API/Backend, with payload: { message, file(optional), session_id, user_token }.
+6. Show a "typing / loading" state while waiting for the answer.
+7. Receive the response from the backend, either streamed (SSE/WebSocket) or as a single response.
+8. Render the answer on screen, including:
+   - the answer content
+   - sources/citations (if any, from the RAG system)
+   - a feedback button (thumbs up/down)
+9. Save the new message to local state and sync it with the history stored on the backend.
+10. The user can ask a follow-up question, which is sent as a new request carrying the previous context (this is the Feedback Loop shown in the diagram).
+11. The user can view a Dashboard summarizing their usage (e.g. question history, previously uploaded files).

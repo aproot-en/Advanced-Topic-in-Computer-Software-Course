@@ -1,0 +1,19 @@
+Module: Response / Log
+
+Recommended environment
+- Python 3.10 or newer (or embedded inside the API/Backend service)
+- PostgreSQL or MongoDB, for conversation history and logs
+- SQLAlchemy with Alembic, for schema/migrations
+- WebSocket or Server-Sent Events (SSE), for streaming the answer to the frontend
+- Kafka or Redis Streams, if log volume is high
+
+Required configuration
+- LOG_DATABASE_URL: log/history database connection string
+- ENABLE_STREAMING=true or false
+- FEEDBACK_WEBHOOK_URL: optional notification target for negative feedback
+
+Important requirements
+- Save every conversation turn with its source list and the engine that produced it, for traceability.
+- Logging must run asynchronously, so it never delays the answer sent to the user.
+- Define a data retention policy for logs and history, in line with personal data protection rules.
+- Route follow-up questions back into the AI Router with the correct conversation context (the feedback loop).

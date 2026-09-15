@@ -1,0 +1,26 @@
+Module: Web App
+
+Recommended environment
+- Node.js 20 LTS or newer
+- Next.js 14+, React 18+, and TypeScript
+- Tailwind CSS (shadcn/ui or MUI as an optional component library)
+- TanStack Query for API calls, caching, and retries
+- Zustand or Redux Toolkit for global state (chat history, session)
+- react-dropzone, or a native file input, for file upload (PDF, image, docx)
+- WebSocket or Server-Sent Events (SSE) for streaming chat responses
+- ESLint and Prettier for code quality
+- Vitest/Jest, and Playwright/Cypress for testing
+
+Required configuration
+- NEXT_PUBLIC_API_BASE_URL: backend API address
+- NEXT_PUBLIC_WS_URL: WebSocket/streaming endpoint
+- DEFAULT_LOCALE=th-TH
+- DEFAULT_TIMEZONE=Asia/Bangkok
+
+Important requirements
+- Support current desktop and mobile browsers.
+- Use HTTPS and UTF-8 everywhere (needed for correct Thai text rendering).
+- Never place private API keys (OpenAI, Gemini, etc.) in frontend code.
+- Store the auth token in an httpOnly cookie, not localStorage, to reduce XSS risk.
+- Sanitize any AI-generated content before rendering it as markdown/HTML.
+- Follow WCAG 2.1 AA accessibility guidance for the chat and dashboard UI.

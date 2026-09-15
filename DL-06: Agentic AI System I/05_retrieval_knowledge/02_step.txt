@@ -1,0 +1,25 @@
+### 05_retrieval_knowledge — Workflow Steps
+
+A) Ingestion Pipeline (done ahead of time / periodically)
+-------------------------------------------------------------
+1. Collect source documents from the Knowledge Base: regulations, announcements,
+   handbooks/course catalogs, internal documents.
+2. Convert files (PDF/DOCX/HTML) into raw text (text extraction).
+3. Clean the text (remove repeated headers/footers, normalize whitespace).
+4. Split the text into chunks of a suitable size (e.g. 300-500 tokens per chunk with overlap).
+5. Create an embedding vector for each chunk using the embedding model.
+6. Save the chunk + embedding into the Vector DB, and save a keyword index into the BM25 index.
+7. Store metadata (source, publish date, category) together with each chunk, for later citation.
+8. Schedule this pipeline to re-run whenever new documents/announcements come in.
+
+B) Retrieval Pipeline (runs in real time, per query)
+----------------------------------------------------------
+1. Receive a query from the AI Model Selection stage (University RAG route).
+2. Run semantic search: convert the query into an embedding, then find the closest chunks
+   in the Vector DB.
+3. Run keyword search: use BM25 to find chunks matching the important keywords in the question.
+4. Combine both results (Hybrid Search) and re-rank them, e.g. with a weighted score or a
+   cross-encoder re-ranker.
+5. Pick the top-k most relevant chunks (e.g. top 5).
+6. Return the selected chunks, with metadata/source references, to the AI Model Selection /
+   LLM Generation stage.

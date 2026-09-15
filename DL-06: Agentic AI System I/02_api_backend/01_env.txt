@@ -1,0 +1,25 @@
+Module: API / Backend
+
+Recommended environment
+- Python 3.10 or newer
+- FastAPI (or Flask), served with Uvicorn/Gunicorn
+- Pydantic v2 for request/response validation
+- python-jose or PyJWT, and passlib[bcrypt], for authentication
+- python-multipart for file uploads
+- SQLAlchemy 2.x with Alembic for the database, and Redis for caching/sessions
+- PyPDF2/pdfplumber, Pillow, and python-magic for file processing
+- pytest and httpx for testing
+
+Required configuration
+- DATABASE_URL: main database connection string
+- REDIS_URL: cache/session store connection string
+- JWT_SECRET_KEY and JWT_ALGORITHM: authentication settings
+- AI_ROUTER_SERVICE_URL: internal address of the AI Router/Agent service
+- CORS_ALLOWED_ORIGINS: allowed frontend origins
+
+Important requirements
+- Use HTTPS for every endpoint, and validate every request body with Pydantic.
+- Never log or store plaintext passwords; keep only hashed values.
+- Enforce a file size/type limit on every upload, checked server-side.
+- Rate-limit requests per user, to protect the AI Router and external LLM APIs from abuse.
+- Keep all secrets (DB credentials, JWT key, API keys) in environment variables, never hardcoded.

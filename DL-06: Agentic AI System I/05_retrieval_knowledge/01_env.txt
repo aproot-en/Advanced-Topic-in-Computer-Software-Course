@@ -1,0 +1,28 @@
+Module: Retrieval / Knowledge
+
+Additional AI packages
+- numpy (normalizes embedding vectors and combines BM25 + vector scores for hybrid search)
+- sentence-transformers (local/multilingual embedding model for semantic search)
+- faiss-cpu (lightweight, in-process vector index — a self-hosted alternative to the vector DB service)
+- tqdm (progress bar while chunking/embedding a large batch of documents during ingestion)
+
+Recommended environment
+- Python 3.10 or newer
+- A vector database: ChromaDB, Qdrant/Weaviate, Pinecone, pgvector, or faiss-cpu
+- rank_bm25, or Elasticsearch/OpenSearch, for keyword (BM25) search
+- sentence-transformers, or an OpenAI embedding model, for semantic search
+- pdfplumber/PyPDF2, python-docx, and BeautifulSoup4, for document parsing
+- PostgreSQL, for document metadata
+- Celery + Redis, or a cron job/Airflow, for scheduled re-indexing
+
+Required configuration
+- VECTOR_DB_URL: vector database connection address
+- EMBEDDING_MODEL: which embedding model to use
+- BM25_INDEX_PATH: where the BM25 index is stored
+- KNOWLEDGE_DB_URL: metadata database connection string
+
+Important requirements
+- Every retrieved chunk must carry source metadata (document, date, page) for citation.
+- Remove or update outdated documents (e.g. cancelled regulations), so the system never cites stale rules.
+- Prefer a multilingual embedding model, since the knowledge base is mostly in Thai.
+- Re-index automatically whenever new announcements/documents are added.

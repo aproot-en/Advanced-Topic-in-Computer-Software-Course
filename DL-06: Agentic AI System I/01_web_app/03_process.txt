@@ -1,0 +1,38 @@
+### 01_web_app — Process & Techniques (README)
+
+Overview
+--------
+This module is the Frontend of the AI Smart University Assistant. It is the connection point
+between the user (student) and the whole AI system, through a Chat Interface that supports
+file upload, plus a Dashboard showing usage history.
+
+Architecture
+------------
+- Built with Next.js (React framework) to support both Client-Side Rendering (real-time chat)
+  and Server-Side Rendering (dashboard pages that need to be SEO-friendly or load fast).
+- Split into 3 main components:
+  1. ChatWindow — handles messages, streaming responses, markdown/citation rendering
+  2. FileUploader — handles file upload with a progress bar and validation
+  3. Dashboard — shows usage stats, question history, and user preferences
+
+Techniques Used
+----------------
+- Streaming Response: uses SSE or WebSocket to show the answer token-by-token
+  (reduces perceived latency so the app feels faster).
+- Optimistic UI: shows the user's own message immediately, before the real response arrives.
+- Client-side caching with TanStack Query, to avoid repeated calls to the same API
+  (e.g. chat history).
+- Retry & Error Boundary: handles network errors or backend timeouts with a clear fallback UI.
+- The auth token is stored in an httpOnly cookie to prevent XSS attacks (not in localStorage).
+
+Communication With the Backend
+--------------------------------
+- Main REST endpoints: POST /api/chat, POST /api/upload, GET /api/history
+- Standard payload: { session_id, message, attachments[], user_context }
+- Expected response: { answer, sources[], session_id, timestamp }
+
+Things to Watch Out For
+--------------------------
+- User input must be sanitized before rendering (to prevent XSS if the answer contains markdown/HTML).
+- File size and type must be limited on both the client and the server (validation on both sides).
+- Typing should be debounced before sending a request, to reduce load on the backend.

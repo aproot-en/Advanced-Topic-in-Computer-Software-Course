@@ -1,0 +1,22 @@
+Module: AI Router / Agent
+
+Recommended environment
+- Python 3.10 or newer
+- LangChain / LangGraph, or a custom function-calling router
+- openai and google-generativeai SDKs, for intent classification
+- instructor or pydantic, to force structured (JSON) LLM output
+- Redis, for short-term conversation/session state
+- tiktoken, for token counting and context-window management
+- FastAPI with Uvicorn, exposed as an internal microservice
+- pytest, for testing the routing/classification logic
+
+Required configuration
+- OPENAI_API_KEY / GEMINI_API_KEY: LLM provider credentials
+- GENERAL_AI_SERVICE_URL / RAG_SERVICE_URL / LOCAL_AI_SERVICE_URL: internal service addresses
+- MAX_CONTEXT_TOKENS: context window budget for the conversation
+
+Important requirements
+- Set a timeout on every sub-service call, so the agent never hangs waiting on one engine.
+- Log the routing decision (chosen engine + reasoning) for every request, for debugging and monitoring.
+- Fall back to rule-based keyword routing when the LLM classifier's confidence is low.
+- Keep all provider API keys in environment variables, never hardcoded.

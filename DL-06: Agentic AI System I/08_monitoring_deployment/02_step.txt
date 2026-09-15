@@ -1,0 +1,29 @@
+### 08_monitoring_deployment — Workflow Steps
+
+A) Deployment (Docker)
+-------------------------
+1. Write a separate Dockerfile for each service (01-07), each defining the base image,
+   dependencies, and entrypoint for that service.
+2. Combine every service into a single docker-compose.yml, with an internal network so services
+   can talk to each other (e.g. api_backend calls ai_router by internal hostname).
+3. Set environment variables via a .env file per service (never commit secrets to git).
+4. Run `docker compose build && docker compose up -d` to deploy the whole system.
+5. Set up a reverse proxy (e.g. Nginx/Traefik) in front of the Web App/API to handle HTTPS/SSL.
+6. (production) Set up a CI/CD pipeline to build/test/deploy automatically on every new push.
+
+B) Monitoring & Analytics
+----------------------------
+1. Each service exports metrics (request count, latency, error rate, token usage) via a
+   /metrics endpoint.
+2. Prometheus scrapes metrics from every service on a set interval.
+3. Grafana pulls data from Prometheus to show dashboards (e.g. latency per engine, daily error
+   rate).
+4. Collect logs from every service into centralized logging (ELK/Loki), for searching and
+   debugging later.
+5. Collect user feedback (from 07_response_logging) and analyze trends
+   (e.g. questions users are unhappy with often, which engine answers wrong often).
+6. Set up alerts for abnormal events (error rate spikes, API key close to quota, unusually high
+   latency).
+7. Use the resulting insights (from logs + feedback) to keep improving the system
+   (continuous improvement) — e.g. adjust prompts, add documents to the Knowledge Base,
+   retrain the Local AI Model.

@@ -1,0 +1,22 @@
+### 02_api_backend — Workflow Steps
+
+1. Receive an HTTP request from the Web App over HTTPS (e.g. POST /api/chat).
+2. Middleware checks:
+   2.1 Authentication — verify/decode the JWT token from the header
+   2.2 Rate limiting — check the user hasn't exceeded their quota
+   2.3 CORS — check the request origin is allowed
+3. Validate the request body with a Pydantic schema (message, session_id, attachments).
+4. If a file is attached (upload), send it into the File Processing pipeline:
+   - check the real file type with python-magic
+   - convert the content to text (PDF → text, image → OCR if needed)
+5. Fetch User Context from the database/Redis:
+   - user profile
+   - recent conversation history (short-term memory)
+   - preferences
+6. Build a payload { query, extracted_file_text, user_context, history }
+   and forward it to the AI Router / Agent (internal service call, e.g. HTTP or gRPC).
+7. Wait for the result from the AI Router (answer + sources + metadata).
+8. Save the new conversation log to the database (conversation table).
+9. Send the response back to the Web App as JSON, or as a stream (SSE).
+10. Handle errors: timeout from the AI service, invalid input, file too large, etc.,
+    returning an appropriate error response with status code and message.

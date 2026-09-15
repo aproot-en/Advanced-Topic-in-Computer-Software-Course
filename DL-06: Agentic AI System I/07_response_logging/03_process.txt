@@ -1,0 +1,43 @@
+### 07_response_logging — Process & Techniques (README)
+
+Overview
+--------
+This module handles the final step of answering the user: formatting the answer, sending it
+back to the Web App, saving conversation history, collecting user feedback, and closing the
+Feedback Loop when the user asks a follow-up question.
+
+Architecture
+------------
+- Runs as the last step of the main pipeline (Web App → API → Router → AI Engines →
+  Generation → Response/Log), and is also the entry point of the "loop" back into the system
+  when there's a follow-up question — matching the "Feedback Loop" arrow shown in the
+  architecture diagram.
+
+Techniques Used
+----------------
+- Conversation History as Context: every message is saved as a pair (user turn, assistant turn)
+  with a session_id, so the AI Router can pull it back as context for the next follow-up
+  question.
+- Explicit Source Attribution: every answer coming from RAG is saved with its source metadata,
+  so users can check it, and so the team can audit whether the system answered correctly.
+- Implicit + Explicit Feedback: collects both feedback the user gives directly (thumbs
+  up/down) and implicit signals (e.g. the user re-asking the same question may mean the
+  previous answer wasn't clear).
+- Asynchronous Logging: writing logs should not block the response to the user — use a
+  background task or message queue (Kafka/Redis Streams) to separate "answering the user"
+  from "saving the data".
+- Feedback Loop Design: when the user asks a follow-up, the system pulls the last N messages
+  from history and attaches them as new context, sending it back into the AI Router/Agent
+  (matching the Feedback Loop arrow in the diagram).
+
+Design Rationale
+------------------
+Separating "sending the answer" from "saving data/feedback" via async logging means the user
+gets their answer as fast as possible, without waiting for the database write to finish.
+
+Things to Watch Out For
+--------------------------
+- Set a retention policy for logs/history (how long to keep them), in line with personal data
+  policy.
+- Negative feedback should trigger a notification to the team, or be collected for analysis in
+  the Monitoring stage.

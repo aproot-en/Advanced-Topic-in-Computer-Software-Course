@@ -1,0 +1,25 @@
+Module: AI Model Selection (General AI / University RAG / Local AI Model)
+
+Additional AI packages
+- numpy (array/tensor operations and feature vectors for the classical ML and local LLM models)
+- sentence-transformers (turns text into embeddings for local semantic classification, without calling an external API)
+- tqdm (progress bar while training or running batch inference)
+
+Recommended environment
+- Python 3.10 or newer
+- openai and google-generativeai SDKs (General AI engine)
+- PyTorch or TensorFlow, and scikit-learn (Local AI Model engine)
+- transformers (HuggingFace), and Ollama or llama.cpp for a local LLM, if needed
+- FastAPI with Uvicorn, to serve the local model as an internal API
+- GPU with CUDA, recommended for larger local models; CPU-only is fine for small ones
+
+Required configuration
+- OPENAI_API_KEY / GEMINI_API_KEY, and OPENAI_MODEL / GEMINI_MODEL
+- LOCAL_MODEL_PATH: path to the saved local model file
+- LOCAL_MODEL_DEVICE=cuda or cpu
+
+Important requirements
+- Process personal/sensitive student data (e.g. academic-risk prediction) with the Local AI Model, not an external API.
+- Log which engine produced each answer, for traceability.
+- Keep a fallback provider (e.g. Gemini as backup for GPT) in case one API is down.
+- Re-evaluate and retrain the Local AI Model periodically, to prevent model drift.

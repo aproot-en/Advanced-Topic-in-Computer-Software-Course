@@ -1,0 +1,17 @@
+### 07_response_logging — Workflow Steps
+
+1. Receive the final answer (answer + source list) from the LLM Generation stage.
+2. Format the response object to match what the frontend expects:
+   { answer, sources[], session_id, message_id, timestamp, engine_used }
+3. Send the answer back to the Web App:
+   - if streaming is enabled, send it in real time via SSE/WebSocket
+   - otherwise, send it as a single JSON response
+4. Save the conversation to the database (conversation history):
+   - user message + system answer + sources + engine used + processing time (latency)
+5. Wait for feedback from the user (thumbs up/down or comment). If given, save it to the
+   feedback table.
+6. If the user asks a follow-up question:
+   - fetch the latest conversation from history
+   - send it back into the AI Router/Agent with the same context (this is the Feedback Loop
+     shown in the diagram)
+7. Send a summary log (latency, engine, token usage) to the Monitoring & Analytics stage (08).

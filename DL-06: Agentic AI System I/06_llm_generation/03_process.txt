@@ -1,0 +1,39 @@
+### 06_llm_generation — Process & Techniques (README)
+
+Overview
+--------
+This module "synthesizes" the final answer sent back to the user. It combines context from
+Retrieval (university documents), results from the Local AI Model, or an answer from General
+AI, through the main LLM, then adds citations/sources and a safety check before sending it out.
+
+Architecture
+------------
+- Acts as the central service that every route (General AI / RAG / Local AI) must pass through
+  before an answer reaches the user. This creates a single "quality gate" for the whole system,
+  instead of letting each engine send raw answers directly.
+
+Techniques Used
+----------------
+- Retrieval-Augmented Prompting: inserts retrieved documents into the prompt with clear
+  reference labels ([1], [2]), forcing the LLM to cite sources instead of answering purely from
+  memory (reduces hallucination).
+- Grounding Instruction: the system prompt sets a rule — "if the given documents don't contain
+  the answer, say you don't know" — instead of guessing. This matters a lot for
+  regulation-related answers, which need to be accurate.
+- Streaming Generation: sends the answer back token-by-token via SSE, to reduce perceived
+  latency.
+- Content Safety Layer: every answer must pass a moderation check before being sent out,
+  covering both inappropriate content and leaking personal information (PII).
+- Citation Mapping: keeps a mapping between reference numbers in the answer and the real
+  metadata (document name, date, link), so the Response/Log stage can show clickable sources.
+
+Design Rationale
+------------------
+Keeping Generation clearly separate from Retrieval and Routing means the main LLM (e.g.
+switching from GPT to another model) can be changed without affecting the RAG or Router logic.
+
+Things to Watch Out For
+--------------------------
+- Use a low temperature (e.g. 0.2-0.4) for questions that need high accuracy, such as
+  regulations.
+- Log every answer that gets blocked by moderation, to improve the prompt/filter over time.

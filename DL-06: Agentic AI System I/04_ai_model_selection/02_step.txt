@@ -1,0 +1,34 @@
+### 04_ai_model_selection — Workflow Steps
+
+Receives the route chosen by the AI Router/Agent (general_ai / university_rag / local_ai) and
+branches accordingly:
+
+Route A: General AI
+----------------------
+1. Receive the query (general question, writing/summarizing task, general Q&A that doesn't
+   need university-specific data).
+2. Pick a model based on policy (e.g. Gemini for low-cost general tasks, GPT for complex ones).
+3. Call the provider's API (OpenAI/Gemini), using a system prompt that sets the role
+   "university assistant".
+4. Send the raw result to the LLM Generation stage.
+
+Route B: University RAG
+---------------------------
+1. Receive a query related to regulations/announcements/course info.
+2. Forward the query to the Retrieval/Knowledge service (see 05_retrieval_knowledge) to search
+   for relevant documents.
+3. Wait for document chunks + metadata (source info) to come back.
+4. Send it to the LLM Generation stage, along with the retrieved context.
+
+Route C: Local AI Model
+----------------------------
+1. Receive a query/data that needs classification or specialized prediction
+   (e.g. dropout-risk prediction, request-type classification, sentiment analysis).
+2. Preprocess the input to match the format the model expects.
+3. Run inference with the local model (on-premise, no data leaves the system — good for
+   sensitive data).
+4. Convert the result (label/score) into a human-readable message.
+5. Send the result to the LLM Generation stage, to be turned into a natural-language answer.
+
+Once a result is available from one route (or several combined), the system merges all results
+and sends them together into the LLM Generation stage.

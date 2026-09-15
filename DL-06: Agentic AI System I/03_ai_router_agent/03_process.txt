@@ -1,0 +1,41 @@
+### 03_ai_router_agent — Process & Techniques (README)
+
+Overview
+--------
+This is the core "Agent Layer" of the system. It decides which AI engine should handle each
+user question — General AI, University RAG, or Local AI Model — and plans the order of work,
+while managing context across the whole conversation.
+
+Architecture
+------------
+- Designed as a "Router-based Agent", similar to an application-level Mixture-of-Experts:
+  a small/fast LLM (or a few-shot prompt) acts as an intent classifier before forwarding to the
+  right "expert", instead of sending every question to one large LLM. This saves cost and
+  improves domain accuracy.
+
+Techniques Used
+----------------
+- Function Calling / Structured Output: forces the LLM to reply as JSON with fields such as
+  { "route": "university_rag", "confidence": 0.92, "reasoning": "..." }
+  so downstream systems can use it directly without parsing free text.
+- Rule-based fallback: if the LLM classifier's confidence is too low, use keyword matching
+  (e.g. words like "regulation", "announcement", "course" force the route to RAG) as a backup
+  to improve accuracy.
+- Context Window Management: uses tiktoken to count tokens in the conversation history. If it
+  exceeds the limit, old messages are summarized with an LLM instead of just being dropped,
+  so important context isn't lost.
+- Multi-tool orchestration: supports questions that need more than one data source
+  (e.g. comparing an old regulation to a new one, then summarizing in English) — the agent
+  calls RAG first, then passes the result to General AI to summarize.
+
+Design Rationale
+------------------
+Separating "decision making" (routing) from "actual processing" (generation) means:
+- new AI engines can be added/removed in the future without touching the core logic (extensible)
+- cost is controlled better (RAG isn't called for every question when it isn't needed)
+- easier debugging, since there is a clear decision log of why the system chose a given route
+
+Things to Watch Out For
+--------------------------
+- The intent classifier can make mistakes (misroute); track accuracy metrics and log them for improvement.
+- Set a timeout for every sub-service call, so the agent doesn't hang waiting on one of them.

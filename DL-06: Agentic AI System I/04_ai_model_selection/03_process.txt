@@ -1,0 +1,33 @@
+### 04_ai_model_selection — Process & Techniques (README)
+
+Overview
+--------
+This module is the "multi-engine AI" layer, combining 3 processing sources: General AI
+(external LLM API), University RAG (search over internal university data), and Local AI Model
+(a model trained/run in-house). This lets the system pick the best tool for each question,
+instead of relying on one external LLM for everything.
+
+Architecture
+------------
+- Designed as pluggable engines: each route (General AI / RAG / Local AI) is an independent
+  service with the same standard interface (takes a query + context, returns the same result
+  object), so models can be added or swapped in the future without affecting the AI Router.
+
+Techniques Used
+----------------
+- Model Routing Policy: rules for picking a model based on cost/latency/accuracy — e.g. use a
+  small/cheap model (Gemini Flash) for simple tasks, and a larger model for complex ones.
+- Data Privacy by Design: tasks involving personal student data (e.g. predicting academic
+  performance) are processed with the Local AI Model inside the system, without sending data to
+  an external API — protecting privacy and helping with compliance (e.g. PDPA).
+- Unified Response Schema: every engine returns the same shape, e.g.
+  { "content": "...", "sources": [...], "engine": "university_rag", "latency_ms": 320 }
+  so the LLM Generation stage can easily compose the final answer.
+- Graceful Degradation: if the General AI API is down or times out, the system can fall back to
+  a backup model (e.g. from GPT to Gemini) without the user noticing a failure.
+
+Things to Watch Out For
+--------------------------
+- Control General AI API cost with a token budget per request/per user.
+- The Local AI Model needs periodic retraining/evaluation to avoid model drift.
+- Log which engine produced each answer, for traceability and debugging.

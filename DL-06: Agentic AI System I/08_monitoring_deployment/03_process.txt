@@ -1,0 +1,44 @@
+### 08_monitoring_deployment — Process & Techniques (README)
+
+Overview
+--------
+This module covers everything "around" the main pipeline that's still needed to run the system
+in production: containerizing it with Docker (as shown in the diagram, where the whole system
+runs inside Docker), and continuously monitoring/analyzing how the system behaves.
+
+Architecture
+------------
+- Every service (Web App, API/Backend, AI Router, AI Model Selection, Retrieval, LLM
+  Generation, Response/Log) is containerized separately and combined with Docker Compose
+  (or Kubernetes at larger scale), so each service can be deployed/scaled independently.
+- The Monitoring stack (Prometheus + Grafana) and Logging stack (ELK/Loki) are supporting
+  services that pull data from every service via metrics endpoints and log shippers.
+
+Techniques Used
+----------------
+- Service Isolation with Docker: each service has its own dependencies (e.g. backend uses
+  Python, frontend uses Node.js) in separate containers, avoiding conflicts and allowing
+  independent deploys.
+- Metrics-Driven Monitoring: uses Prometheus to pull-scrape metrics from every service, to
+  measure SLIs (latency, error rate, throughput) and set the system's SLOs.
+- Distributed Tracing (OpenTelemetry): since one user request travels through many services
+  (Backend → Router → AI Engine → Generation), having a single trace ID across the whole chain
+  makes it much easier to debug latency issues or find where an error happened.
+- Feedback-Driven Continuous Improvement: user feedback (thumbs up/down) and performance
+  metrics for each AI engine are reviewed periodically (e.g. weekly) to improve prompts, add
+  data to the Knowledge Base, or retrain the Local AI Model — closing the loop of
+  "learning from real usage" for the whole system.
+
+Design Rationale
+------------------
+Keeping Monitoring/Deployment as its own module (instead of embedding it in each service) lets
+the DevOps/MLOps team manage the whole system from one place, and improve the infrastructure
+without touching each service's business logic.
+
+Things to Watch Out For
+--------------------------
+- Keep environments (dev/staging/production) clearly separated, especially API keys and
+  databases.
+- Have a backup strategy for the databases (user data, conversation history, knowledge base).
+- Set resource limits (CPU/Memory) for each container, especially the one running the Local AI
+  Model, which can use a lot of resources during inference.

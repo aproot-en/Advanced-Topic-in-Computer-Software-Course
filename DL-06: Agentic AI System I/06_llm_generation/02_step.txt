@@ -1,0 +1,21 @@
+### 06_llm_generation — Workflow Steps
+
+1. Receive input containing:
+   - the user's query (latest question)
+   - retrieved context (chunks from RAG, results from the Local AI Model, or a raw answer from
+     General AI)
+   - relevant conversation history
+2. Build the prompt (Prompt Construction):
+   - add a system prompt that sets the role ("You are the university's AI assistant...")
+   - insert the reference context/documents in an LLM-friendly format, with reference numbers
+     [1], [2]
+   - insert the user's question and relevant conversation history
+3. Check the prompt length doesn't exceed the model's context window (trim/summarize if needed).
+4. Call the LLM to generate the answer (streaming supported, for real-time delivery).
+5. Post-process the answer:
+   - map reference numbers [1],[2] back to the actual source metadata (document name/link)
+   - format as markdown (bullets, tables) if needed
+6. Check content safety (Safety & Filtering):
+   - check for inappropriate content/sensitive information before sending it out
+   - if a problem is found, return a safe fallback message instead
+7. Send the final answer, with the source list, to the Response/Log stage.

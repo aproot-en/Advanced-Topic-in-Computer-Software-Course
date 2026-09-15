@@ -1,0 +1,21 @@
+Module: LLM Generation
+
+Recommended environment
+- Python 3.10 or newer
+- openai and google-generativeai SDKs, with streaming support
+- LangChain PromptTemplate or Jinja2, for prompt templates
+- tiktoken, for token counting
+- OpenAI Moderation API, or a custom filter, for content safety
+- Presidio, for detecting/masking personal information (PII), if needed
+- FastAPI with Uvicorn, exposed as an internal service
+
+Required configuration
+- OPENAI_API_KEY / GEMINI_API_KEY, and GENERATION_MODEL
+- MAX_OUTPUT_TOKENS and TEMPERATURE
+- MODERATION_ENABLED=true
+
+Important requirements
+- Every answer grounded in retrieved documents must cite its sources.
+- If the retrieved context doesn't contain the answer, the model must say so, not guess.
+- Every answer must pass a moderation/safety check before it reaches the user.
+- Use a low temperature for regulation-related answers, where accuracy matters most.

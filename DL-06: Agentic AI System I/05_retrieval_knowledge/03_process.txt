@@ -1,0 +1,41 @@
+### 05_retrieval_knowledge — Process & Techniques (README)
+
+Overview
+--------
+This module is the core of the RAG (Retrieval-Augmented Generation) system. It stores and
+retrieves university-specific data (regulations, announcements, course catalogs, handbooks) so
+the LLM can answer accurately with real sources, instead of relying only on general knowledge
+that may be outdated or wrong.
+
+Architecture
+------------
+- Split into two clear pipelines: Ingestion (offline, prepares the data) and Retrieval (online,
+  answers real queries). This separation keeps search latency low, since documents don't need
+  to be reprocessed on every question.
+
+Techniques Used
+----------------
+- Hybrid Search (BM25 + Vector/semantic search): BM25 is good at exact matches
+  (e.g. regulation codes, specific course names), while semantic search is good at understanding
+  meaning/synonyms. Combining both gives broader and more accurate results than either alone.
+- Chunking Strategy: split documents into small pieces with overlap (e.g. 500 tokens, 50-token
+  overlap), so context isn't lost at chunk boundaries.
+- Metadata Filtering: allow queries to filter by metadata, e.g. only the latest year's
+  announcements, or only a specific faculty — improving accuracy and reducing noise.
+- Citation Tracking: every retrieved chunk carries source metadata (document/page/date), so the
+  LLM Generation stage can cite sources in its answer (builds trust).
+- Re-indexing Pipeline: the system must support automatically updating the Knowledge Base when
+  new announcements appear (e.g. a daily cron job, or a webhook triggered on document upload).
+
+Design Rationale
+------------------
+Separating Retrieval from Generation, following the standard RAG pattern, helps reduce
+hallucination (the LLM inventing false information), because answers are grounded in real
+retrieved documents instead of relying only on the model's own memory.
+
+Things to Watch Out For
+--------------------------
+- Chunking quality and embedding model choice directly affect answer accuracy — test and tune
+  regularly.
+- There must be a process to remove/update outdated chunks (e.g. a cancelled regulation), so the
+  system doesn't cite old information.

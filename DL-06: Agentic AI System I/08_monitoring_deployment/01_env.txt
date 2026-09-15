@@ -1,0 +1,19 @@
+Module: Monitoring & Deployment
+
+Recommended environment
+- Docker 24.x or newer, with Docker Compose (or Kubernetes + Helm at larger scale)
+- Prometheus and Grafana, for metrics and dashboards
+- ELK Stack or Grafana Loki, for centralized logging
+- OpenTelemetry, for distributed tracing across services
+- GitHub Actions or GitLab CI, for CI/CD
+
+Required configuration
+- PROMETHEUS_PORT and GRAFANA_PORT
+- LOG_LEVEL
+- OTEL_EXPORTER_OTLP_ENDPOINT: tracing collector address
+
+Important requirements
+- Keep dev/staging/production environments and credentials fully separated.
+- Set resource limits (CPU/memory) on every container, especially the Local AI Model service.
+- Back up the databases (user data, conversation history, knowledge base) regularly.
+- Alert the team automatically when error rate or latency goes abnormally high.
