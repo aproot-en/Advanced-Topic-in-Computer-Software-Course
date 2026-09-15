@@ -49,13 +49,10 @@ ProJ-Agent-II/
 │   └── 03_process.txt                       # Deterministic policy, grounded generation, and audit
 │
 ├── 08_recommendation_feedback/              # Final advice, alerts, and continuous feedback loop
-│   ├── 01_env.txt                           # Response, notification, monitoring, and feedback tools
-│   ├── 02_step.txt                          # Recommendation delivery and follow-up workflow
-│   └── 03_process.txt                       # Output design, feedback governance, and safety metrics
-│
-├── proJ-7.txt                               # Original text-based system workflow
-├── proposed-agent-ii.png                    # Proposed architecture diagram
-└── README.md                                # Project overview and module structure
+    ├── 01_env.txt                           # Response, notification, monitoring, and feedback tools
+    ├── 02_step.txt                          # Recommendation delivery and follow-up workflow
+    └── 03_process.txt                       # Output design, feedback governance, and safety metrics
+
 ```
 
 # Core Recommendations
