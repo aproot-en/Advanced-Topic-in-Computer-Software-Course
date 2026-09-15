@@ -57,20 +57,22 @@ Design and document a complete multi-agent RAG system for a university, from the
 
 This project is currently at the **design/documentation stage**. The `01-08` folders contain planning and process files; runnable services will be added during implementation.
 
-Once implementation starts, the complete system will be managed using **Docker Compose** rather than a single run-all script. Each module runs as an independent service/container, allowing different technologies such as Next.js, Python, FastAPI, AI models, and databases to work together.
+Once implemented, the complete system will be managed using **Docker Compose**. Each module runs as an independent service/container, allowing Next.js, Python, FastAPI, AI models, and databases to work together.
 
-* **`docker-compose.yml`** — the main system orchestrator. It builds, starts, connects, and manages all service containers through the Docker network.
-* **`Dockerfile`** — each service can have its own Dockerfile defining its runtime, dependencies, and environment.
+* **`docker-compose.yml`** — builds, starts, connects, and manages all services.
+* **`Dockerfile`** — defines the runtime, dependencies, and environment for each service.
+* **`.env`** — stores API keys and environment configuration.
+* **Docker Network** — enables communication between service containers.
 * **`Makefile`** *(optional)* — provides shortcuts such as `make up`, `make down`, `make logs`, and `make rebuild`.
-* **`scripts/dev_run_all.py`** *(optional)* — can be used to start services without Docker during local development.
 
 To start the complete system:
 
-```bash
+```
 docker compose up -d
 ```
 
-Docker Compose remains the **main orchestrator** for running and connecting all services in the project.
+Docker Compose is the **main orchestrator** for running and connecting all services in the project.
+
 
   
 ## Summary
