@@ -82,8 +82,8 @@ To start the complete system:
 ```
 docker compose up -d
 ```
+Docker Compose is the main orchestrator for the complete system.
 
-Docker Compose is the **main orchestrator** for running and connecting all services in the project.
 ----
 ## Summary
 
