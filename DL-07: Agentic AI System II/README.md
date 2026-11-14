@@ -64,22 +64,22 @@ The 54 offline tests pass. The 8 end-to-end tests call the real APIs and fail wh
 
 All APIs below are free to use. The Groq Llama API is optional and requires a free API key.
 
-| API | Used for | Used in | Link |
-|---|---|---|---|
-| Open-Meteo Forecast | Temperature, rain, wind, gusts, visibility (hourly, 3 days) | 04, 05 | [docs](https://open-meteo.com/en/docs) |
-| Open-Meteo Air Quality | PM2.5 / PM10 forecast | 04, 05 | [docs](https://open-meteo.com/en/docs/air-quality-api) |
-| Open-Meteo Flood (GloFAS) | River discharge forecast | 04 | [docs](https://open-meteo.com/en/docs/flood-api) |
-| Open-Meteo Geocoding | Place search (Thai/English) | 04 | [docs](https://open-meteo.com/en/docs/geocoding-api) |
-| USGS Earthquake API | Earthquake feeds and nearby search | 04 | [docs](https://earthquake.usgs.gov/fdsnws/event/1/) · [feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) |
-| GDACS API | Tropical cyclones (with track), floods, wildfires, volcanoes, droughts | 04 | [site](https://www.gdacs.org) · [API](https://www.gdacs.org/gdacsapi/swagger/index.html) |
-| NASA EONET v3 | Open wildfires, severe storms, volcanoes | 04 | [docs](https://eonet.gsfc.nasa.gov/docs/v3) |
-| RainViewer | Rain radar tiles | 01, 04 | [docs](https://www.rainviewer.com/api.html) |
-| OSRM demo server | Driving routes and alternatives | 04 | [docs](https://project-osrm.org/docs/v5.24.0/api/) |
-| Nominatim (OpenStreetMap) | Reverse geocoding, nearby hospitals/police/fire stations (max 1 request/second) | 04 | [docs](https://nominatim.org/release-docs/latest/api/Overview/) · [usage policy](https://operations.osmfoundation.org/policies/nominatim/) |
-| OpenFreeMap | Basemap styles (streets, night) | 01 | [site](https://openfreemap.org) |
-| Esri World Imagery | Satellite basemap | 01 | [info](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9) |
-| MapLibre GL JS (CDN) | Globe / map rendering in the browser | 01 | [docs](https://maplibre.org/maplibre-gl-js/docs/) |
-| **Groq — Llama API** (optional) | Understand questions (03), word explanations (07) | 03, 07 | [get a key](https://console.groq.com/keys) · [docs](https://console.groq.com/docs/openai) · [models](https://console.groq.com/docs/models) |
+| API | Used for | Link |
+|---|---|---|
+| Open-Meteo Forecast | Temperature, rain, wind, gusts, visibility (hourly, 3 days) | [docs](https://open-meteo.com/en/docs) |
+| Open-Meteo Air Quality | PM2.5 / PM10 forecast | [docs](https://open-meteo.com/en/docs/air-quality-api) |
+| Open-Meteo Flood (GloFAS) | River discharge forecast | [docs](https://open-meteo.com/en/docs/flood-api) |
+| Open-Meteo Geocoding | Place search (Thai/English) | [docs](https://open-meteo.com/en/docs/geocoding-api) |
+| USGS Earthquake API | Earthquake feeds and nearby search | [docs](https://earthquake.usgs.gov/fdsnws/event/1/) · [feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) |
+| GDACS API | Tropical cyclones (with track), floods, wildfires, volcanoes, droughts | [site](https://www.gdacs.org) · [API](https://www.gdacs.org/gdacsapi/swagger/index.html) |
+| NASA EONET v3 | Open wildfires, severe storms, volcanoes | [docs](https://eonet.gsfc.nasa.gov/docs/v3) |
+| RainViewer | Rain radar tiles | [docs](https://www.rainviewer.com/api.html) |
+| OSRM demo server | Driving routes and alternatives | [docs](https://project-osrm.org/docs/v5.24.0/api/) |
+| Nominatim (OpenStreetMap) | Reverse geocoding, nearby hospitals/police/fire stations (max 1 request/second) | [docs](https://nominatim.org/release-docs/latest/api/Overview/) · [usage policy](https://operations.osmfoundation.org/policies/nominatim/) |
+| OpenFreeMap | Basemap styles (streets, night) | [site](https://openfreemap.org) |
+| Esri World Imagery | Satellite basemap | [info](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9) |
+| MapLibre GL JS (CDN) | Globe / map rendering in the browser | [docs](https://maplibre.org/maplibre-gl-js/docs/) |
+| **Groq — Llama API** (optional) | Understand questions and provide word explanations | [get a key](https://console.groq.com/keys) · [docs](https://console.groq.com/docs/openai) · [models](https://console.groq.com/docs/models) |
 
 ----
 ## Summary
