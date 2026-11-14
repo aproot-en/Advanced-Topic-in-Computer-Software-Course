@@ -1,0 +1,66 @@
+### 07_response_logging — Process & Techniques (README)
+
+Overview
+--------
+This module handles the final step of answering the user: formatting the answer, sending it
+back to the Web App, saving conversation history, collecting user feedback, and closing the
+Feedback Loop when the user asks a follow-up question.
+
+Architecture
+------------
+- A module used by the API/Backend at the end of each request: it builds the
+  user-facing response, stores the conversation and feedback, and serves history.
+  The Feedback Loop in the diagram (follow-up question) runs Web App → API/Backend →
+  AI Router; this module supplies the history for it but does not start it.
+
+Techniques Used
+----------------
+- Conversation History as Context: every message is saved as a pair (user turn, assistant turn)
+  with a session_id, so the AI Router can pull it back as context for the next follow-up
+  question.
+- Explicit Source Attribution: every answer coming from RAG is saved with its source metadata,
+  so users can check it, and so the team can audit whether the system answered correctly.
+- Implicit + Explicit Feedback: collects both feedback the user gives directly (thumbs
+  up/down) and implicit signals (e.g. the user re-asking the same question may mean the
+  previous answer wasn't clear).
+- Asynchronous Logging: writing logs should not block the response to the user — use a
+  background task or message queue (Kafka/Redis Streams) to separate "answering the user"
+  from "saving the data".
+- Feedback Loop Design: when the user asks a follow-up, the system pulls the last N messages
+  from history and attaches them as new context, sending it back into the AI Router/Agent
+  (matching the Feedback Loop arrow in the diagram).
+
+Log Fields
+----------
+Every turn is logged with: trace_id, session_id, message_id, user_id (pseudonymized in
+analytics), route, response_type, engine_used, model / model_version, confidence,
+sources (doc ids), token_usage (input/output), cost_estimate, latency_ms (per stage
+and total), degraded_services, moderation result, feedback rating.
+
+Design Rationale
+------------------
+Separating "sending the answer" from "saving data/feedback" via async logging means the user
+gets their answer as fast as possible, without waiting for the database write to finish.
+
+Things to Watch Out For
+--------------------------
+- Retention policy (defaults, to be confirmed by the university's data protection
+  officer): conversation history 180 days; uploaded files 30 days; anonymized analytics
+  2 years. Users can delete their own history (PDPA right to erasure), which also
+  removes it from Redis and from analytics that are not yet anonymized.
+- Negative feedback should trigger a notification to the team, or be collected for analysis in
+  the Monitoring stage.
+
+Implementation (local, Phase 1)
+-------------------------------
+- Code: 07_response_logging/response_log.py, called by 02_api_backend/main.py (never by the Router).
+- format_response() builds the Unified Response Schema (09_backend/schemas.py, ChatResponse).
+- save_turn() runs as a FastAPI BackgroundTask (after the response is sent) and writes to
+  SQLite tables conversations / messages; an in-memory dict stands in for Redis
+  (last HISTORY_TURNS turns) so follow-ups work immediately.
+- add_feedback() stores ratings (one per user per message) and calls FEEDBACK_WEBHOOK_URL
+  for thumbs-down with message_id + trace_id only.
+- Retention: purge_old_data() runs at startup (180 / 30 days); DELETE /api/history calls
+  delete_user_history() (right to erasure).
+- A summary event per turn goes to 08_monitoring_deployment/monitoring.py (JSON log + /metrics counters).
+  Token usage / cost fields are logged once an LLM provider is configured.

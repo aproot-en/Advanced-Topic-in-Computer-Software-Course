@@ -1,0 +1,22 @@
+ ⨯ ./components/ChatApp.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mD:\Code_LLM\06-ProJ-Agent I\01_web_app\frontend\components\ChatApp.tsx[0m:299:1]
+ [2m299[0m |   };
+ [2m300[0m | 
+ [2m301[0m |   return (
+ [2m302[0m |     <div className="shell">
+     : [31;1m     ^^^[0m
+ [2m303[0m |       <Sidebar
+ [2m304[0m |         open={sidebarOpen}
+ [2m305[0m |         t={t}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/ChatApp.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload

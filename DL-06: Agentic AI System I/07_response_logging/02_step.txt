@@ -1,0 +1,21 @@
+### 07_response_logging — Workflow Steps
+
+1. Receive the final answer (answer + source list) from the LLM Generation stage.
+2. Format the result into the Unified Response Schema:
+   { message_id, session_id, response_type, answer, clarify_options[], sources[],
+     engine_used, confidence, data_freshness, degraded_services[], latency_ms,
+     trace_id, timestamp }
+3. Return the response object to the API/Backend, which sends it to the Web App
+   (JSON or SSE). This module never sends responses to the Web App directly.
+4. Persist the turn asynchronously (background task or queue): user message, answer,
+   sources, response_type, engine_used, confidence, latency_ms, trace_id. Also update
+   the short-term history in Redis (last N turns) for fast follow-ups.
+5. Store feedback received through the API/Backend (POST /api/feedback) in the feedback
+   table. Negative feedback triggers FEEDBACK_WEBHOOK_URL (if set) with message_id and
+   trace_id only — no personal data.
+6. When the API/Backend receives a follow-up question, it asks this module for the
+   last N turns of the session; this module returns them (Redis first, database as
+   fallback). The API/Backend then sends them to the AI Router. This module never
+   calls the AI Router itself.
+7. Emit a summary event (trace_id, route, response_type, engine_used, latency_ms,
+   token usage, cost estimate) to Monitoring & Analytics (08).

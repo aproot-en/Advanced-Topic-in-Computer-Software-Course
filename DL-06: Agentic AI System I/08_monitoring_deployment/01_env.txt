@@ -1,0 +1,26 @@
+Module: Monitoring & Deployment
+
+Recommended environment
+- Docker 24.x or newer, with Docker Compose (or Kubernetes + Helm at larger scale)
+- Prometheus and Grafana, for metrics and dashboards
+- ELK Stack or Grafana Loki, for centralized logging
+- OpenTelemetry, for distributed tracing across services
+- GitHub Actions or GitLab CI, for CI/CD
+- Langfuse (self-hosted) or OpenTelemetry GenAI semantic conventions, for LLM traces
+  (prompt, model, tokens, cost, latency per call)
+- Trivy (image scanning), pip-audit and npm audit (dependency scanning)
+- Caddy or Nginx/Traefik as the reverse proxy
+
+Required configuration
+- PROMETHEUS_PORT and GRAFANA_PORT
+- LOG_LEVEL
+- OTEL_EXPORTER_OTLP_ENDPOINT: tracing collector address
+- LANGFUSE_HOST / LANGFUSE_PUBLIC_KEY / LANGFUSE_SECRET_KEY (if Langfuse is used)
+- ALERT_WEBHOOK_URL
+- DAILY_LLM_BUDGET_USD
+
+Important requirements
+- Keep dev/staging/production environments and credentials fully separated.
+- Set resource limits (CPU/memory) on every container, especially the Local AI Model service.
+- Back up the databases (user data, conversation history, knowledge base) regularly.
+- Alert the team automatically when error rate or latency goes abnormally high.

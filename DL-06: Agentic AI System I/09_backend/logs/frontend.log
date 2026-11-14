@@ -1,0 +1,40 @@
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1599ms
+ ✓ Compiled / in 498ms (462 modules)
+ GET / 200 in 633ms
+ GET / 200 in 70ms
+ ✓ Compiled in 738ms (462 modules)
+ ✓ Compiled in 2.9s (476 modules)
+ ✓ Compiled in 1227ms (462 modules)
+ ✓ Compiled in 460ms (462 modules)
+ ✓ Compiled in 771ms (476 modules)
+ GET / 200 in 152ms
+ ✓ Compiled in 816ms (462 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 930ms (465 modules)
+ GET /_next/static/webpack/9a981d2519df524e.webpack.hot-update.json 404 in 1170ms
+ GET / 200 in 70ms
+ GET / 200 in 78ms
+ ✓ Compiled in 850ms (476 modules)
+ GET / 200 in 134ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1726ms (465 modules)
+ GET /_next/static/webpack/ca8f725e8363bc38.webpack.hot-update.json 404 in 1238ms
+ GET / 200 in 42ms
+ ✓ Compiled in 411ms (479 modules)
+ ✓ Compiled in 438ms (479 modules)
+ ✓ Compiled in 1188ms (462 modules)
+ GET / 200 in 229ms
+ ✓ Compiled in 760ms (476 modules)
+ GET / 200 in 126ms
+ GET / 200 in 44ms
+ GET / 200 in 67ms
+ ✓ Compiled in 227ms (462 modules)
+ ✓ Compiled in 591ms (462 modules)
+ GET / 200 in 141ms
+ ✓ Compiled in 451ms (462 modules)
+ GET / 200 in 407ms

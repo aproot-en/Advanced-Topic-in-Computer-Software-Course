@@ -1,0 +1,103 @@
+INFO:     Started server process [19796]
+INFO:     Waiting for application startup.
+2026-11-14 15:33:26,087 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-14 15:33:26,133 huggingface_hub.utils._http WARNING Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-14 15:33:26,154 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:26,419 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:26,447 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:26,452 sentence_transformers.base.model INFO Loading SentenceTransformer model from BAAI/bge-m3.
+2026-11-14 15:33:26,716 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:26,745 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:27,038 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:27,065 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-11-14 15:33:27,340 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:27,369 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:27,658 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:27,691 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:27,988 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:28,278 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:28,335 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:28,727 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-14 15:33:29,030 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-11-14 15:33:29,352 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-14 15:33:29,667 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-11-14 15:33:29,946 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:30,236 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 7247.19it/s]
+2026-11-14 15:33:31,058 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:31,367 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:31,655 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:31,942 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:32,241 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:32,272 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:32,589 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:32,605 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:32,894 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:32,925 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:33,197 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:33,225 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:33,516 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:33,789 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-14 15:33:37,891 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-14 15:33:38,235 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:38,271 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:38,569 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-11-14 15:33:42,444 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:42,494 sentence_transformers.base.model INFO No modules.json found for BAAI/bge-reranker-v2-m3, initializing a new CrossEncoder model.
+2026-11-14 15:33:42,760 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-11-14 15:33:43,049 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:43,079 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:43,351 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:43,644 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:43,680 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 6756.36it/s]
+2026-11-14 15:33:44,317 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:44,604 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:44,893 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:45,181 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:45,464 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:45,501 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:45,787 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:45,816 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:46,095 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:46,121 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:46,406 httpx INFO HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-11-14 15:33:46,436 httpx INFO HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-11-14 15:33:46,713 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-14 15:33:46,985 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-14 15:33:50,221 httpx INFO HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.21s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it]
+2026-11-14 15:33:54,752 router INFO {"event": "route_decision", "route": "university_rag", "response_type": "answer_with_citations", "confidence": 1.0, "language": "th", "rewritten_query": "ลงทะเบียนเรียนได้กี่หน่วยกิต", "reasoning": "classifier router-2026.11.14", "clarify_options": []}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-11-14 15:34:24,604 router INFO {"event": "route_decision", "route": "university_rag", "response_type": "answer_with_citations", "confidence": 0.945, "language": "th", "rewritten_query": "ตรวจสอบว่าค่าเทอมถูกหรือไม่", "reasoning": "classifier router-2026.11.14", "clarify_options": []}
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.53it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.46it/s]
+2026-11-14 15:34:25,722 monitoring INFO {"event": "turn", "trace_id": "0915330792514b6f84f729a9e0ca9da4", "route": "university_rag", "response_type": "clarify", "engine_used": "none", "latency_ms": 1428, "degraded": []}
+2026-11-14 15:34:39,396 router INFO {"event": "route_decision", "route": "university_rag", "response_type": "answer_with_citations", "confidence": 0.999, "language": "th", "rewritten_query": "ค่าเทอมเท่าไหร่", "reasoning": "classifier router-2026.11.14", "clarify_options": []}
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.34s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+2026-11-14 15:34:41,052 monitoring INFO {"event": "turn", "trace_id": "eb02dea7a95140ff938f39c53fdf99c2", "route": "university_rag", "response_type": "answer_with_citations", "engine_used": "university_rag", "latency_ms": 2005, "degraded": []}
+2026-11-14 15:45:05,150 asyncio ERROR Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-11-14 15:50:31,384 asyncio ERROR Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-11-14 15:54:44,845 asyncio ERROR Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Admin\anaconda3\envs\tf_cpe\lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

@@ -1,0 +1,82 @@
+### 08_monitoring_deployment — Workflow Steps
+
+A) Deployment (Docker)
+-------------------------
+1. Phase 1 (MVP) — modular monolith. Containers:
+   - proxy        (Caddy or Nginx: HTTPS, routes / → web_app, /api → api)
+   - web_app      (Next.js, stage 01)
+   - api          (FastAPI, stages 02-07 as modules in one process)
+   - postgres     (users, conversations, messages, feedback, document metadata)
+   - redis        (sessions, short-term history, rate limits, caches)
+   - qdrant       (vector index; BM25 index stored on a volume inside api)
+2. Phase 2 (Scale) — split out services only when needed:
+   - retrieval      (CPU/RAM-heavy indexing, independent scaling)
+   - llm_generation (streaming load)
+   - local_ai       (GPU node)
+   Module interfaces stay the same; only in-process calls become HTTP/gRPC calls.
+
+   Example docker-compose.yml (Phase 1, outline):
+
+     services:
+       proxy:
+         image: caddy:2
+         ports: ["80:80", "443:443"]
+         depends_on: [web_app, api]
+       web_app:
+         build: ./01_web_app
+         env_file: ./01_web_app/.env
+       api:
+         build: { context: ., dockerfile: 09_backend/Dockerfile }   # stages 02-07 (folders 02-09)
+         env_file: ./09_backend/.env
+         depends_on:
+           postgres: { condition: service_healthy }
+           redis:    { condition: service_healthy }
+           qdrant:   { condition: service_started }
+         healthcheck:
+           test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+           interval: 30s
+         deploy:
+           resources:
+             limits: { cpus: "2", memory: 4g }
+         volumes: ["bm25_index:/data/bm25"]
+       postgres:
+         image: postgres:16
+         volumes: ["pg_data:/var/lib/postgresql/data"]
+         healthcheck: { test: ["CMD-SHELL", "pg_isready"], interval: 10s }
+       redis:
+         image: redis:7
+         healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 10s }
+       qdrant:
+         image: qdrant/qdrant
+         volumes: ["qdrant_data:/qdrant/storage"]
+     volumes: { pg_data: {}, qdrant_data: {}, bm25_index: {} }
+
+   Monitoring services (prometheus, grafana, loki, langfuse) go in a separate
+   docker-compose.monitoring.yml, started with -f when needed.
+3. Set environment variables via a .env file per service (never commit secrets to git).
+4. Run `docker compose build && docker compose up -d` to deploy the whole system.
+5. Set up a reverse proxy (e.g. Nginx/Traefik) in front of the Web App/API to handle HTTPS/SSL.
+6. (production) Set up a CI/CD pipeline to build/test/deploy automatically on every new push.
+
+B) Monitoring & Analytics
+----------------------------
+1. Each component exports metrics via /metrics:
+   - system: request count, latency (p50/p95), error rate, saturation
+   - AI: routing distribution per route, clarify rate, decline rate, citation rate,
+     no-answer rate, thumbs-down rate per engine, token usage and cost per day/user,
+     LLM provider error/timeout rate, degraded-mode count
+   - data: knowledge-base freshness (age of the newest ingested document), ingestion
+     failures, number of active vs cancelled documents
+2. Prometheus scrapes metrics from every service on a set interval.
+3. Grafana pulls data from Prometheus to show dashboards (e.g. latency per engine, daily error
+   rate).
+4. Collect logs from every service into centralized logging (ELK/Loki), for searching and
+   debugging later.
+5. Collect user feedback (from 07_response_logging) and analyze trends
+   (e.g. questions users are unhappy with often, which engine answers wrong often).
+6. Alerts (starting thresholds): error rate > 2% for 5 minutes; p95 latency > 8 s;
+   daily LLM cost > 80% of DAILY_LLM_BUDGET_USD; thumbs-down rate > 20% in a day;
+   no successful ingestion for > 48 hours; any provider in degraded mode > 15 minutes.
+7. Use the resulting insights (from logs + feedback) to keep improving the system
+   (continuous improvement) — e.g. adjust prompts, add documents to the Knowledge Base,
+   retrain the Local AI Model.

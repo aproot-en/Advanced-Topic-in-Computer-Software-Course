@@ -1,0 +1,78 @@
+### 08_monitoring_deployment — Process & Techniques (README)
+
+Overview
+--------
+This module covers everything "around" the main pipeline that's still needed to run the system
+in production: containerizing it with Docker (as shown in the diagram, where the whole system
+runs inside Docker), and continuously monitoring/analyzing how the system behaves.
+
+Architecture
+------------
+- Every service (Web App, API/Backend, AI Router, AI Model Selection, Retrieval, LLM
+  Generation, Response/Log) is containerized separately and combined with Docker Compose
+  (or Kubernetes at larger scale), so each service can be deployed/scaled independently.
+- The Monitoring stack (Prometheus + Grafana) and Logging stack (ELK/Loki) are supporting
+  services that pull data from every service via metrics endpoints and log shippers.
+
+Techniques Used
+----------------
+- Service Isolation with Docker: each service has its own dependencies (e.g. backend uses
+  Python, frontend uses Node.js) in separate containers, avoiding conflicts and allowing
+  independent deploys.
+- Metrics-Driven Monitoring: uses Prometheus to pull-scrape metrics from every service, to
+  measure SLIs (latency, error rate, throughput) and set the system's SLOs.
+- Distributed Tracing (OpenTelemetry): since one user request travels through many services
+  (Backend → Router → AI Engine → Generation), having a single trace ID across the whole chain
+  makes it much easier to debug latency issues or find where an error happened.
+- Feedback-Driven Continuous Improvement: user feedback (thumbs up/down) and performance
+  metrics for each AI engine are reviewed periodically (e.g. weekly) to improve prompts, add
+  data to the Knowledge Base, or retrain the Local AI Model — closing the loop of
+  "learning from real usage" for the whole system.
+
+CI/CD and Evaluation Gate
+-------------------------
+- On every pull request: lint, unit tests, build images, Trivy scan, pip-audit /
+  npm audit.
+- Evaluation gate: when a change touches prompts, router keywords, chunking, embedding
+  or reranker settings, run the evaluation sets automatically:
+    router accuracy >= 0.90 (03), Recall@5 >= 0.85 (05),
+    faithfulness >= 0.85 and citation accuracy >= 0.90 (06).
+  A drop below a threshold blocks the merge.
+- Deploy order: dev → staging (runs the same evaluation on staging data) → production,
+  with manual approval for production.
+
+Security Operations
+-------------------
+- Secrets come from Docker secrets or a secret manager (e.g. Vault); .env files are
+  for local development only and are git-ignored.
+- Separate API keys per environment, with spending limits set at the provider.
+- Containers run as non-root, with read-only file systems where possible.
+- Back up postgres and qdrant daily; test restore monthly.
+
+Design Rationale
+------------------
+Keeping Monitoring/Deployment as its own module (instead of embedding it in each service) lets
+the DevOps/MLOps team manage the whole system from one place, and improve the infrastructure
+without touching each service's business logic.
+
+Things to Watch Out For
+--------------------------
+- Keep environments (dev/staging/production) clearly separated, especially API keys and
+  databases.
+- Have a backup strategy for the databases (user data, conversation history, knowledge base).
+- Set resource limits (CPU/Memory) for each container, especially the one running the Local AI
+  Model, which can use a lot of resources during inference.
+
+Implementation (local, Phase 1 — not containerized yet)
+-------------------------------------------------------
+- Docker / docker-compose are planned (outline above) but intentionally not built yet; the
+  system currently runs locally: web_app_std.bat at the project root starts both servers
+  and opens the app ("web_app_std.bat stop" stops them); 09_09_backend/run_backend.bat and
+  01_web_app/webapp.bat start each side alone; 09_backend/dev_run_all.py is a dev helper.
+- Metrics: 08_monitoring_deployment/monitoring.py exposes GET /metrics in Prometheus text format
+  (http_requests_total, route_total, response_type_total, engine_total,
+  citation_answers_total, degraded_total, feedback_total, latency_ms_sum) and writes one
+  JSON log line per turn with trace_id.
+- Evaluation gate: "python evaluate.py" in 08_monitoring_deployment/ exits with code 1 when any [C7]
+  threshold fails, so the same command can block a merge in CI later.
+- Health check: GET /health (used by the compose healthcheck).

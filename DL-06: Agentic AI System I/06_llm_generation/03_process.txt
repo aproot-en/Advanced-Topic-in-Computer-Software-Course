@@ -1,0 +1,72 @@
+### 06_llm_generation — Process & Techniques (README)
+
+Overview
+--------
+This module "synthesizes" the final answer sent back to the user. It combines context from
+Retrieval (university documents), results from the Local AI Model, or an answer from General
+AI, through the main LLM, then adds citations/sources and a safety check before sending it out.
+
+Architecture
+------------
+- Acts as the central service that every route (General AI / RAG / Local AI) must pass through
+  before an answer reaches the user. This creates a single "quality gate" for the whole system,
+  instead of letting each engine send raw answers directly.
+- This is the only stage that calls an LLM to write the final answer. Other engines return
+  data (chunks, labels, passthrough requests), which keeps cost to at most two LLM calls per
+  question.
+
+Techniques Used
+----------------
+- Retrieval-Augmented Prompting: inserts retrieved documents into the prompt with clear
+  reference labels ([1], [2]), forcing the LLM to cite sources instead of answering purely from
+  memory (reduces hallucination).
+- Grounding Instruction: the system prompt sets a rule — "if the given documents don't contain
+  the answer, say you don't know" — instead of guessing. This matters a lot for
+  regulation-related answers, which need to be accurate.
+- Streaming Generation: sends the answer back token-by-token via SSE, to reduce perceived
+  latency.
+- Content Safety Layer: every answer must pass a moderation check before being sent out,
+  covering both inappropriate content and leaking personal information (PII).
+- Citation Mapping: keeps a mapping between reference numbers in the answer and the real
+  metadata (document name, date, link), so the Response/Log stage can show clickable sources.
+- Language Handling: answer in the same language as the question (language detected
+  by the router). Keep official Thai terms (e.g. regulation names) as written in the
+  source, even in English answers, so users can match them to the documents.
+
+Design Rationale
+------------------
+Keeping Generation clearly separate from Retrieval and Routing means the main LLM (e.g.
+switching from GPT to another model) can be changed without affecting the RAG or Router logic.
+
+Evaluation
+----------
+- Use the golden set from 05_retrieval_knowledge.
+- Metrics: faithfulness and answer relevancy (e.g. RAGAS or an LLM-as-judge with a
+  fixed rubric), citation accuracy (share of claims supported by the cited document),
+  correct "I don't know" behaviour on no-answer questions, duplicate-sentence rate.
+- Starting targets: faithfulness >= 0.85, citation accuracy >= 0.90.
+- Spot-check a weekly sample by hand, especially regulation answers.
+
+Things to Watch Out For
+--------------------------
+- Use a low temperature (e.g. 0.2-0.4) for questions that need high accuracy, such as
+  regulations.
+- Log every answer that gets blocked by moderation, to improve the prompt/filter over time.
+
+Implementation (local, Phase 1)
+-------------------------------
+- Code: 06_llm_generation/generation.py. build_prompt() creates the system prompt + <documents> /
+  <user_file> delimiters; call_llm() uses the OpenAI SDK when OPENAI_API_KEY is set.
+- Offline mode (no API key, the default for local runs): the RAG answer is extractive — the
+  best-matching lines of the top chunks are chosen by a small IDF score on PyThaiNLP tokens
+  and cited as [n]. Nothing is written that is not in a source, so it cannot hallucinate,
+  but the wording is less natural than an LLM answer.
+- Clarify, decline, greetings and Local AI explanations are template-based (no LLM call).
+- Post-processing: dedup_lines, validate_citations, source mapping, mask_pii (Thai national
+  ID with checksum, phone, email, student ID), a simple blocked-word moderation check,
+  and confidence = 0.4 x router + 0.4 x best rerank score + 0.2 x citation coverage.
+- Streaming: /api/chat/stream currently streams the finished answer in small pieces; true
+  token streaming from the LLM is a follow-up once an API key is used.
+- Evaluation: 08_monitoring_deployment/evaluate.py uses a token-overlap proxy (a bullet is "supported" when
+  >= 70% of its tokens appear in the cited chunk). Current: citation accuracy 0.98,
+  faithfulness 0.98, duplicate bullets 0. Replace with RAGAS/LLM-as-judge when an LLM is used.
