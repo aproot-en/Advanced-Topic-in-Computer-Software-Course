@@ -35,7 +35,6 @@ Requirements: Python 3.10+, PyTorch (CUDA optional), Node.js 20+, ~5 GB disk for
 
 ```bash
 pip install -r 09_backend/requirements.txt
-git clone https://github.com/thanasinb/CPE_RMUTT68.git 05_retrieval_knowledge/data/raw/CPE_RMUTT68
 cd 01_web_app/frontend && npm install && cd ../..
 ```
 
