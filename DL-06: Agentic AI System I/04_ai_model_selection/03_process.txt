@@ -1,0 +1,71 @@
+### 04_ai_model_selection — Process & Techniques (README)
+
+Overview
+--------
+This module is the "multi-engine AI" layer, combining 3 processing sources: General AI
+(external LLM API), University RAG (search over internal university data), and Local AI Model
+(a model trained/run in-house). This lets the system pick the best tool for each question,
+instead of relying on one external LLM for everything.
+
+Architecture
+------------
+- Designed as pluggable engines: each route (General AI / RAG / Local AI) is an independent
+  service with the same standard interface (takes a query + context, returns the same result
+  object), so models can be added or swapped in the future without affecting the AI Router.
+
+Techniques Used
+----------------
+- Model Routing Policy: rules for picking a model based on cost/latency/accuracy — e.g. use a
+  small/cheap model (Gemini Flash) for simple tasks, and a larger model for complex ones.
+- Data Privacy by Design: tasks involving personal student data (e.g. predicting academic
+  performance) are processed with the Local AI Model inside the system, without sending data to
+  an external API — protecting privacy and helping with compliance (e.g. PDPA).
+- Engine Result Schema (internal): every engine returns the same shape
+  { engine, content, chunks[], label, score, passthrough, model_version, latency_ms,
+    error }
+  This is internal to the AI layer. The user-facing Unified Response Schema is built
+  later by 07_response_logging.
+- Graceful Degradation: if a provider or engine is down or times out, fall back to a
+  backup (e.g. GPT → Gemini, or Hybrid → BM25-only) and add the affected service to
+  degraded_services[]. The user still gets an answer, but is told it may be limited.
+
+Responsible Local AI
+--------------------
+- Predictions about individual students (e.g. dropout risk) require a documented
+  purpose, a legal basis/consent under PDPA, and approval by the responsible office.
+- Show results as advisory guidance with the main contributing factors
+  (explainability), never as a final decision; a human advisor makes decisions.
+- Students see only predictions about themselves; staff access is role-based and
+  logged.
+- Evaluate fairness across groups (faculty, year, gender where lawful) before each
+  release; block the release if the gap exceeds an agreed threshold.
+
+Model Registry
+--------------
+- Every trained local model gets a version, training-data snapshot date, and metrics
+  (accuracy, F1, per-group metrics).
+- model_version is returned in every Engine Result and stored in the logs, so any
+  answer can be traced to the exact model that produced it.
+- Keep the previous version available for fast rollback.
+
+Things to Watch Out For
+--------------------------
+- Control General AI API cost with a token budget per request/per user.
+- The Local AI Model needs periodic retraining/evaluation to avoid model drift.
+- Log which engine produced each answer, for traceability and debugging.
+
+Implementation (local, Phase 1)
+-------------------------------
+- Code: 04_ai_model_selection/engines.py (route A/B/C, timeout via a thread pool, errors returned in the
+  Engine Result) and 04_ai_model_selection/local_ai.py (PyTorch models).
+- Local AI models (PyTorch, trained by 04_ai_model_selection/train_local_ai.py, saved in 04_ai_model_selection/models/):
+  1. router        — bge-m3 embedding → MLP, 3 routes (used by 03 as its classifier)
+  2. request_type  — bge-m3 embedding → MLP, 4 request types (registration / finance /
+                     scholarship / academic_affairs)
+  3. risk          — MLP on 4 features (GPA, credits, failed courses, absence rate),
+                     trained on SYNTHETIC data only; explanation = gradient x (input -
+                     typical-student baseline), a small stand-in for shap.
+- Model registry: 04_ai_model_selection/models/registry.json (version, metrics, snapshot date, last 5
+  versions for rollback). Per-group fairness metrics are not computed yet (no real data).
+- Route A returns passthrough=true; with no OPENAI_API_KEY the General AI answer is marked
+  degraded ("general_ai" in degraded_services) instead of failing silently.

@@ -1,0 +1,32 @@
+### 02_api_backend — Workflow Steps
+
+1. Receive an HTTP request from the Web App over HTTPS (e.g. POST /api/chat).
+2. Middleware checks:
+   2.1 Authentication — verify/decode the JWT token from the header
+   2.2 Rate limiting — check the user hasn't exceeded their quota
+   2.3 CORS — check the request origin is allowed
+3. Validate the request body with a Pydantic schema (message, session_id, attachments).
+4. If a file is attached (upload), send it into the File Processing pipeline:
+   - check the real file type with python-magic
+   - convert the content to text (PDF → text, image → OCR if needed)
+5. Fetch User Context from the database/Redis:
+   - user profile
+   - recent conversation history (short-term memory)
+   - preferences
+6. Build a payload { query, extracted_file_text (marked untrusted), user_context
+   (profile, role, faculty), history, trace_id } and pass it to the AI Router / Agent
+   (in-process function call in Phase 1; HTTP/gRPC once services are split).
+7. Receive the final result from LLM Generation (answer, sources, response_type,
+   engine_used, confidence, metadata).
+8. Call the Response/Log module (07) to format the result into the Unified Response
+   Schema and to persist the conversation asynchronously (does not block step 9).
+9. Send the response to the Web App as JSON, or as an SSE stream. The API/Backend is
+   the only component that sends responses to the Web App.
+10. Follow-up questions arrive on the same endpoint (POST /api/chat) with the same
+    session_id. The backend loads the last N turns (Redis first, database as fallback)
+    via the Response/Log module and sends them to the AI Router as history.
+    (This is the Feedback Loop; the Router is never called from anywhere else.)
+11. POST /api/feedback { message_id, rating, comment } is validated and passed to the
+    Response/Log module to be stored.
+12. Handle errors: timeout from the AI service, invalid input, file too large, etc.,
+    returning an appropriate error response with status code and message.

@@ -1,0 +1,37 @@
+### 04_ai_model_selection — Workflow Steps
+
+Receives the route chosen by the AI Router/Agent (general_ai / university_rag / local_ai) and
+branches accordingly:
+
+Route A: General AI
+----------------------
+1. Receive the query (general question, writing/summarizing task, general Q&A).
+2. Choose the generation model tier based on policy (e.g. a low-cost model for simple
+   tasks, a larger model for complex ones) and record it as a hint.
+3. Do not call an LLM here. Return an Engine Result with passthrough=true, the model
+   hint, and no chunks.
+4. LLM Generation (06) makes the single LLM call for this answer.
+
+Route B: University RAG
+---------------------------
+1. Receive a query related to regulations/announcements/course info.
+2. Forward the rewritten_query from the Router to the Retrieval/Knowledge service (see
+   05_retrieval_knowledge) to search for relevant documents.
+3. Wait for document chunks + metadata (source info) to come back.
+4. Wrap the returned chunks (with metadata and untrusted=true) into an Engine Result and
+   send it to LLM Generation.
+
+Route C: Local AI Model
+----------------------------
+1. Receive a query/data that needs classification or specialized prediction
+   (e.g. dropout-risk prediction, request-type classification, sentiment analysis).
+2. Preprocess the input to match the format the model expects.
+3. Run inference with the local model (on-premise, no data leaves the system — good for
+   sensitive data).
+4. Return label, score, model_version and a short human-readable explanation of the main
+   factors as an Engine Result.
+5. LLM Generation turns the Engine Result into a natural-language answer.
+
+Once a result is available from one route (or several combined), the system merges all results
+and sends them together into the LLM Generation stage. Engines run in parallel when more than
+one is selected; each has its own timeout, and a failed engine returns error instead of raising.

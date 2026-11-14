@@ -1,0 +1,66 @@
+{
+  "router": {
+    "version": "router-2026.11.14",
+    "val_accuracy": 1.0,
+    "train_size": 53,
+    "labels": [
+      "general_ai",
+      "local_ai",
+      "university_rag"
+    ],
+    "history": [
+      {
+        "version": "router-2026.11.14",
+        "val_accuracy": 1.0,
+        "train_size": 53,
+        "labels": [
+          "general_ai",
+          "local_ai",
+          "university_rag"
+        ]
+      }
+    ]
+  },
+  "request_type": {
+    "version": "request_type-2026.11.14",
+    "val_accuracy": 0.625,
+    "train_size": 32,
+    "labels": [
+      "academic_affairs",
+      "finance",
+      "registration",
+      "scholarship"
+    ],
+    "history": [
+      {
+        "version": "request_type-2026.11.14",
+        "val_accuracy": 0.625,
+        "train_size": 32,
+        "labels": [
+          "academic_affairs",
+          "finance",
+          "registration",
+          "scholarship"
+        ]
+      }
+    ]
+  },
+  "risk": {
+    "version": "risk-2026.11.14",
+    "val_accuracy": 0.822,
+    "f1": 0.805,
+    "train_size": 1600,
+    "data": "synthetic",
+    "snapshot_date": "2026-11-14",
+    "history": [
+      {
+        "version": "risk-2026.11.14",
+        "val_accuracy": 0.822,
+        "f1": 0.805,
+        "train_size": 1600,
+        "data": "synthetic",
+        "snapshot_date": "2026-11-14"
+      }
+    ]
+  }
+}

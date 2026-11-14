@@ -1,0 +1,87 @@
+### 03_ai_router_agent — Process & Techniques (README)
+
+Overview
+--------
+This is the core "Agent Layer" of the system. It decides which AI engine should handle each
+user question — General AI, University RAG, or Local AI Model — and plans the order of work,
+while managing context across the whole conversation.
+
+Architecture
+------------
+- Designed as a "Router-based Agent", similar to an application-level Mixture-of-Experts:
+  a small/fast LLM (or a few-shot prompt) acts as an intent classifier before forwarding to the
+  right "expert", instead of sending every question to one large LLM. This saves cost and
+  improves domain accuracy.
+
+Techniques Used
+----------------
+- Function Calling / Structured Output: forces the LLM to reply as JSON with fields such as
+  { "route": "university_rag", "response_type": "answer_with_citations",
+    "confidence": 0.92, "language": "th", "rewritten_query": "...",
+    "reasoning": "..." }
+  so downstream systems can use it directly without parsing free text.
+  - rewritten_query: a standalone version of a follow-up question (resolves "it", "that
+    rule", etc. using history) — used for retrieval.
+- Rule-based fallback: if the LLM classifier's confidence is below
+  ROUTE_CONFIDENCE_MIN, tokenize the query with PyThaiNLP (engine "newmm") and match
+  keyword lists per route, e.g.
+    university_rag: "ระเบียบ", "ประกาศ", "รายวิชา", "ลงทะเบียน", "ค่าเทอม", "หลักสูตร",
+                    "regulation", "announcement", "course"
+    local_ai:       "ทำนาย", "จัดประเภท", "ความเสี่ยง", "predict", "classify"
+  Thai has no spaces between words, so matching on raw substrings or whitespace
+  splitting gives wrong results; tokenization is required.
+- Context Window Management: uses tiktoken to count tokens in the conversation history. If it
+  exceeds the limit, old messages are summarized with an LLM instead of just being dropped,
+  so important context isn't lost.
+- Multi-tool orchestration: supports questions that need more than one data source
+  (e.g. comparing an old regulation to a new one, then summarizing in English) — the agent
+  calls RAG first, then passes the result to General AI to summarize.
+
+Cost Control
+------------
+- The router uses ROUTER_MODEL (small and cheap); the large model is used only in
+  06_llm_generation.
+- Budget: at most 2 LLM calls per user question (1 router + 1 generation). The General
+  AI route is a passthrough and does not add a call (see 04_ai_model_selection).
+- Cache router decisions for identical normalized queries for a short time (e.g.
+  10 minutes in Redis).
+- History summarization (context window management) counts as an extra call; run it
+  only when MAX_CONTEXT_TOKENS is exceeded, and cache the summary per session.
+
+Design Rationale
+------------------
+Separating "decision making" (routing) from "actual processing" (generation) means:
+- new AI engines can be added/removed in the future without touching the core logic (extensible)
+- cost is controlled better (RAG isn't called for every question when it isn't needed)
+- easier debugging, since there is a clear decision log of why the system chose a given route
+
+Evaluation
+----------
+- Routing test set: at least 100 questions (Thai and English, including follow-ups,
+  ambiguous and out-of-scope questions), each labelled with the expected route and
+  response_type.
+- Metrics: overall accuracy, per-route precision/recall, confusion matrix,
+  clarify rate, decline rate.
+- Starting target: accuracy >= 0.90; no unsafe question routed to an engine.
+- Run on every change to the router prompt or keyword lists (CI evaluation gate,
+  see 08_monitoring_deployment).
+
+Things to Watch Out For
+--------------------------
+- The intent classifier can make mistakes (misroute); track accuracy metrics and log them for improvement.
+- Set a timeout for every sub-service call, so the agent doesn't hang waiting on one of them.
+
+Implementation (local, Phase 1)
+-------------------------------
+- Code: 03_ai_router_agent/router_agent.py, called in-process by 02_api_backend/main.py.
+- Classifier: instead of an external ROUTER_MODEL, step (b) uses a local PyTorch MLP on top of
+  bge-m3 sentence embeddings (04_ai_model_selection/local_ai.py, trained by 04_ai_model_selection/train_local_ai.py on
+  04_ai_model_selection/data/train_text.json). This keeps the budget at 0-1 LLM calls per question when no
+  API key is configured. The structured decision dict has the fields shown above.
+- Keyword fallback: PyThaiNLP newmm tokens matched against KEYWORDS per route.
+- Follow-ups: rewrite_query() prepends the previous user question when the new one starts
+  with "แล้ว"/"and" or contains a reference word (นี้, นั้น, it, that).
+- Context window: trim_history() drops the oldest turns above MAX_CONTEXT_TOKENS
+  (summarization is left for when an LLM key is configured).
+- Evaluation: 08_monitoring_deployment/evaluate.py + 08_monitoring_deployment/data/eval_router.json (42 questions so far;
+  grow it to >= 100 before production). Current result: accuracy 1.00 on this set.

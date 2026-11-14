@@ -1,0 +1,85 @@
+### 02_api_backend — Process & Techniques (README)
+
+Overview
+--------
+This is the Backend/API layer that acts as a gateway between the Web App and the entire AI
+system. It is responsible for authentication, request validation, file processing, and managing
+user context/history, then forwarding the work to the AI Router.
+
+Architecture
+------------
+- Built as a RESTful API with FastAPI (async), to handle many concurrent requests without
+  blocking the thread while waiting for the AI Router to respond.
+- Split into layers: Router (endpoint) → Service (business logic) → Repository (database access),
+  following separation of concerns, to keep the code easy to test and maintain.
+- Phase 1 (MVP): stages 02-07 run inside one Python process as separate modules
+  (api, router, engines, retrieval, generation, logging) that call each other as
+  functions behind clear interfaces. Phase 2 can split them into services without
+  changing those interfaces (see 08_monitoring_deployment).
+
+Techniques Used
+----------------
+- JWT-based Authentication: stateless auth, good for a system with multiple services (scales easily).
+- Redis caching: stores short-term session/context to reduce repeated database queries
+  (e.g. the last 10 messages of a conversation).
+- Async I/O: uses async def together with httpx.AsyncClient when calling the AI Router,
+  so one request doesn't block others.
+- File processing pipeline runs as a separate worker/queue (e.g. FastAPI background tasks,
+  or Celery for large/slow files), so the main API doesn't time out.
+- Structured logging (JSON logs) makes it easy to feed into the Monitoring stack
+  (see 08_monitoring_deployment).
+
+Upload Security
+---------------
+- Check the real MIME type with python-magic (never trust the file extension), and
+  enforce MAX_UPLOAD_MB and ALLOWED_UPLOAD_TYPES on the server.
+- Strip active content (macros, embedded scripts); reject encrypted/password PDFs.
+- Optionally scan files with an antivirus engine (e.g. ClamAV) before processing.
+- Text extracted from uploads is untrusted: mark it with untrusted=true so the
+  LLM Generation stage wraps it in a separate delimiter and never follows instructions
+  found inside it (prompt-injection protection).
+- Store raw files outside the web root with random names; keep only what is needed.
+
+Access Control
+--------------
+- The JWT carries user_id, role (student / staff / admin) and faculty.
+- user_context sent to the AI Router includes role and faculty, so Retrieval can filter
+  documents by access_level and faculty (see 05_retrieval_knowledge).
+- Users can only read their own sessions, files and feedback (check ownership on every
+  GET /api/sessions/{id}).
+
+Database Schema (concept)
+---------------------------
+- users(id, email, name, role, faculty, created_at)
+- conversations(id, user_id, session_id, created_at)
+- messages(id, conversation_id, role, content, sources_json, response_type,
+  engine_used, confidence, latency_ms, trace_id, created_at)
+- uploaded_files(id, user_id, filename, extracted_text, uploaded_at)
+- feedback(id, message_id, user_id, rating, comment, created_at)
+(07_response_logging writes to messages/feedback; the schema is defined only here.)
+
+Things to Watch Out For
+--------------------------
+- Sanitize/escape input before saving to the database (protect against SQL injection even with an ORM).
+- Limit uploaded file size (e.g. max 10MB) and set a timeout for file processing.
+- Use a circuit breaker/retry policy when calling the AI Router, to handle the case where it is down.
+  When a downstream component is unavailable, add its name to degraded_services[] in the
+  response instead of failing silently.
+- Keep secrets (JWT key, DB credentials) in environment variables, never hardcoded in the code.
+
+Implementation (local, Phase 1)
+-------------------------------
+- Code: 02_api_02_api_backend/main.py (FastAPI app; all stages 02-07 in one process). Each stage's
+  code lives in its own folder (02-08); shared code (config, schemas, thai_text, embedder)
+  and scripts live in 09_backend. Run with web_app_std.bat (whole system) or
+  09_09_backend/run_backend.bat (API only).
+- Local substitutions (no Docker yet): SQLite (07_response_logging/data/app.db) instead of PostgreSQL,
+  an in-memory dict instead of Redis, an in-memory per-user limiter instead of slowapi,
+  magic-byte checks instead of python-magic, and plain StreamingResponse for SSE.
+- AUTH_ENABLED=false (default) uses a demo user; the X-User-Role header switches role
+  (student / staff) to test access control. AUTH_ENABLED=true verifies a JWT from the
+  access_token cookie or the Authorization header.
+- Endpoints: POST /api/chat, POST /api/chat/stream, POST /api/upload, GET /api/history,
+  DELETE /api/history, GET /api/sessions/{id}, POST /api/feedback, GET /api/status,
+  GET /health, GET /metrics.
+- Tests: 09_backend/tests/test_api.py (python -m pytest -q).

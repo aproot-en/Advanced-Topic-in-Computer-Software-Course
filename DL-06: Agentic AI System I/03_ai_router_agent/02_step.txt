@@ -1,0 +1,31 @@
+### 03_ai_router_agent — Workflow Steps
+
+1. Receive the query + context (user profile, history, extracted file text) from the API/Backend.
+2. Understand intent:
+   - use an LLM with function-calling, or a classifier, to categorize the question, e.g.
+     "general", "university-specific", or "classification/prediction task"
+3. Select a route and a response_type based on the classification result:
+   - general questions / writing / summarizing → General AI (response_type: answer)
+   - regulations / announcements / course info → University RAG
+     (response_type: answer_with_citations)
+   - specialized classification/prediction → Local AI Model (response_type: local_task)
+   - ambiguous question, or confidence < CLARIFY_THRESHOLD → clarify
+     (generate 2-4 clarify_options; no engine call)
+   - out of scope, unsafe, or requests for other people's personal data → decline
+     (no engine call; include the staff contact)
+   - some cases may need more than one route (e.g. RAG + General AI together)
+   3.1 Decision order: (a) safety / scope check → decline;
+       (b) LLM classifier with structured output;
+       (c) if confidence < ROUTE_CONFIDENCE_MIN → rule-based Thai keyword fallback;
+       (d) if still below CLARIFY_THRESHOLD → clarify.
+4. Plan and execute:
+   - decide the order of tool/service calls needed
+   - send sub-queries to the chosen service(s) (async call)
+5. Manage context/memory:
+   - trim or summarize the conversation history if it exceeds MAX_CONTEXT_TOKENS
+   - attach relevant context to every sub-query
+6. Aggregate the results returned from every engine as a list of Engine Results
+   (engine, content, chunks, label, score, passthrough, latency_ms, error).
+7. Pass the list, plus route, response_type, confidence and history, to the
+   LLM Generation stage (06_llm_generation). For clarify/decline, pass an empty list.
+8. Log the decision (which tool was used, and why) for debugging and monitoring.
