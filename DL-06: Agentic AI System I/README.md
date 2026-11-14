@@ -7,8 +7,6 @@ A Thai/English multi-agent RAG chat assistant for university students. It answer
 and **every answer cites its source documents**. The AI parts use **Python + PyTorch** and run locally
 (no API key needed).
 
-> **Status:** Phase 1 — runs locally (Windows tested). Docker deployment is planned, not built yet.
-
 ![UniRAG web app](web_app_UniRAG.png)
 
 ----
