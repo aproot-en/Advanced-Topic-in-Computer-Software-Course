@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent II Hazard Map</title>
+  <meta name="description" content="แผนที่ภัยพิบัติและผู้ช่วยวางแผนเดินทางอย่างปลอดภัย (ProJ-7 Agent II)">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Full-screen map -->
+  <div id="map"></div>
+
+  <!-- Left menu rail (Google-Maps-like layout) -->
+  <nav id="rail">
+    <button class="rail-btn" data-panel="point" title="ข้อมูลจุด"><span>📍</span><small data-i18n="railPoint">ข้อมูลจุด</small></button>
+    <button class="rail-btn" data-panel="trip" title="วางแผนเดินทาง"><span>🧭</span><small data-i18n="railTrip">เส้นทาง</small></button>
+    <button class="rail-btn" data-panel="chat" title="ผู้ช่วย"><span>💬</span><small data-i18n="railChat">ผู้ช่วย</small></button>
+    <button class="rail-btn" data-panel="alerts" title="แจ้งเตือน"><span>⚠️</span><small data-i18n="railAlerts">แจ้งเตือน</small><b id="alert-count" class="badge hidden">0</b></button>
+  </nav>
+
+  <!-- Search box + hazard chips -->
+  <div id="top">
+    <div id="search-box">
+      <input id="search" type="text" autocomplete="off" data-i18n-placeholder="searchPlaceholder"
+             placeholder="ค้นหาสถานที่ หรือถามผู้ช่วย…" aria-label="ค้นหา">
+      <button id="search-btn" title="ค้นหา">🔍</button>
+      <button id="directions-btn" title="วางแผนเดินทาง">➜</button>
+      <ul id="suggestions" class="hidden"></ul>
+    </div>
+    <div id="chips"></div>
+  </div>
+
+  <!-- Top-right corner -->
+  <div id="top-right">
+    <button id="lang-btn" class="pill">TH | EN</button>
+  </div>
+
+  <!-- Banner shown when some data providers are down -->
+  <div id="degraded" class="hidden"></div>
+
+  <!-- Pop-up message when a new severe event appears (click = go there) -->
+  <div id="toast" class="hidden" role="alert"></div>
+
+  <!-- Layer status messages (e.g. "no rain here now", storm list, quota problems) -->
+  <div id="layer-info" class="hidden"></div>
+
+  <!-- Left side panel -->
+  <aside id="panel" class="hidden">
+    <button id="panel-close" title="ปิด">✕</button>
+
+    <section id="panel-point" class="panel-page">
+      <h2 data-i18n="pointTitle">ข้อมูลจุดที่เลือก</h2>
+      <p class="hint" data-i18n="pointHint">คลิกที่ใดก็ได้บนแผนที่เพื่อดูพยากรณ์และภัยในอีก 48 ชั่วโมง</p>
+      <div id="point-body"></div>
+    </section>
+
+    <section id="panel-trip" class="panel-page hidden">
+      <h2 data-i18n="tripTitle">วางแผนเดินทาง</h2>
+      <form id="trip-form">
+        <label><span data-i18n="origin">ต้นทาง</span><input name="origin" required maxlength="200" placeholder="เช่น กรุงเทพมหานคร"></label>
+        <label><span data-i18n="destination">ปลายทาง</span><input name="destination" required maxlength="200" placeholder="เช่น เชียงใหม่"></label>
+        <label><span data-i18n="departure">เวลาออกเดินทาง</span><input name="departure_time" type="datetime-local"></label>
+        <label><span data-i18n="mode">การเดินทาง</span>
+          <select name="travel_mode">
+            <option value="CAR">🚗 รถยนต์ / Car</option>
+            <option value="MOTORCYCLE">🏍 มอเตอร์ไซค์ / Motorcycle</option>
+            <option value="BUS">🚌 รถทัวร์ / Bus</option>
+            <option value="TRAIN">🚆 รถไฟ / Train</option>
+          </select>
+        </label>
+        <button type="submit" class="primary" data-i18n="checkSafety">ตรวจสอบความปลอดภัย</button>
+      </form>
+      <div id="trip-progress" class="hidden"></div>
+      <div id="trip-result"></div>
+    </section>
+
+    <section id="panel-chat" class="panel-page hidden">
+      <h2 data-i18n="chatTitle">ผู้ช่วยการเดินทาง</h2>
+      <div id="chat-log"></div>
+      <form id="chat-form">
+        <input id="chat-input" maxlength="2000" autocomplete="off" data-i18n-placeholder="chatPlaceholder"
+               placeholder="เช่น พรุ่งนี้เช้าจากกรุงเทพไปเชียงใหม่ปลอดภัยไหม">
+        <button class="primary">➤</button>
+      </form>
+      <div class="examples">
+        <button class="example">แผ่นดินไหวล่าสุดอยู่ที่ไหน</button>
+        <button class="example">พรุ่งนี้ฝนจะตกที่ภูเก็ตไหม</button>
+        <button class="example">พรุ่งนี้เช้าจากกรุงเทพไปเชียงใหม่ปลอดภัยไหม</button>
+        <button class="example">น้ำเข้าบ้านแล้ว ต้องทำยังไง</button>
+      </div>
+    </section>
+
+    <section id="panel-alerts" class="panel-page hidden">
+      <h2 data-i18n="myAlertsTitle">การแจ้งเตือนพื้นที่ของฉัน</h2>
+      <div id="my-areas"></div>
+      <div id="my-notifications"></div>
+      <h2 data-i18n="alertsTitle">เหตุการณ์รุนแรงล่าสุด</h2>
+      <div id="alerts-list"></div>
+    </section>
+  </aside>
+
+  <!-- Bottom-right map controls -->
+  <div id="controls">
+    <button id="locate-btn" title="ตำแหน่งของฉัน">◎</button>
+    <button id="zoomin-btn" title="ซูมเข้า">＋</button>
+    <button id="zoomout-btn" title="ซูมออก">－</button>
+    <button id="globe-btn" title="ลูกโลก / แผนที่">🌐</button>
+  </div>
+
+  <!-- Basemap switcher, bottom-left -->
+  <div id="basemaps">
+    <button data-base="streets" class="active">🗺<small data-i18n="baseStreets">แผนที่</small></button>
+    <button data-base="satellite">🛰<small data-i18n="baseSatellite">ดาวเทียม</small></button>
+    <button data-base="dark">🌙<small data-i18n="baseDark">กลางคืน</small></button>
+  </div>
+
+  <!-- Timeline (past 24 h to 72 h forecast) -->
+  <div id="timeline">
+    <button id="play-btn" title="เล่น">▶</button>
+    <input id="time-slider" type="range" min="0" max="95" value="24" aria-label="เวลา">
+    <div id="time-label">-</div>
+    <button id="now-btn" data-i18n="now">ตอนนี้</button>
+  </div>
+
+  <!-- Color legend -->
+  <div id="legend" class="hidden"></div>
+
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="layers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

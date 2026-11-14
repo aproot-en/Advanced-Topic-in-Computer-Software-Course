@@ -1,0 +1,141 @@
+/* style.css — Google-Maps-like layout (cards floating over the map) with our own design */
+:root {
+  --bg: #ffffff;
+  --text: #202124;
+  --muted: #5f6368;
+  --line: #dadce0;
+  --accent: #1a73e8;
+  --shadow: 0 2px 6px rgba(0, 0, 0, .25);
+  /* Severity colors 0-4 */
+  --sev0: #2e7d32; --sev1: #f9a825; --sev2: #ef6c00; --sev3: #c62828; --sev4: #6a1b9a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #202124; --text: #e8eaed; --muted: #9aa0a6; --line: #3c4043; }
+}
+:root[data-theme="dark"] { --bg: #202124; --text: #e8eaed; --muted: #9aa0a6; --line: #3c4043; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; font-family: "Sarabun", "Noto Sans Thai", "Segoe UI", sans-serif; color: var(--text); background: #000; }
+#map { position: absolute; inset: 0; }
+button { font: inherit; cursor: pointer; }
+.hidden { display: none !important; }
+
+/* ---------- Left menu rail ---------- */
+#rail { position: absolute; left: 0; top: 0; bottom: 0; width: 72px; background: var(--bg); box-shadow: var(--shadow);
+        display: flex; flex-direction: column; align-items: center; padding-top: 80px; gap: 6px; z-index: 5; }
+.rail-btn { position: relative; background: none; border: 0; color: var(--text); display: flex; flex-direction: column;
+            align-items: center; padding: 8px 4px; width: 64px; border-radius: 12px; }
+.rail-btn span { font-size: 20px; }
+.rail-btn small { font-size: 11px; color: var(--muted); }
+.rail-btn:hover, .rail-btn.active { background: rgba(26, 115, 232, .12); }
+.badge { position: absolute; top: 2px; right: 8px; background: var(--sev3); color: #fff; border-radius: 9px;
+         font-size: 11px; padding: 0 5px; }
+
+/* ---------- Search + chips ---------- */
+#top { position: absolute; left: 84px; top: 10px; right: 120px; z-index: 6; display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap; }
+#search-box { position: relative; display: flex; align-items: center; background: var(--bg); border-radius: 24px;
+              box-shadow: var(--shadow); width: 380px; max-width: 100%; height: 46px; padding: 0 6px 0 16px; }
+#search { flex: 1; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 15px; }
+#search-box button { border: 0; background: none; font-size: 18px; width: 38px; height: 38px; border-radius: 50%; color: var(--accent); }
+#search-box button:hover { background: rgba(0, 0, 0, .06); }
+#suggestions { position: absolute; top: 50px; left: 0; right: 0; list-style: none; margin: 0; padding: 6px 0; background: var(--bg);
+               border-radius: 12px; box-shadow: var(--shadow); max-height: 300px; overflow: auto; }
+#suggestions li { padding: 8px 16px; cursor: pointer; font-size: 14px; }
+#suggestions li:hover { background: rgba(26, 115, 232, .1); }
+#chips { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }
+.chip { border: 1px solid var(--line); background: var(--bg); color: var(--text); border-radius: 18px; height: 34px; padding: 0 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .2); font-size: 13px; white-space: nowrap; }
+.chip.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+#top-right { position: absolute; right: 12px; top: 14px; z-index: 6; }
+.pill { border: 0; background: var(--bg); color: var(--text); border-radius: 18px; height: 36px; padding: 0 14px; box-shadow: var(--shadow); }
+
+#toast { position: absolute; top: 112px; left: 50%; transform: translateX(-50%); z-index: 7; background: #b71c1c; color: #fff;
+         border-radius: 12px; padding: 10px 16px; box-shadow: var(--shadow); cursor: pointer; font-size: 14px; max-width: 90%; }
+#toast small { display: block; opacity: .9; }
+.where { font-size: 12px; color: var(--muted); }
+#layer-info { position: absolute; right: 64px; bottom: 200px; z-index: 5; background: var(--bg); color: var(--text);
+              border-radius: 10px; box-shadow: var(--shadow); padding: 8px 12px; font-size: 13px; max-width: 300px; }
+#layer-info .line { margin: 3px 0; }
+#layer-info button { border: 0; background: none; color: var(--accent); padding: 0; cursor: pointer; font-size: 13px; text-align: left; }
+#degraded { position: absolute; top: 112px; left: 50%; transform: translateX(-50%); z-index: 6; background: #fff3cd; color: #664d03;
+            border-radius: 10px; padding: 8px 14px; font-size: 13px; box-shadow: var(--shadow); max-width: 90%; }
+
+/* ---------- Left side panel ---------- */
+#panel { position: absolute; left: 84px; top: 112px; bottom: 90px; width: 400px; background: var(--bg); border-radius: 14px;
+         box-shadow: var(--shadow); z-index: 5; overflow-y: auto; padding: 16px 18px; }
+#panel h2 { margin: 0 0 8px; font-size: 18px; }
+#panel-close { position: absolute; right: 10px; top: 10px; border: 0; background: none; color: var(--muted); font-size: 16px; }
+.hint { color: var(--muted); font-size: 13px; }
+label { display: block; margin-bottom: 10px; font-size: 13px; color: var(--muted); }
+label input, label select { display: block; width: 100%; margin-top: 4px; padding: 9px 10px; border: 1px solid var(--line);
+                            border-radius: 8px; font: inherit; background: var(--bg); color: var(--text); }
+.primary { background: var(--accent); color: #fff; border: 0; border-radius: 20px; padding: 10px 18px; }
+.secondary { background: none; color: var(--accent); border: 1px solid var(--line); border-radius: 16px; padding: 6px 12px; font-size: 13px; }
+
+.action-badge { display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: 12px; color: #fff; font-size: 18px; font-weight: bold; margin: 12px 0 8px; }
+.act-NORMAL { background: var(--sev0); } .act-CHANGE_ROUTE { background: var(--sev1); color: #222; }
+.act-DELAY { background: var(--sev2); } .act-AVOID { background: var(--sev3); } .act-EMERGENCY { background: var(--sev4); }
+.meta { font-size: 13px; color: var(--muted); }
+.card { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 8px 0; font-size: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 14px; }
+.card ul { margin: 0; padding-left: 18px; }
+.sev { display: inline-block; border-radius: 10px; padding: 1px 8px; font-size: 12px; color: #fff; }
+.sev-0 { background: var(--sev0); } .sev-1 { background: var(--sev1); color: #222; } .sev-2 { background: var(--sev2); }
+.sev-3 { background: var(--sev3); } .sev-4 { background: var(--sev4); }
+.hazard-row { display: flex; justify-content: space-between; gap: 8px; padding: 6px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.route-item { cursor: pointer; } .route-item.selected { border-color: var(--accent); border-width: 2px; }
+.contacts a { display: inline-block; margin: 3px 6px 3px 0; padding: 4px 10px; border-radius: 14px; background: var(--sev3); color: #fff; text-decoration: none; font-size: 13px; }
+.buttons { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+#trip-progress { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; vertical-align: middle; margin-right: 6px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+svg.chart { width: 100%; height: 130px; }
+
+#chat-log { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.msg { padding: 8px 12px; border-radius: 12px; font-size: 14px; max-width: 92%; }
+.msg.user { align-self: flex-end; background: var(--accent); color: #fff; }
+.msg.bot { align-self: flex-start; background: rgba(127, 127, 127, .12); }
+#chat-form { display: flex; gap: 6px; }
+#chat-input { flex: 1; padding: 10px; border: 1px solid var(--line); border-radius: 20px; background: var(--bg); color: var(--text); font: inherit; }
+.examples { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.example { border: 1px solid var(--line); background: none; color: var(--text); border-radius: 14px; padding: 4px 10px; font-size: 12px; }
+.alert-item { cursor: pointer; }
+
+/* ---------- Map controls ---------- */
+#controls { position: absolute; right: 12px; bottom: 100px; z-index: 5; display: flex; flex-direction: column; gap: 8px; }
+#controls button { width: 42px; height: 42px; border-radius: 50%; border: 0; background: var(--bg); color: var(--text); box-shadow: var(--shadow); font-size: 18px; }
+#basemaps { position: absolute; left: 84px; bottom: 16px; z-index: 5; display: flex; gap: 6px; }
+#basemaps button { width: 64px; height: 60px; border-radius: 10px; border: 2px solid transparent; background: var(--bg); color: var(--text);
+                   box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 18px; }
+#basemaps button small { font-size: 11px; }
+#basemaps button.active { border-color: var(--accent); }
+
+#timeline { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 5; background: var(--bg); border-radius: 30px;
+            box-shadow: var(--shadow); display: flex; align-items: center; gap: 10px; padding: 8px 14px; width: 560px; max-width: calc(100% - 320px); }
+#timeline input { flex: 1; }
+#time-label { font-size: 13px; min-width: 150px; text-align: center; }
+#timeline button { border: 0; background: none; color: var(--accent); font-size: 14px; }
+#legend { position: absolute; right: 64px; bottom: 100px; z-index: 5; background: var(--bg); border-radius: 10px; box-shadow: var(--shadow);
+          padding: 8px 10px; font-size: 12px; }
+#legend .bar { display: flex; height: 10px; width: 180px; border-radius: 4px; overflow: hidden; margin: 4px 0; }
+#legend .bar span { flex: 1; }
+#legend .labels { display: flex; justify-content: space-between; color: var(--muted); }
+
+.maplibregl-popup-content { color: #202124; font-size: 13px; max-width: 260px; }
+
+/* ---------- Mobile: side panel becomes a bottom sheet ---------- */
+@media (max-width: 760px) {
+  #rail { top: auto; width: 100%; height: 58px; flex-direction: row; justify-content: space-around; padding: 0; bottom: 0; }
+  #top { left: 10px; right: 10px; }
+  #search-box { width: 100%; }
+  #chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+  #top-right { top: auto; bottom: 70px; left: 12px; right: auto; }
+  #panel { left: 0; right: 0; width: auto; top: auto; bottom: 58px; max-height: 55vh; border-radius: 16px 16px 0 0; }
+  #basemaps { display: none; }
+  #timeline { bottom: 68px; width: auto; max-width: none; left: 60px; right: 60px; transform: none; }
+  #time-label { min-width: 90px; font-size: 11px; }
+  #now-btn { display: none; }
+  #controls { bottom: 130px; }
+  #legend { bottom: 130px; right: 60px; }
+}
