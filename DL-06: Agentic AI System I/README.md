@@ -2,94 +2,73 @@
 
 # 06-ProJ: AI smart university assistant
 
-Design and document a complete multi-agent RAG system for a university, from the chat frontend and API gateway to AI routing across General AI / University RAG / Local AI models, retrieval, generation, logging, and deployment.
+A Thai/English multi-agent RAG chat assistant for university students. It answers questions about the
+**B.Eng. Computer Engineering curriculum (RMUTT, revised 2568)**, registration, tuition and scholarships,
+and **every answer cites its source documents**. The AI parts use **Python + PyTorch** and run locally
+(no API key needed).
+
+> **Status:** Phase 1 — runs locally (Windows tested). Docker deployment is planned, not built yet.
+
+![UniRAG web app](web_app_UniRAG.png)
 
 ----
 ## Structure
 
 ```text
-06-ProJ-Agent I/
-│
-│
-├── 01_web_app/                             # Frontend — Chat / Upload / Dashboard
-│   ├── 01_env.txt                          # Environment & requirements
-│   ├── 02_step.txt                         # Workflow steps
-│   └── 03_process.txt                      # Process & techniques
-│
-├── 02_api_backend/                         # API / Backend — FastAPI / Flask
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-├── 03_ai_router_agent/                     # AI Router / Agent — intent, routing, planning
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-├── 04_ai_model_selection/                  # General AI / University RAG / Local AI Model
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-├── 05_retrieval_knowledge/                 # BM25 + Vector DB hybrid retrieval + Knowledge Base
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-├── 06_llm_generation/                      # Context + Query → LLM answer, citations, safety
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-├── 07_response_logging/                    # Response / Log / Feedback loop
-│   ├── 01_env.txt
-│   ├── 02_step.txt
-│   └── 03_process.txt
-│
-└── 08_monitoring_deployment/                # Docker, Monitoring & Analytics, CI/CD
-    ├── 01_env.txt
-    ├── 02_step.txt
-    └── 03_process.txt
+01_web_app/                 # Frontend (Next.js) — chat UI
+02_api_backend/             # FastAPI gateway (main.py)
+03_ai_router_agent/         # Router: safety → classifier → Thai keyword fallback → clarify
+04_ai_model_selection/      # Engines + local PyTorch models (train_local_ai.py, models/)
+05_retrieval_knowledge/     # Knowledge base, ingestion, hybrid retrieval
+06_llm_generation/          # Answer, citations, safety
+07_response_logging/        # Response format, history, feedback (SQLite)
+08_monitoring_deployment/   # /metrics, evaluation gate (evaluate.py)
+09_backend/                 # Shared code, run scripts, tests, .env
+web_app_std.bat             # Start / stop the whole system
+prompt_pj.txt               # PATCH 1-8 design plan
 ```
-----
 
-## Core Recommendations
-
-The system settles on one primary response type per query:
-
-- **Answer directly** — General AI, for non-university questions
-- **Answer with citations** — University RAG, for regulations/announcements/course info
-- **Run a local task** — Local AI Model, for classification/prediction requests
-- **Ask for clarification** — when confidence is too low to answer safely
-- **Decline and refer to staff** — for out-of-scope or unsafe requests
+Each stage folder also has `01_env.txt`, `02_step.txt` and `03_process.txt` (requirements, workflow, techniques).
 
 ----
-
 ## How to Run
 
-This project is currently at the **design/documentation stage**. The `01-08` folders contain planning and process files; runnable services will be added during implementation.
+Requirements: Python 3.10+, PyTorch (CUDA optional), Node.js 20+, ~5 GB disk for the Hugging Face models.
 
-Once implemented, the complete system will be managed using **Docker Compose**. Each module runs as an independent service/container, allowing Next.js, Python, FastAPI, AI models, and databases to work together.
-
-* **`docker-compose.yml`** — builds, starts, connects, and manages all services.
-* **`Dockerfile`** — defines the runtime, dependencies, and environment for each service.
-* **`.env`** — stores API keys and environment configuration.
-* **Docker Network** — enables communication between service containers.
-* **`Makefile`** *(optional)* — provides shortcuts such as `make up`, `make down`, `make logs`, and `make rebuild`.
-
-To start the complete system:
-
+```bash
+pip install -r 09_backend/requirements.txt
+git clone https://github.com/thanasinb/CPE_RMUTT68.git 05_retrieval_knowledge/data/raw/CPE_RMUTT68
+cd 01_web_app/frontend && npm install && cd ../..
 ```
-docker compose up -d
+
+```bat
+web_app_std.bat          :: first run builds the knowledge base + trains models, then opens http://localhost:3000
+web_app_std.bat stop     :: stop the system
+09_backend\run_backend.bat test   :: tests + evaluation (stop the system first)
 ```
-Docker Compose is the main orchestrator for the complete system.
+
+**API key (optional):** open `09_backend/.env`, paste your key into
+`### OPENAI_API_KEY=...`, remove `### `, then restart. Without a key, answers are taken directly from the documents.
 
 ----
-## Summary
+## Evaluation
 
-This project presents the design of **AI Smart University Assistant**, an agentic RAG system organized into **8 stages (01–08)**. The workflow is **Web App → API/Backend → AI Router/Agent → General AI / University RAG / Local AI → Retrieval → LLM Generation → Response/Log**, with the complete system managed using **Docker** and monitored through **Monitoring & Analytics**.
+| Metric | Result | Target |
+|---|---|---|
+| Router accuracy | 1.00 | ≥ 0.90 |
+| Retrieval Recall@5 | 0.95 | ≥ 0.85 |
+| Citation accuracy | 0.98 | ≥ 0.90 |
+| Faithfulness | 0.98 | ≥ 0.85 |
 
-Each stage contains `01_env.txt`, `02_step.txt`, and `03_process.txt`, describing its **requirements, workflow, and techniques**. Supporting data includes **User Data/Context** for the backend, a **Knowledge Base** for RAG, and **Monitoring & Analytics** for system logs, feedback, and model performance.
+Test sets are still small (42 router / 23 retrieval questions), so results are optimistic.
+
+----
+## Data Sources
+
+- Curriculum: [thanasinb/CPE_RMUTT68](https://github.com/thanasinb/CPE_RMUTT68) — no license file, so the raw copy is
+  not committed (clone it as above).
+- Regulations/announcements in `kb_docs.json` are **fictional samples**; the risk model uses **synthetic** data.
+- Models: [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3), [BAAI/bge-reranker-v2-m3](https://huggingface.co/BAAI/bge-reranker-v2-m3); Thai NLP: [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp)
 
 
 
