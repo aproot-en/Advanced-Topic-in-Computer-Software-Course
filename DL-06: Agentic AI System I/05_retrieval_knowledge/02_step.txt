@@ -1,0 +1,46 @@
+### 05_retrieval_knowledge — Workflow Steps
+
+A) Ingestion Pipeline (done ahead of time / periodically)
+-------------------------------------------------------------
+1. Collect source documents from the Knowledge Base: regulations, announcements,
+   handbooks/course catalogs, internal documents.
+2. Convert files (PDF/DOCX/HTML) into raw text. Use OCR (Tesseract tha+eng) for scanned
+   PDFs; for HTML, extract only the main content (drop menus, buttons, footers,
+   cookie banners).
+3. Clean the text:
+   3.1 remove repeated headers/footers, page numbers and navigation/UI text
+   3.2 normalize Thai text (pythainlp.util.normalize), remove zero-width spaces,
+       fix floating vowels/tone marks, normalize Thai and Arabic digits consistently
+   3.3 deduplicate repeated sentences/paragraphs within a document
+   3.4 reject chunks that are mostly boilerplate (e.g. very short, or > 50% non-text)
+   Example of what must be removed: the duplicated bullet and the leftover text
+   "button on your keyboard.)" seen in web_app.png.
+4. Split the text into chunks of CHUNK_SIZE_TOKENS with CHUNK_OVERLAP_TOKENS overlap,
+   splitting on structure first (headings, regulation article numbers such as "ข้อ 5",
+   paragraphs), then on Thai sentence boundaries (pythainlp sent_tokenize) — never in
+   the middle of a word. Count tokens with the embedding model's tokenizer.
+5. Create an embedding vector for each chunk using the embedding model.
+6. Save the chunk + embedding into the Vector DB. For the BM25 index, tokenize each
+   chunk with PyThaiNLP (engine newmm), lowercase English, and remove stopwords.
+7. Store metadata with each chunk: doc_id, title, source_url, page, category,
+   published_at, effective_date, expired_date, status (active / cancelled /
+   superseded), superseded_by, access_level (public / student / staff), faculty.
+8. Schedule this pipeline to re-run whenever new documents/announcements come in.
+
+B) Retrieval Pipeline (runs in real time, per query)
+----------------------------------------------------------
+1. Receive rewritten_query and user_context (role, faculty) from the University RAG
+   route.
+2. Build a metadata filter: status = active, access_level allowed for the user's role,
+   faculty = user's faculty or "all", plus any date filter detected in the query.
+3. Semantic search: embed the query, retrieve RETRIEVAL_TOP_K chunks from the Vector DB
+   with the filter applied.
+4. Keyword search: tokenize the query with the same PyThaiNLP settings, retrieve
+   RETRIEVAL_TOP_K chunks from BM25 with the same filter.
+5. Fuse both lists with Reciprocal Rank Fusion: score = Σ 1 / (RRF_K + rank).
+6. Re-rank the fused candidates with the cross-encoder (RERANKER_MODEL) and keep the
+   top RERANK_TOP_N.
+7. If the best rerank score is below a threshold, return an empty result with
+   reason "no_relevant_document" (06 will then answer that it does not know or ask
+   to clarify).
+8. Return the chunks with metadata, ref numbers and untrusted=true.

@@ -1,0 +1,1921 @@
+[
+ {
+  "chunk_id": "PROSP-01-mixed-0",
+  "text": "รายการ — รายละเอียด\nรหัสหลักสูตร — 25401911100917\nชื่อปริญญา (ไทย) — วิศวกรรมศาสตรบัณฑิต (วิศวกรรมคอมพิวเตอร์)\nชื่อปริญญา (อังกฤษ) — Bachelor of Engineering (Computer Engineering)\nชื่อย่อ — วศ.บ. (วิศวกรรมคอมพิวเตอร์) / B.Eng. (Computer Engineering)\nจำนวนหน่วยกิต — 141 หน่วยกิต\nระยะเวลา — 4 ปี (ระบบทวิภาค)\nภาษาที่ใช้สอน — ภาษาไทยและภาษาอังกฤษ\nรูปแบบหลักสูตร — CWIE ระดับ 1 (สหกิจศึกษา)\nเปิดสอนครั้งแรก — ภาคการศึกษาที่ 1 ปีการศึกษา 2568\nสถานที่จัดการเรียนการสอน — มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี คลองหก ปทุมธานี",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-01",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 1. ข้อมูลหลักสูตร | Program Identity",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-02-mixed-0",
+  "text": "ปรัชญา: สร้างบัณฑิตทางด้านวิศวกรรมคอมพิวเตอร์ที่เป็นที่ต้องการของภาคอุตสาหกรรม พัฒนานวัตกรรมที่มีคุณค่าและยั่งยืนให้กับประเทศไทย\nวัตถุประสงค์: ผลิตบัณฑิตที่\n1. มีความรู้และทักษะด้านวิศวกรรมคอมพิวเตอร์ที่สามารถประยุกต์และบูรณาการเพื่อสร้างนวัตกรรมตอบสนองยุทธศาสตร์การพัฒนาประเทศ\n2. ตอบสนองความต้องการของอุตสาหกรรมเซมิคอนดัคเตอร์ อิเล็กทรอนิกส์อัจฉริยะ ดิจิทัล และปัญญาประดิษฐ์\n3. มีความซื่อสัตย์ จรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\n4. สามารถแสวงหาความรู้ด้วยตนเองและเรียนรู้เทคโนโลยีใหม่เพื่อแก้ปัญหาได้อย่างมีประสิทธิภาพ\n5. ทำงานเป็นทีม สื่อสาร และแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-02",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 2. ปรัชญาและวัตถุประสงค์ | Philosophy & Objectives",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-03-mixed-0",
+  "text": "ผลลัพธ์การเรียนรู้ครอบคลุม 4 ด้าน ตามกรอบมาตรฐานคุณวุฒิระดับอุดมศึกษา พ.ศ. 2565 (K = ความรู้, S = ทักษะ, E = จริยธรรม, C = ลักษณะบุคคล) และสอดคล้องกับมาตรฐาน TABEE\nPLO — ผลลัพธ์การเรียนรู้ — ด้าน — TABEE PO\nPLO1 — อธิบายและคำนวณหลักการสำคัญทางคณิตศาสตร์พื้นฐาน วิทยาศาสตร์พื้นฐาน วิศวกรรมศาสตร์พื้นฐาน และวิศวกรรมคอมพิวเตอร์พื้นฐานได้ — K — PO1\nPLO2 — ใช้ความรู้และทักษะ ในเชิงทฤษฎีและปฏิบัติ เพื่อแก้ไขปัญหาด้านวิศวกรรมคอมพิวเตอร์ได้ — K — PO3\nPLO3 — บูรณาการความรู้ในสาขาวิศวกรรมคอมพิวเตอร์เพื่อแก้ไขปัญหาให้กับอุตสาหกรรมหรือชุมชน เพื่อการพัฒนาที่ยั่งยืน — K — PO8\nPLO4 — คิดวิเคราะห์อย่างเป็นระบบ สืบค้นและทดลองเพื่อพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างเป็นขั้นตอน — S — *แยกเป็น PLO4.1–4.2*\n↳ PLO4.1 — ระบุ กำหนด และวิเคราะห์ปัญหาทางวิศวกรรมคอมพิวเตอร์อย่างเป็นระบบ โดยค้นคว้าข้อมูลที่เกี่ยวข้อง เพื่อหาแนวทางแก้ไขเบื้องต้นได้ — S — PO2\n↳ PLO4.2 — สืบค้นข้อมูลจากมาตรฐาน ฐานข้อมูล และเอกสารวิชาการ ออกแบบและดำเนินการทดลองอย่างเป็นขั้นตอน เพื่อให้ได้ข้อสรุปที่ถูกต้องและเชื่อถือได้ในการพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้ — S — PO4\nPLO5 — ใช้เครื่องมือทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างถูกต้องเหมาะสม — S — PO5\nPLO6 — อธิบายจรรยาบรรณวิชาชีพได้ มีความตรงต่อเวลา — E — PO9\nPLO7 — อธิบายและประยุกต์ใช้เทคโนโลยีทางวิศวกรรมคอมพิวเตอร์ที่ไม่เคยเรียนในหลักสูตรได้ — C — PO11\nPLO8 — ทำงานเป็นทีม วางแผนและบริหารจัดการงานที่ได้รับมอบหมาย สื่อสารความคืบหน้าและปัญหาได้ตรงประเด็น และเสนอแนวทางแก้ไขพร้อมเหตุผลรองรับได้ — C — *แยกเป็น PLO8.1–8.3*\n↳ PLO8.1 — ทำงานเป็นทีมร่วมกับผู้อื่นที่มีความหลากหลายได้อย่างมีประสิทธิภาพ — C — PO6\n↳ PLO8.2 — สื่อสารความคืบหน้าและปัญหาได้ตรงประเด็นทั้งภาษาไทยและภาษาอังกฤษ และเสนอแนวทางแก้ไขพร้อมเหตุผลรองรับได้ — C — PO7\n↳ PLO8.3 — วางแผนและบริหารจัดการงานหรือโครงการที่ได้รับมอบหมายได้ — C — PO10\nPLO ย่อย (sub-PLO): PLO4 และ PLO8 ครอบคลุม TABEE PO มากกว่า 1 ข้อ จึงแยกเป็น PLO ย่อย เพื่อให้ PLO แต่ละข้อแมปกับ TABEE PO เพียงข้อเดียว ข้อความ PLO4 และ PLO8 ยังคงเดิมตามหลักสูตร แต่การแมป CLO ทุกรายวิชาและการประเมินผลจะอ้างอิงถึง PLO ย่อยเท่านั้น (PLO4.1, PLO4.2, PLO8.1, PLO8.2, PLO8.3)\n→ ดูการแมป PLO–CLO ทุกรายวิชา: CPE_RMUTT68_PLO_CLO_Matrix.md | ดูการแมป TABEE PO–PLO: CPE_RMUTT68_TABEE_PO_Mapping.md | รายชื่อวิชาทั้งหมด: Course_Index.md | PLO เวอร์ชันเดิม: Old_PLO.md",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-03",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 3. ผลลัพธ์การเรียนรู้ระดับหลักสูตร | Program Learning Outcomes (PLOs)",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-04-mixed-0",
+  "text": "ชั้นปี — ความคาดหวัง — PLOs\nปี 1 — มีความรู้พื้นฐานทางวิทยาศาสตร์และคณิตศาสตร์ มีความรู้พื้นฐานทางวิศวกรรมศาสตร์ มีความรู้พื้นฐานในการเขียนโปรแกรม — PLO1, PLO6\nปี 2 — มีความรู้พื้นฐานทางวิศวกรรมคอมพิวเตอร์ (ฮาร์ดแวร์ ซอฟต์แวร์ ระบบเครือข่าย) มีความรู้พื้นฐานสำหรับการศึกษาปัญญาประดิษฐ์ มีทักษะการใช้เครื่องมือที่เกี่ยวข้อง — PLO1, PLO2, PLO4, PLO5, PLO6, PLO8\nปี 3 — สามารถวิเคราะห์ ออกแบบและพัฒนาระบบคอมพิวเตอร์ทั้งฮาร์ดแวร์ ซอฟต์แวร์ ระบบเครือข่าย และปัญญาประดิษฐ์ สามารถใช้เครื่องมือที่เกี่ยวข้องได้ — PLO2–PLO8\nปี 4 — สามารถใช้ความรู้และทักษะทางวิศวกรรมคอมพิวเตอร์เพื่อบูรณาการระบบคอมพิวเตอร์เพื่อการแก้ไขปัญหาในศาสตร์ต่าง ๆ — PLO3–PLO8",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-04",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 4. ความคาดหวังผลลัพธ์การเรียนรู้รายปี | Year Learning Outcomes (YLOs)",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-05-mixed-0",
+  "text": "ผู้สมัครต้องสำเร็จการศึกษาอย่างใดอย่างหนึ่ง ดังนี้\nเส้นทางปกติ (ม.6):\n- สำเร็จการศึกษามัธยมศึกษาตอนปลาย (ม.6) กลุ่มสาระคณิตศาสตร์–วิทยาศาสตร์ หรือ วิทยาศาสตร์และเทคโนโลยี หรือเทียบเท่า\n- สำเร็จการศึกษาระดับ ปวช. ประเภทวิชาช่างอุตสาหกรรม (สาขาช่างไฟฟ้ากำลัง ช่างอิเล็กทรอนิกส์ ช่างเทคนิคคอมพิวเตอร์ เมคาทรอนิกส์) หรือ ประเภทวิชาเทคโนโลยีสารสนเทศและการสื่อสาร\nเส้นทางเทียบโอน (ปวส.):\n- สำเร็จการศึกษาระดับ ปวส. ประเภทวิชาอุตสาหกรรม (สาขาไฟฟ้า อิเล็กทรอนิกส์ เทคนิคคอมพิวเตอร์ เมคาทรอนิกส์) หรือ ประเภทวิชาเทคโนโลยีสารสนเทศและสื่อสาร สามารถเทียบโอนหน่วยกิตได้ตามระเบียบมหาวิทยาลัย\nปฏิทินการศึกษา:\n- ภาคการศึกษาที่ 1: กรกฎาคม – ตุลาคม\n- ภาคการศึกษาที่ 2: พฤศจิกายน – มีนาคม\n- ภาคฤดูร้อน: เมษายน – มิถุนายน\nรับทั้งนักศึกษาไทยและนักศึกษาต่างชาติ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-05",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 5. คุณสมบัติผู้สมัคร | Admission Requirements",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-06-mixed-0",
+  "text": "หมวดวิชา — หน่วยกิต\n1. หมวดวิชาศึกษาทั่วไป — 24\n1.1 กลุ่มวิชาความเป็นพลเมืองไทยและพลเมืองโลก — 6\n1.2 กลุ่มวิชาเทคโนโลยีและการเสริมสร้างนวัตกรรม — 6\n1.3 กลุ่มวิชาภาษาเพื่อการสื่อสาร — 9\n1.4 กลุ่มวิชาส่งเสริมความเป็นผู้ประกอบการ — 3\n2. หมวดวิชาเฉพาะ — 111\n2.1 กลุ่มวิชาพื้นฐาน — 44\n2.2 กลุ่มวิชาบังคับ — 48\n2.3 กลุ่มวิชาเลือก — 12\n2.4 กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ (CWIE) — 7\n3. หมวดวิชาเลือกเสรี — 6\nรวม — 141",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-06",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 6. โครงสร้างหลักสูตร | Curriculum Structure",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-08-mixed-0",
+  "text": "แผนการเรียน ปี 1 เทอม 1 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n01-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาภาษาเพื่อการสื่อสาร (1) — 3(x-x)\n04-411-101 — การฝึกพื้นฐานทางวิศวกรรม / Basic Engineering Training — 3(1-6)\n04-621-101 — การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming — 3(2-3)\n04-711-101 — เคมีสำหรับวิศวกร / Chemistry for Engineers — 3(3-0)\n09-111-141 — แคลคูลัสสำหรับวิศวกร 1 / Calculus for Engineers 1 — 3(3-0)\n09-410-141 — ฟิสิกส์สำหรับวิศวกร 1 / Physics for Engineers 1 — 3(3-0)\n09-410-142 — ปฏิบัติการฟิสิกส์สำหรับวิศวกร 1 / Physics Laboratory for Engineers 1 — 1(0-3)\nรวม — 19",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-08",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 1 / ภาคการศึกษาที่ 1 — 19 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-09-mixed-0",
+  "text": "แผนการเรียน ปี 1 เทอม 2 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n01-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาภาษาเพื่อการสื่อสาร (2) — 3(x-x)\n04-313-101 — กลศาสตร์วิศวกรรม / Engineering Mechanics — 3(3-0)\n04-411-102 — เขียนแบบวิศวกรรม / Engineering Drawing — 3(2-3)\n04-720-101 — วัสดุวิศวกรรม / Engineering Materials — 3(3-0)\n09-111-142 — แคลคูลัสสำหรับวิศวกร 2 / Calculus for Engineers 2 — 3(3-0)\nxx-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาความเป็นพลเมืองไทยและพลเมืองโลก (1) — 3(x-x)\nxx-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาเทคโนโลยีและการเสริมสร้างนวัตกรรม (1) — 3(x-x)\nรวม — 21\nYLO ชั้นปีที่ 1: มีความรู้พื้นฐานทางวิทยาศาสตร์และคณิตศาสตร์ มีความรู้พื้นฐานทางวิศวกรรมศาสตร์ มีความรู้พื้นฐานในการเขียนโปรแกรม",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-09",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 1 / ภาคการศึกษาที่ 2 — 21 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-10-mixed-0",
+  "text": "แผนการเรียน ปี 2 เทอม 1 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n01-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาภาษาเพื่อการสื่อสาร (3) — 3(x-x)\n04-620-201 — ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory — 1(0-3)\n04-620-202 — ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory — 1(0-3)\n04-621-201 — วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering — 3(2-3)\n04-621-203 — การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design — 3(2-3)\n04-622-201 — โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms — 3(2-3)\n04-623-201 — การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking — 3(3-0)\n04-624-201 — ทฤษฎีการคำนวณ / Theory of Computation — 3(3-0)\nรวม — 20",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-10",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 2 / ภาคการศึกษาที่ 1 — 20 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-11-mixed-0",
+  "text": "แผนการเรียน ปี 2 เทอม 2 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n04-621-202 — วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering — 3(2-3)\n04-621-204 — ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing — 3(2-3)\n04-622-202 — ระบบฐานข้อมูล / Database System — 3(2-3)\n04-622-203 — การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming — 3(2-3)\n04-623-202 — ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks — 3(3-0)\n04-xxx-xxx — หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (1) — 3(x-x)\nxx-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาเทคโนโลยีและการเสริมสร้างนวัตกรรม (2) — 3(x-x)\nรวม — 21\nYLO ชั้นปีที่ 2: มีความรู้พื้นฐานทางวิศวกรรมคอมพิวเตอร์ (ฮาร์ดแวร์ ซอฟต์แวร์ ระบบเครือข่าย) มีความรู้พื้นฐานสำหรับการศึกษาปัญญาประดิษฐ์ มีทักษะการใช้เครื่องมือที่เกี่ยวข้อง",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-11",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 2 / ภาคการศึกษาที่ 2 — 21 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-12-mixed-0",
+  "text": "แผนการเรียน ปี 3 เทอม 1 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n04-620-301 — สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering — 1(0-3)\n04-621-301 — องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture — 3(3-0)\n04-621-302 — อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things — 3(2-3)\n04-622-301 — การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development — 3(2-3)\n04-623-301 — ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory — 1(0-3)\n04-xxx-xxx — หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (2) — 3(x-x)\n09-122-103 — สถิติทั่วไป / General Statistics — 3(3-0)\nxx-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาความเป็นพลเมืองไทยและพลเมืองโลก (2) — 3(x-x)\nรวม — 20",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-12",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 3 / ภาคการศึกษาที่ 1 — 20 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-13-mixed-0",
+  "text": "แผนการเรียน ปี 3 เทอม 2 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n04-000-301 — การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ — 1(0-2)\n04-620-302 — ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory — 2(0-6)\n04-620-303 — การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project — 1(0-3)\n04-621-303 — ระบบปฏิบัติการ / Operating Systems — 3(3-0)\n04-622-302 — วิศวกรรมซอฟต์แวร์ / Software Engineering — 3(2-3)\n04-622-303 — การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry — 3(2-3)\n04-624-301 — การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision — 3(2-3)\n04-xxx-xxx — หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (3) — 3(x-x)\nรวม — 19\nYLO ชั้นปีที่ 3: สามารถวิเคราะห์ ออกแบบและพัฒนาระบบคอมพิวเตอร์ทั้งฮาร์ดแวร์ ซอฟต์แวร์ ระบบเครือข่าย และปัญญาประดิษฐ์ สามารถใช้เครื่องมือที่เกี่ยวข้องได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-13",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 3 / ภาคการศึกษาที่ 2 — 19 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-14-mixed-0",
+  "text": "แผนการเรียน ปี 4 เทอม 1 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n04-000-401 — สหกิจศึกษา / Cooperative Education — 6(0-40)",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-14",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 4 / ภาคการศึกษาที่ 1 — 6 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-15-mixed-0",
+  "text": "แผนการเรียน ปี 4 เทอม 2 ต้องเรียนวิชาต่อไปนี้\nรหัส — ชื่อวิชา — หน่วยกิต\n04-620-401 — โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project — 3(1-6)\n04-xxx-xxx — หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (4) — 3(x-x)\nxx-xxx-xxx — หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาส่งเสริมความเป็นผู้ประกอบการ — 3(x-x)\nxx-xxx-xxx — หมวดวิชาเลือกเสรี (1) — 3(x-x)\nxx-xxx-xxx — หมวดวิชาเลือกเสรี (2) — 3(x-x)\nรวม — 15\nYLO ชั้นปีที่ 4: สามารถใช้ความรู้และทักษะทางวิศวกรรมคอมพิวเตอร์เพื่อบูรณาการระบบคอมพิวเตอร์เพื่อการแก้ไขปัญหาในศาสตร์ต่าง ๆ\nรวมตลอดหลักสูตร: 141 หน่วยกิต",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-15",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 7. แผนการศึกษาเสนอแนะ | Recommended Study Plan — ชั้นปีที่ 4 / ภาคการศึกษาที่ 2 — 15 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-16-mixed-0",
+  "text": "→ ดูรายชื่อวิชาทั้งหมดพร้อมหน่วยกิตและชั้นปี/ภาคการศึกษา: Course_Index.md",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-16",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 8. รายวิชาหลัก | Core Courses",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-17-mixed-0",
+  "text": "พื้นฐานคณิตศาสตร์และวิทยาศาสตร์:\nรหัส — ชื่อวิชา — หน่วยกิต\n09-111-141 — แคลคูลัสสำหรับวิศวกร 1 / Calculus for Engineers 1 — 3(3-0)\n09-111-142 — แคลคูลัสสำหรับวิศวกร 2 / Calculus for Engineers 2 — 3(3-0)\n09-122-103 — สถิติทั่วไป / General Statistics — 3(3-0)\n09-410-141 — ฟิสิกส์สำหรับวิศวกร 1 / Physics for Engineers 1 — 3(3-0)\n09-410-142 — ปฏิบัติการฟิสิกส์สำหรับวิศวกร 1 / Physics Laboratory for Engineers 1 — 1(0-3)\n04-711-101 — เคมีสำหรับวิศวกร / Chemistry for Engineers — 3(3-0)\n04-720-101 — วัสดุวิศวกรรม / Engineering Materials — 3(3-0)\nพื้นฐานทางวิศวกรรม:\n04-313-101 — กลศาสตร์วิศวกรรม / Engineering Mechanics — 3(3-0)\n04-411-101 — การฝึกพื้นฐานทางวิศวกรรม / Basic Engineering Training — 3(1-6)\n04-411-102 — เขียนแบบวิศวกรรม / Engineering Drawing — 3(2-3)\nพื้นฐานทางวิศวกรรมคอมพิวเตอร์:\n04-621-101 — การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming — 3(2-3)\n04-621-201 — วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering — 3(2-3)\n04-621-202 — วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering — 3(2-3)\n04-621-203 — การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design — 3(2-3)\n04-621-204 — ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing — 3(2-3)\n04-622-201 — โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms — 3(2-3)\n04-622-202 — ระบบฐานข้อมูล / Database System — 3(2-3)\n04-623-201 — การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking — 3(3-0)\n04-624-201 — ทฤษฎีการคำนวณ / Theory of Computation — 3(3-0)\n04-620-201 — ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory — 1(0-3)\n04-620-202 — ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory — 1(0-3)",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-17",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 8. รายวิชาหลัก | Core Courses — 8.1 กลุ่มวิชาพื้นฐาน (Foundation) — 44 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-18-mixed-0",
+  "text": "กลุ่มฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์:\nรหัส — ชื่อวิชา — หน่วยกิต\n04-621-301 — องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture — 3(3-0)\n04-621-302 — อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things — 3(2-3)\nกลุ่มเทคโนโลยีและวิธีการทางซอฟต์แวร์:\n04-622-203 — การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming — 3(2-3)\n04-622-301 — การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development — 3(2-3)\n04-622-302 — วิศวกรรมซอฟต์แวร์ / Software Engineering — 3(2-3)\n04-622-303 — การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry — 3(2-3)\nกลุ่มเทคโนโลยีและวิธีการทางระบบเครือข่าย:\n04-623-202 — ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks — 3(2-3)\n04-621-303 — ระบบปฏิบัติการ / Operating Systems — 3(3-0)\n04-623-301 — ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory — 1(0-3)\nกลุ่มคณิตศาสตร์และวิธีการทางปัญญาประดิษฐ์:\n04-624-301 — การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision — 3(2-3)\nกลุ่มวิชาบูรณาการทางวิศวกรรม:\n04-620-301 — สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering — 1(0-3)\n04-620-302 — ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory — 2(0-6)\n04-620-303 — การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project — 1(0-3)\n04-620-401 — โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project — 3(1-6)",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-18",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 8. รายวิชาหลัก | Core Courses — 8.2 กลุ่มวิชาบังคับ (Core) — 48 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-19-mixed-0",
+  "text": "นักศึกษาเลือกจาก 4 กลุ่มความเชี่ยวชาญ (อย่างน้อย 2 กลุ่ม):\nกลุ่ม — ตัวอย่างรายวิชา\nฮาร์ดแวร์และสถาปัตยกรรม — ระบบสมองกลฝังตัว, การออกแบบระบบดิจิทัลและการทวนสอบ, สถาปัตยกรรมคอมพิวเตอร์ขั้นสูง, การออกแบบวงจรรวมดิจิทัล, ระบบปฏิบัติการแบบทันกาล, อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม\nเทคโนโลยีและวิธีการทางซอฟต์แวร์ — การพัฒนาเว็บเต็มรูปแบบขั้นสูง, ระบบฐานข้อมูลขั้นสูง, การทดสอบซอฟต์แวร์, กระบวนการพัฒนาซอฟต์แวร์, การโปรแกรมเกม, การเขียนโปรแกรมบนระบบยูนิกซ์\nเทคโนโลยีและวิธีการทางระบบเครือข่าย — ความปลอดภัยไซเบอร์, ความมั่นคงในระบบเครือข่าย, เครือข่ายเซ็นเซอร์ไร้สาย, LAN และ WAN เบื้องต้น\nเทคโนโลยีและวิธีการทางปัญญาประดิษฐ์ — การเรียนรู้ของเครื่อง, การเรียนรู้เชิงลึก, ข้อมูลขนาดใหญ่, วิศวกรรมข้อมูล, TinyML และ Edge Computing, การรู้จำเสียงพูด",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-19",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 8. รายวิชาหลัก | Core Courses — 8.3 กลุ่มวิชาเลือก (Electives) — 12 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-20-mixed-0",
+  "text": "นักศึกษาต้องผ่านการเตรียมความพร้อม (1 หน่วยกิต) และเลือกรูปแบบการฝึกประสบการณ์ (6 หน่วยกิต) อย่างใดอย่างหนึ่ง:\nรูปแบบ — ระยะเวลา — หน่วยกิต\nสหกิจศึกษา (Cooperative Education) — ≥ 16 สัปดาห์ (1 ภาคการศึกษา) — 6\nสหกิจศึกษาต่างประเทศ — ≥ 16 สัปดาห์ — 6\nฝึกงาน (Apprenticeship) — ≥ 8 สัปดาห์ — 3\nฝึกงานต่างประเทศ — ≥ 8 สัปดาห์ — 3\nหมายเหตุ: นักศึกษาต้องผ่านการทดสอบสมรรถนะก่อนเข้าโครงการสหกิจศึกษา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-20",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 8. รายวิชาหลัก | Core Courses — 8.4 กลุ่มเสริมสร้างประสบการณ์วิชาชีพ (CWIE) — 7 หน่วยกิต",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-21-mixed-0",
+  "text": "1. วิศวกรคอมพิวเตอร์\n2. นักวิเคราะห์และออกแบบระบบคอมพิวเตอร์\n3. วิศวกรฮาร์ดแวร์ / ระบบประมวลผล / อินเตอร์เน็ตของสรรพสิ่ง\n4. นักพัฒนาซอฟต์แวร์ / วิศวกรซอฟต์แวร์\n5. วิศวกรระบบเครือข่าย\n6. บุคลากรในสถานศึกษาทั้งภาครัฐและเอกชน / ผู้ช่วยนักวิจัย\n7. ประกอบอาชีพส่วนตัว / ผู้ประกอบการด้านเทคโนโลยี\n8. อาชีพอื่น ๆ ที่เกี่ยวข้องกับอุตสาหกรรมดิจิทัล เซมิคอนดัคเตอร์ และปัญญาประดิษฐ์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-21",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 9. อาชีพที่สามารถประกอบได้ | Career Opportunities",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-22-mixed-0",
+  "text": "นักศึกษาต้องมีคุณสมบัติครบถ้วน ดังนี้\n1. หน่วยกิต: เรียนครบ 141 หน่วยกิต และผ่านทุกรายวิชาที่กำหนดในหลักสูตร\n2. เกรดเฉลี่ย: มีแต้มระดับคะแนนเฉลี่ยสะสม (GPA) ตลอดหลักสูตร ไม่ต่ำกว่า 2.00\n3. ระยะเวลา: ศึกษาภายในระยะเวลาที่กำหนดตามเกณฑ์มาตรฐานหลักสูตรระดับปริญญาตรี พ.ศ. 2565\n4. หนี้สิน: ไม่มีพันธะด้านหนี้สินใด ๆ กับมหาวิทยาลัย\n5. คุณสมบัติอื่น: เป็นไปตามข้อบังคับมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ว่าด้วยการศึกษาระดับปริญญาตรี พ.ศ. 2550 และฉบับเพิ่มเติม",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-22",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 10. เกณฑ์การสำเร็จการศึกษา | Graduation Requirements",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-23-mixed-0",
+  "text": "- ห้องบรรยาย 4 ห้อง (ภาควิชา) + 26 ห้อง (อาคารเรียนรวม) + 8 ห้อง (อาคารเฉลิมพระเกียรติ)\n- ห้องปฏิบัติการ 9 ห้อง\n- ห้องสมุดคณะวิศวกรรมศาสตร์\n- อาจารย์ประจำหลักสูตร 15 คน (มีคุณวุฒิปริญญาเอกไม่น้อยกว่าร้อยละ 40 ดำรงตำแหน่งทางวิชาการไม่น้อยกว่าร้อยละ 80)\n- อาจารย์พิเศษจากภาคอุตสาหกรรม (นักวิจัย NECTEC, IT Security Manager จากบริษัทเอกชน)",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-23",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 11. สิ่งสนับสนุนการเรียนรู้ | Learning Resources",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "PROSP-24-mixed-0",
+  "text": "มาตรฐาน — รายละเอียด\nAUN-QA — ASEAN University Network Quality Assurance — ผลลัพธ์การเรียนรู้ครอบคลุม 4 ด้าน (K-S-E-C) พร้อม Curriculum Mapping\nTABEE — Thailand Accreditation Board for Engineering Education — PLO สอดคล้องกับ Student Outcomes ด้านความรู้วิศวกรรม การวิเคราะห์ปัญหา จริยธรรม และการทำงานเป็นทีม\nTQF — กรอบมาตรฐานคุณวุฒิระดับอุดมศึกษา พ.ศ. 2565\nCWIE — หลักสูตรสหกิจศึกษาและการศึกษาเชิงบูรณาการกับการทำงาน ระดับ 1\n*เอกสารนี้จัดทำจากรายละเอียดหลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ (หลักสูตรปรับปรุง พ.ศ. 2568) ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี*",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "PROSP-24",
+   "title": "หลักสูตร วศ.บ. วิศวกรรมคอมพิวเตอร์ มทร.ธัญบุรี (ปรับปรุง 2568) — 12. มาตรฐานที่หลักสูตรรับรอง | Accreditation Standards",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/CPE_RMUTT68_Prospectus.md",
+   "page": null,
+   "category": "handbook",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-301-mixed-0",
+  "text": "รหัสวิชา 04-620-301 สัมมนาทางวิศวกรรมคอมพิวเตอร์ (Seminar in Computer Engineering) หน่วยกิต 1(0-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nการนำเสนอและอภิปรายหัวข้อหรืออาชีพที่น่าสนใจทางวิศวกรรมคอมพิวเตอร์ / Presentation and discussion of interesting topics or careers in computer engineering / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: สามารถประยุกต์ใช้ความรู้และหลักการเบื้องต้นทางด้านวิศวกรรมคอมพิวเตอร์เพื่อแก้ไขปัญหาตามตำแหน่งงานที่กำหนดได้\nCLO2: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO3: สามารถปรับตัวและแก้ไขสถานการณ์ต่าง ๆ เพื่อให้การทำงานประสบความสำเร็จ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-301",
+   "title": "รายวิชา 04-620-301 สัมมนาทางวิศวกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_620_301_Seminar_in_Computer_Engineering.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-302-mixed-0",
+  "text": "รหัสวิชา 04-620-302 ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ (Computer System Integration Laboratory) หน่วยกิต 2(0-6)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nปฏิบัติการการบูรณาการระบบฮาร์ดแวร์และซอฟต์แวร์ การออกแบบอินเตอร์เฟซระบบปฏิบัติการ อันตรกิริยาฮาร์ดแวร์-ซอฟต์แวร์ การออกแบบวงจรฮาร์ดแวร์ การเขียนโปรแกรมสื่อสารระหว่างอุปกรณ์กับเซิร์ฟเวอร์และฐานข้อมูล การแสดงผลข้อมูล การใช้ปัญญาประดิษฐ์ช่วยในการพัฒนาระบบคอมพิวเตอร์ / Practice in integrating hardware and software systems; designing the interface of an operating system; hardware-software interaction; hardware circuit design; programming communication between devices, servers and database; data visualization; AI-assisted computer system development\nCLO1: สามารถประยุกต์ใช้หลักการและความรู้พื้นฐานทางวิศวกรรมคอมพิวเตอร์ในการปฏิบัติจริงเพื่อออกแบบและพัฒนาระบบคอมพิวเตอร์ได้\nCLO2: สามารถบูรณาการระบบคอมพิวเตอร์กับศาสตร์อื่นรวมถึงตรวจสอบและปรับปรุงการทำงานได้\nCLO3: สามารถวิเคราะห์ปัญหาที่เกิดขึ้นจากการทำงานของระบบคอมพิวเตอร์บูรณาการและใช้กระบวนการคิดอย่างเป็นระบบในการแก้ไขปัญหาและหาวิธีปรับปรุงประสิทธิภาพของระบบ\nCLO4: สามารถใช้เครื่องมือและอุปกรณ์ทางวิศวกรรมคอมพิวเตอร์ในการ ตรวจสอบ วิเคราะห์และแก้ปัญหาระบบคอมพิวเตอร์บูรณาการได้อย่างเหมาะสมและมีประสิทธิภาพ\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO6: สามารถทำงานร่วมกับผู้อื่นได้อย่างมีประสิทธิภาพ สื่อสารอย่างสร้างสรรค์ และมีส่วนร่วมในการแก้ไขปัญหาภายในทีม ทั้งในด้านเทคนิคและการบริหารจัดการ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-302",
+   "title": "รายวิชา 04-620-302 ปฏิบัติการบูรณาการระบบคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_620_302_Computer_System_Integration_Laboratory.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-303-mixed-0",
+  "text": "รหัสวิชา 04-620-303 การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ (Computer Engineering Pre-Project) หน่วยกิต 1(0-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nวิธีดำเนินงานโครงงานทางวิศวกรรมคอมพิวเตอร์ การเลือกและศึกษาความเป็นไปได้ของข้อเสนอโครงงาน การศึกษาความเป็นมาของปัญหา การกำหนดวัตถุประสงค์และขอบเขต การวางแผนโครงงาน วัสดุและอุปกรณ์ที่ต้องการ การรายงานความคืบหน้า การนำเสนอหัวข้อโครงงาน / Project methodologies of a project in the field of Computer Engineering; selecting and feasible study of project proposal; problem background study; defining objectives and scopes; project planning; required materials and equipment; progress report; proposal presentation\nCLO1: สามารถวิเคราะห์และออกแบบระบบทางวิศวกรรมคอมพิวเตอร์ตามโจทย์ที่ตนสนใจได้\nCLO2: สามารถอธิบายปัญหาในศาสตร์อื่นเพื่อนำมาแก้ปัญหาโดยใช้ระบบทางวิศวกรรมคอมพิวเตอร์ได้\nCLO3: สามารถวิเคราะห์ความต้องการของระบบทางวิศวกรรมคอมพิวเตอร์ และวางแผนการดำเนินงานโครงการวิศวกรรมคอมพิวเตอร์ตามโจทย์ที่ตนสนใจได้\nCLO4: นำเสนอรายงานความคืบหน้าและหลักการแก้ไขปัญหาของงานกับอาจารย์ที่ปรึกษาโครงงานอย่างสม่ำเสมอ\nCLO5: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ทางด้านวิศวกรรมคอมพิวเตอร์ได้\nCLO6: สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-303",
+   "title": "รายวิชา 04-620-303 การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_620_303_Computer_Engineering_Pre-Project.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-401-mixed-0",
+  "text": "รหัสวิชา 04-620-401 โครงงานวิศวกรรมคอมพิวเตอร์ (Computer Engineering Project) หน่วยกิต 3(1-6)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 4 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): 04-620-303 การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ (Computer Engineering Pre-Project)\nการทำโครงงานหรืองานวิจัยที่ได้รับอนุมัติ การรายงานความคืบหน้า การนำเสนอผลการดำเนินงาน การจัดทำรายงานโครงงานวิศวกรรมคอมพิวเตอร์ฉบับสมบูรณ์หรือบทความทางวิชาการหรือวารสารทางวิชาการ / Implementation of improved project; progress report; project examination; presentation of completed project; submitting Computer Engineering project report or academic proceeding or academic journal\nCLO1: สามารถส่งผลงานของโครงงานหรือผลงานวิจัยและปริญญานิพนธ์ฉบับสมบูรณ์หรือบทความทางวิชาการหรือวารสารทางวิชาการ\nCLO2: สามารถวิเคราะห์และออกแบบระบบทางวิศวกรรมคอมพิวเตอร์ตามโจทย์ที่กำหนดได้\nCLO3: สามารถใช้เครื่องมือที่เกี่ยวข้องได้อย่างถูกต้องและปลอดภัย\nCLO4: นำเสนอรายงานความคืบหน้าของงานอย่างสม่ำเสมอ\nCLO5: สามารถศึกษาเทคโนโลยีใหม่ ๆ เพื่อให้โครงงานประสบความสำเร็จ\nCLO6: สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-401",
+   "title": "รายวิชา 04-620-401 โครงงานวิศวกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_620_401_Computer_Engineering_Project.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-301-mixed-0",
+  "text": "รหัสวิชา 04-621-301 องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ (Computer Organization and Architecture) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ (Digital Circuit and Logic Design)\nวิวัฒนาการและการเพิ่มประสิทธิภาพของคอมพิวเตอร์ โครงสร้าง หน้าที่และการเชื่อต่อระหว่างกัน ลำดับชั้นของหน่วยความจำ หน่วยความจำแคช หน่วยความจำเสมือน หน่วยจัดเก็บข้อมูล หน่วยนำข้อมูลและส่งข้อมูลออก การสนับสนุนของระบบปฏิบัติการ กระบวนการ อินเตอร์รัพท์ การเรียกระบบ ชุดคำสั่ง โครงสร้างและหน้าที่ของตัวประมวลผล สถาปัตยกรรมชุดคำสั่งแบบซับซ้อนและแบบลดทอนคำสั่ง ไปป์ไลน์ ตัวประมวลผลแบบซุปเปอร์สเกลลาร์ คอมพิวเตอร์หลายแกนประมวลผล / Computer evolution and performance; computer structure; function and interconnection; memory hierarchy; cache memory; virtual memory; storage; input/output; operating system support; process; interrupt; system call; instruction set; processor structure and function; RISC vs CISC; pipelining; super-scalar processors\nCLO1: อธิบายความหมายขององค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ได้\nCLO2: ประยุกต์ใช้องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์สำหรับเป็นแนวทางในการออกแบบระบบคอมพิวเตอร์ได้อย่างเหมาะสม\nCLO3: อธิบายวิธีการแก้ปัญหาขององค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ได้\nCLO4: ใช้สารสนเทศเพื่อการสืบค้นข้อมูลทางด้านองค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ได้อย่างเหมาะสม",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-301",
+   "title": "รายวิชา 04-621-301 องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_621_301_Computer_Organization_and_Architecture.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-302-mixed-0",
+  "text": "รหัสวิชา 04-621-302 อินเตอร์เน็ตของสรรพสิ่ง (Internet of Things) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-621-204 ไมโครคอนโทรลเลอร์และการเชื่อมต่อ (Microcontroller and Interfacing)\nหลักการอินเทอร์เน็ตของสรรพสิ่ง สถาปัตยกรรม การเชื่อมประสานเซ็นเซอร์และอุปกรณ์ โปรโตคอลและการเชื่อมต่อเครือข่ายเช่น เอ็มคิวทีที และ ซีโอเอพี การสื่อสารกับระบบคลาวด์ การวิเคราะห์และการแสดงผลข้อมูล ความปลอดภัยและความเป็นส่วนตัว / Internet of Things (IoT) concept; IoT architecture; sensors and devices interfacing; IoT protocols and network connectivity, such as, MQTT and CoAP; cloud system communication; IoT data analytics and visualization; IoT security and privacy\nCLO1: อธิบายและประยุกต์ใช้หลักการ สถาปัตยกรรม การเชื่อมต่อและโปรโตคอลที่เกี่ยวข้องกับอุปกรณ์และระบบอินเตอร์เน็ตของสรรพสิ่งได้\nCLO2: สามารถออกแบบและพัฒนาระบบอินเตอร์เน็ตของสรรพสิ่งเพื่อใช้งานในศาสตร์อื่นได้\nCLO3: สามารถวิเคราะห์ความต้องการข้อจำกัดและสถาปัตยกรรมของระบบอินเตอร์เน็ตของสรรพสิ่งได้\nCLO4: สามารถใช้เครื่องมือทางอิเล็กทรอนิกส์และซอฟต์แวร์พัฒนาระบบอินเตอร์เน็ตของสรรพสิ่งได้\nCLO5: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ สำหรับการพัฒนาระบบอินเตอร์เน็ตของสรรพสิ่งได้\nCLO6: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-302",
+   "title": "รายวิชา 04-621-302 อินเตอร์เน็ตของสรรพสิ่ง",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_621_302_Internet_of_Things.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-303-mixed-0",
+  "text": "รหัสวิชา 04-621-303 ระบบปฏิบัติการ (Operating Systems) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nหลักการและแนวคิดที่ใช้ในการออกแบบระบบปฏิบัติการสมัยใหม่ โพรเซสโมเดลของการประมวลผล การไม่เกิดร่วม การทำงานร่วมกันของโพรเซส เซมาฟอร์ การส่งผ่านข้อความและมอนิเตอร์ การตรวจจับการติดตายของโพรเซสและการป้องกัน การจัดการทรัพยากร การจัดตารางทำงานของโพรเซสเซอร์ การบริหารหน่วยความจำการจัดการหน่วยความจำสำรอง สถาปัตยกรรมของระบบปฏิบัติการ ทิศทางการออกแบบระบบปฏิบัติการในอนาคต / Principles and concepts governing modern operating system designs; process model of computation; mutual exclusion; process synchronization; semaphores; message passing and monitors; process deadlock detection and prevention; resource management; processor scheduling; memory management; management of secondary storage devices; operating system architectures; future trends in operating system design\nCLO1: สามารถอธิบายหลักการพื้นฐานของระบบปฏิบัติการ รวมถึงการจัดการทรัพยากร การทำงานของตัวจัดการหน่วยความจำ ตัวจัดการกระบวนการ และการทำงานของระบบไฟล์ และสามารถคำนวณหาประสิทธิภาพของการทำงานในสถานการณ์ต่าง ๆ ได้\nCLO2: สามารถใช้เครื่องมือและซอฟต์แวร์ที่เกี่ยวข้องกับระบบปฏิบัติการอย่างถูกต้อง เพื่อทำการติดตั้ง ทดสอบ และวิเคราะห์การทำงานในสถานการณ์จริงได้\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-303",
+   "title": "รายวิชา 04-621-303 ระบบปฏิบัติการ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_621_303_Operating_Systems.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-203-mixed-0",
+  "text": "รหัสวิชา 04-622-203 การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 2 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nหลักการเขียนโปรแกรมเชิงวัตถุ คลาส วัตถุเชิงซอฟต์แวร์ เมธอด การส่งผ่านค่าพารามิเตอร์ การห่อหุ้มข้อมูล การซ่อนข้อมูล การสืบทอดคลาส ภาวะหลายรูปแบบ การจัดการข้อผิดพลาดของโปรแกรม เธรด องค์ประกอบและคุณลักษณะเฉพาะ เช่น ชนิดข้อมูล ตัวปฏิบัติการ โครงสร้างการควบคุม ของภาษาคอมพิวเตอร์ที่ถูกออกแบบโดยเฉพาะเพื่อการเขียนโปรแกรมเชิงวัตถุ เช่น ภาษาจาวา / Object-oriented programming concepts; objects; classes; methods; parameter passing; encapsulation; information hiding; inheritance; polymorphism; exception handling; thread; elements and characteristics, e.g. data types, operators; control structures of a computer language specifically designed for object-oriented programming such as Java language\nCLO1: แยกแยะและเปรียบเทียบองค์ประกอบของวัตถุความเป็นจริงและวัตถุเสมือนได้\nCLO2: พัฒนาส่วนของโปรแกรมที่ได้รับมอบหมายและนำมาประกอบรวมกันเพื่อให้ได้งานที่สมบูรณ์ได้\nCLO3: แก้ปัญหาโจทย์ธรรมชาติและจัดเตรียมให้อยู่ในรูปแบบคลาสได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-203",
+   "title": "รายวิชา 04-622-203 การเขียนโปรแกรมเชิงวัตถุ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_622_203_Object-Oriented_Programming.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-301-mixed-0",
+  "text": "รหัสวิชา 04-622-301 การพัฒนาเว็บเต็มรูปแบบ (Full-stack Web Development) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-622-202 ระบบฐานข้อมูล (Database System)\nการออกแบบและการสร้างเว็บไซต์และแอพพลิเคชั่น การพัฒนาส่วนหน้าและการพัฒนาส่วนหลัง กระบวนการพัฒนาเว็บไซต์และแอพพลิเคชั่น การพัฒนาและการบำรุงรักษาบริการเว็บและอินเทอร์เฟซ / Design and create websites and applications; basic front-end and back-end development; website and application development process; developing and maintaining web services and interfaces\nCLO1: สามารถพัฒนาเว็บแอปพลิเคชันในส่วนด้านหน้าและด้านหลัง\nCLO2: สามารถออกแบบ, วางแผน, ติดตั้ง, ควบคุมและดูแลรักษาระบบฐานข้อมูล\nCLO3: มีทักษะการออกแบบภาพรวมของงานรวมถึงสร้างแนวทางปฏิบัติที่ดีที่สุดสำหรับผู้ใช้\nCLO4: สามารถปฏิบัติงานพัฒนาโปรแกรมที่รับผิดชอบได้ตรงตามเวลา\nCLO5: สามารถทำงานเป็นทีมในการปฏิบัติงานพัฒนาโปรแกรมที่รับผิดชอบได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-301",
+   "title": "รายวิชา 04-622-301 การพัฒนาเว็บเต็มรูปแบบ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_622_301_Full-stack_Web_Development.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-302-mixed-0",
+  "text": "รหัสวิชา 04-622-302 วิศวกรรมซอฟต์แวร์ (Software Engineering) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): 04-622-202 ระบบฐานข้อมูล (Database System), 04-622-203 การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming)\nความสำคัญของเทคโนโลยีสารสนเทศ กระบวนการพัฒนาซอฟต์แวร์ การบริหารโครงการซอฟต์แวร์ ข้อกำหนดทางซอฟต์แวร์ การวิเคราะห์และออกแบบระบบเชิงโครงสร้าง การวิเคราะห์และออกแบบระบบเชิงวัตถุ การจำลองระบบ การออกแบบส่วนติดต่อผู้ใช้งาน การออกแบบอินพุตและเอาต์พุต การทดสอบซอฟต์แวร์ / Importance of information technology; software development process; software project management; software specifications; structural system analysis and design; object-oriented system analysis and design; system modeling; user interface design; input and output design; software testing\nCLO1: อธิบายความสำคัญของเทคโนโลยีสารสนเทศต่อองค์กรและระบบธุรกิจได้\nCLO2: อธิบายขั้นตอนและกิจกรรมในแต่ละขั้นตอนของการพัฒนาระบบได้\nCLO3: ออกแบบระบบสารสนเทศเพื่อตอบสนองความต้องการทางธุรกิจได้\nCLO4: วิเคราะห์ระบบงานและความต้องการของระบบ เพื่อสร้างความได้เปรียบทางธุรกิจโดยใช้เทคโนโลยีสารสนเทศได้\nCLO5: นำเสนอกระบวนการทำงานของระบบและข้อมูลที่เกี่ยวข้องเป็นแผนภาพได้\nCLO6: ส่งงานที่มอบหมายตามกำหนด และปฏิบัติตามข้อตกลงของวิชา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-302",
+   "title": "รายวิชา 04-622-302 วิศวกรรมซอฟต์แวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_622_302_Software_Engineering.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-303-mixed-0",
+  "text": "รหัสวิชา 04-622-303 การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล (Mobile Device Programming for Digital Industry) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเทคโนโลยีอุปกรณ์เคลื่อนที่ การเขียนโปรแกรมสำหรับอุปกรณ์เคลื่อนที่ขั้นพื้นฐาน การออกแบบส่วนติดต่อผู้ใช้ การเชื่อมต่อฐานข้อมูล การเชื่อมต่อระบบเครือข่าย การต่อประสานกับอุปกรณ์รับรู้ บริการเว็บสำหรับอุปกรณ์เคลื่อนที่ การเผยแพร่โปรแกรมประยุกต์ / Mobile device technology; basic mobile device programming; user-interface design; database connection; network connection; sensor interfacing; mobile web services; application publishing\nCLO1: สามารถสร้างโปรแกรมสำหรับอุปกรณ์เคลื่อนที่ขั้นพื้นฐาน\nCLO2: สามารถประยุกต์พัฒนาโปรแกรมสำหรับอุปกรณ์เคลื่อนที่ในปัญหาของศาสตร์ด้านอื่น ๆ\nCLO3: สามารถออกแบบส่วนติดต่อผู้ใช้และการเชื่อมต่อฐานข้อมูลและระบบเครือข่ายได้\nCLO4: สามารถใช้เครื่องมือและหลักการออกแบบส่วนติดต่อผู้ใช้และการเชื่อมต่อฐานข้อมูลและระบบเครือข่ายได้ของโปรแกรมสำหรับอุปกรณ์เคลื่อนที่ได้อย่างเหมาะสม\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO6: สามารถปรับตัวและเรียนรู้เทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับการโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-303",
+   "title": "รายวิชา 04-622-303 การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_622_303_Mobile_Device_Programming_for_Digital_Industry.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-202-mixed-0",
+  "text": "รหัสวิชา 04-623-202 ระบบเครือข่ายแบบทีซีพีไอพี (TCP/IP Networks) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 2 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): 04-623-201 การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communication and Computer Networking)\nระดับชั้นต่าง ๆ ของทีซีพีไอพี แอดเดรสในเครือข่ายอินเทอร์เน็ต ระบบชื่อโดเมน รายละเอียดของโพรโตคอล ไอพี เออาร์พี ไอซีเอ็มพี ทีซีพี และ ยูดีพี การหาเส้นทางในเครือข่ายอินเทอร์เน็ต โพรโทคอลหาเส้นทาง ได้แก่ อาร์ไอพี โอเอสพีเอฟ ไอเอสไอเอส บีจีพี และอื่น ๆ อุปกรณ์หาเส้นทาง การหาเส้นทางในเครือข่ายมัลติคาสต์ ไอพีเวอร์ชัน 6 และโพรโทคอลประยุกต์ต่าง ๆ ได้แก่ โพรโทคอลไอ จีเอ็มพี เอฟทีพี เอสเอ็มทีพี เอสเอ็นเอ็มพี / TCP/IP layers; internet addresses; domain name system; details of IP, ARP, ICMP, TCP and UDP; internet route; routing protocols including RIP, OSPF, IS-IS, and BGP; routing devices; multicast routing; IPv6 and other application protocols including IGMP, FTP, SMTP and SNMP\nCLO1: สามารถอธิบายและประยุกต์ใช้หลักการพื้นฐานของระบบเครือข่ายทีซีพีไอพี เช่น ระดับชั้นต่าง ๆ ของทีซีพีไอที\nCLO2: สามารถวิเคราะห์และแก้ไขปัญหาที่เกิดขึ้นในการหาเส้นทางในเครือข่ายอินเตอร์เน็ต โพรโทคอลหาเส้นทาง\nCLO3: สามารถปรับตัวและเรียนรู้เทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับ ระบบเครือข่ายทีซีพีไอพี",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-202",
+   "title": "รายวิชา 04-623-202 ระบบเครือข่ายแบบทีซีพีไอพี",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_623_202_TCP_IP_Networks.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-301-mixed-0",
+  "text": "รหัสวิชา 04-623-301 ปฏิบัติการเครือข่ายคอมพิวเตอร์ (Computer Network Laboratory) หน่วยกิต 1(0-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nปฏิบัติการในเนื้อหาที่เกี่ยวกับเครือข่ายคอมพิวเตอร์ การสวิตช์ เครือข่ายเสมือน เครือข่ายสำรอง การตั้งค่าการกำหนดเส้นทาง / Laboratories on computer network field; switching; VLAN; redundant networks; routing configuration\nCLO1: สามารถตั้งค่าระบบเครือข่ายคอมพิวเตอร์ได้\nCLO2: สามารถวิเคราะห์และประเมินปัญหาที่เกิดในเครือข่ายคอมพิวเตอร์ได้\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-301",
+   "title": "รายวิชา 04-623-301 ปฏิบัติการเครือข่ายคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_623_301_Computer_Network_Laboratory.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-301-mixed-0",
+  "text": "รหัสวิชา 04-624-301 การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ (Image Processing and Computer Vision) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาบังคับ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): 04-624-201 ทฤษฎีการคำนวณ (Theory of Computation)\nการประมวลผลภาพ วิเคราะห์สัญญาณภาพดิจิตอล การแทนสัญญาณของภาพด้วยฟังก์ชันทางคณิตศาสตร์ การสุ่มและควอนไตซ์สัญญาณภาพการรับรู้และเข้าใจภาพ การแปลงสัญญาณภาพ การเพิ่มคุณภาพของภาพ การกรองสัญญาณภาพ การตรวจจับและการจับคู่ลักษณะเด่น การประมวลผลจากสีของภาพ การวิเคราะห์พื้นผิว การรู้จำภาพ  การตรวจจับวัตถุอย่างง่าย การตรวจจับวัตถุโดยโมเดลสมัยใหม่ / Image processing; digital image analysis; mathematical representation of images; image sampling and quantization; image perception; image transforms; image enhancement; filtering; classification of digital images including segmentation; feature extraction including feature detection and matching; feature description; understanding texture; image recognition; simple object detection; modern object detection\nCLO1: อธิบายกระบวนการและการแก้ปัญหาเชิงประมวลผลภาพและการรู้จำอย่างเป็นระบบ\nCLO2: เลือกใช้วิธีการประมวลผลภาพเพื่อแก้ไขปัญหาการปรับปรุงคุณภาพของภาพ อย่างเหมาะสม\nCLO3: เลือกใช้เครื่องมือเชิงประมวลผลภาพสำหรับงานด้านการประยุกต์ หรือ การแก้ปัญหานั้นๆ ได้อย่างเหมาะสม\nCLO4: มีความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO5: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ทางด้านการประมวลผลภาพได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-301",
+   "title": "รายวิชา 04-624-301 การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/core/04_624_301_Image_Processing_and_Computer_Vision.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-301-mixed-0",
+  "text": "รหัสวิชา 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ (Professional Experience Preparation) หน่วยกิต 1(0-2)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 3 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nแนวคิด หลักการ ความสำคัญ กระบวนการฝึกประสบการณ์วิชาชีพ การเตรียมความพร้อมด้านการพัฒนาบุคลิกภาพ การสมัครงาน กฎหมาย จริยธรรม และมาตรฐานที่เกี่ยวข้องกับการปฏิบัติงาน ตามสาขาวิชา / Concepts; principles; significance; process of professional experience; preparation for personality development; job applications; laws; ethics; and work-related standards based on field of study / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO2: ค้นคว้าข้อมูลตำแหน่งงาน สร้างเอกสารแนะนำตัว แฟ้มผลงงานทางวิชาการ สำหรับการยื่นสมัครงานในสถานประกอบการที่ตนเองสนใจ\nCLO3: เรียนรู้การใช้เครื่องมือใหม่ ๆ ที่มีแนวโน้มใช้งานในสถานประกอบการและทวนสอบทักษะทางด้านคอมพิวเตอร์เพื่อเตรียมความพร้อมก่อนเข้าทำงานกับสถานประกอบการ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-301",
+   "title": "รายวิชา 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_301_Professional_Experience_Preparation.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-302-mixed-0",
+  "text": "รหัสวิชา 04-000-302 ฝึกงาน (Apprenticeship) หน่วยกิต 3(0-20)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 4 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ (Preparation for Professional Experience)\nการปฏิบัติงานเต็มเวลาที่ตรงกับสมรรถนะอาชีพในสาขาวิชากำหนดอย่างเป็นระบบ ในสถานประกอบการไม่น้อยกว่า 8 สัปดาห์ และการรายงานผลลัพธ์การเรียนรู้จากการปฏิบัติจริง / Full-time work in the workplace based on specified field of study that is methodically linked to professional competencies for a minimum of 8 weeks with the learning outcomes report reflected from actual practice / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: ประยุกต์ใช้ความรู้ภาคทฤษฎีและปฏิบัติในการฝึกงานทางด้านวิศวกรรมคอมพิวเตอร์\nCLO2: เข้าฝึกงานในสถานประกอบการและส่งงานที่ได้รับมอบหมายอย่างสม่ำเสมอและตรงเวลา\nCLO3: ปรับตัวและเรียนรู้เทคโนโลยีและเครื่องมือใหม่ ๆ ในสถานประกอบการ\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-302",
+   "title": "รายวิชา 04-000-302 ฝึกงาน",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_302_Apprenticeship.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-303-mixed-0",
+  "text": "รหัสวิชา 04-000-303 ฝึกงานต่างประเทศ (International Apprenticeship) หน่วยกิต 3(0-20)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 4 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ (Preparation for Professional Experience)\nการปฏิบัติงานเต็มเวลาที่ตรงกับสมรรถนะอาชีพในสาขาวิชากำหนดอย่างเป็นระบบ ในสถานประกอบการในต่างประเทศไม่น้อยกว่า 8 สัปดาห์ และการรายงานผลลัพธ์การเรียนรู้จากการปฏิบัติจริง / Full-time work in the overseas workplace based on specified field of study that is methodically linked to professional competencies for a minimum of 8 weeks with the learning outcomes report reflected from actual practice / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: ประยุกต์ใช้ความรู้ภาคทฤษฎีและปฏิบัติในการฝึกงานทางด้านวิศวกรรมคอมพิวเตอร์\nCLO2: เข้าฝึกงานในสถานประกอบการต่างประเทศและส่งงานที่ได้รับมอบหมายอย่างสม่ำเสมอและตรงเวลา\nCLO3: ปรับตัวและเรียนรู้เทคโนโลยีและเครื่องมือใหม่ ๆ ในสถานประกอบการต่างประเทศ\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-303",
+   "title": "รายวิชา 04-000-303 ฝึกงานต่างประเทศ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_303_International_Apprenticeship.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-401-mixed-0",
+  "text": "รหัสวิชา 04-000-401 สหกิจศึกษา (Cooperative Education) หน่วยกิต 6(0-40)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 4 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ (Preparation for Professional Experience)\nการปฏิบัติงานโดยบูรณาการความรู้ ทักษะ จริยธรรมและลักษณะบุคคล ในสถานประกอบการตามที่สาขาวิชากำหนดเต็มเวลาอย่างเป็นระบบ ไม่น้อยกว่า 1 ภาคการศึกษา หรือ 16 สัปดาห์ และการรายงานผลลัพธ์การเรียนรู้จากการปฏิบัติจริง / Full-time work by systematically integrating knowledge, skills, ethics and personal characteristics in the workplace according to the specified field of study for a minimum of one semester or 16 weeks with the learning outcomes report reflected from actual practice / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: ประยุกต์ใช้ความรู้ภาคทฤษฎีและปฏิบัติในการสหกิจทางด้านวิศวกรรมคอมพิวเตอร์\nCLO2: เข้าสหกิจในสถานประกอบการและส่งงานที่ได้รับมอบหมายอย่างสม่ำเสมอและตรงเวลา\nCLO3: ปรับตัวและเรียนรู้เทคโนโลยีและเครื่องมือใหม่ ๆ ในสถานประกอบการ\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-401",
+   "title": "รายวิชา 04-000-401 สหกิจศึกษา",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_401_Cooperative_Education.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-402-mixed-0",
+  "text": "รหัสวิชา 04-000-402 ปัญหาพิเศษจากสถานประกอบการ (Industry Special Problem) หน่วยกิต 3(x-x)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 4 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nการวิเคราะห์สาเหตุและหาแนวทางแก้ไขปัญหาของสถานประกอบการ การพัฒนากระบวนการ การรายงานผลลัพธ์การเรียนรู้ / Analysis using the problem-cause-solution and seeking the way to approach the problem of the workplace; development of operational processes; learning outcomes reporting / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: วิเคราะห์สาเหตุและประยุกต์ใช้ภาคทฤษฎีและปฏิบัติที่เหมาะสมที่สามารถนำไปแก้ไขปัญหาของสถานประกอบการโดยใช้ศาสตร์ทางวิศวกรรมคอมพิวเตอร์\nCLO2: เข้าทำงานในสถานประกอบการและส่งงานที่ได้รับมอบหมายอย่างสม่ำเสมอและตรงเวลา\nCLO3: ปรับตัวและเรียนรู้การใช้เครื่องมือใหม่ ๆ ในสถานประกอบการ\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-402",
+   "title": "รายวิชา 04-000-402 ปัญหาพิเศษจากสถานประกอบการ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_402_Industry_Special_Problem.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-000-403-mixed-0",
+  "text": "รหัสวิชา 04-000-403 สหกิจศึกษาต่างประเทศ (International Cooperative Education) หน่วยกิต 6(0-40)\nประเภท: กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ | ชั้นปี: 4 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-000-301 การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ (Preparation for Professional Experience)\nการปฏิบัติงานโดยบูรณาการความรู้ ทักษะ จริยธรรม และลักษณะบุคคล ในสถานประกอบการต่างประเทศตามที่สาขาวิชากำหนด เต็มเวลาอย่างเป็นระบบไม่น้อยกว่า 1 ภาคการศึกษาหรือ 16 สัปดาห์ และการรายงานผลลัพธ์การเรียนรู้จากการปฏิบัติจริง / Full-time work by systematically integrating knowledge, skills, ethics and personal characteristics in the overseas workplace according to the specified field of study for a minimum of one semester or 16 weeks with the learning outcomes report reflected from actual practice / หมายเหตุ : การประเมินผลเป็น S และ U\nCLO1: ประยุกต์ใช้ความรู้ภาคทฤษฎีและปฏิบัติในการสหกิจทางด้านวิศวกรรมคอมพิวเตอร์\nCLO2: เข้าสหกิจในสถานประกอบการต่างประเทศและส่งงานที่ได้รับมอบหมายอย่างสม่ำเสมอและตรงเวลา\nCLO3: ปรับตัวและเรียนรู้เทคโนโลยีและเครื่องมือใหม่ ๆ ในสถานประกอบการต่างประเทศ\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-000-403",
+   "title": "รายวิชา 04-000-403 สหกิจศึกษาต่างประเทศ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/cwie/04_000_403_International_Cooperative_Education.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-302-mixed-0",
+  "text": "รหัสวิชา 04-624-302 การเรียนรู้ของเครื่อง (Machine Learning) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-624-201 ทฤษฎีการคำนวณ (Theory of Computation)\nการเรียนรู้ของเครื่อง การเรียนรู้แบบมีผู้สอนและไม่มีผู้สอน การจำแนกประเภท การจัดกลุ่ม ต้นไม้ตัดสินใจ เพื่อนบ้านใกล้ที่สุด โครงข่ายประสาทเทียม เบย์ ซัพพอร์ทเวกเตอร์แมชชีน การลดมิติข้อมูล การตรวจสอบไขว้ การประเมินผลของการทำนาย / Machine learning; supervised and unsupervised learning; classification; clustering; decision tree; K-nearest neighbors; artificial neural networks; Bayesian Learning; support vector machine; dimensionality reduction; cross-validation; evaluating estimator performance\nCLO1: บรรยายความหมายการเรียนรู้ของเครื่องได้\nCLO2: อธิบายหลักการการเรียนรู้แบบมีผู้สอนและไม่มีผู้สอนได้\nCLO3: สร้างแบบจำลองและวิเคราะห์ข้อมูลด้วยเทคนิคการเรียนรู้ของเครื่องได้\nCLO4: เขียนโปรแกรมสร้างแบบจำลองการเรียนรู้ของเครื่องได้\nCLO5: การประเมินผลของแบบจำลองการเรียนรู้ของเครื่องในการแก้ปัญหาได้\nCLO6: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-302",
+   "title": "รายวิชา 04-624-302 การเรียนรู้ของเครื่อง",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_302_Machine_Learning.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-303-mixed-0",
+  "text": "รหัสวิชา 04-624-303 การเรียนรู้เชิงลึกเบื้องต้น (Introduction to Deep Learning) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-201 โครงสร้างข้อมูลและอัลกอริทึม (Data Structure and Algorithms)\nการเรียนรู้เชิงลึก การสร้างแบบจำลองลำดับเชิงลึก คอมพิวเตอร์วิชันเชิงลึก แบบจำลองการสร้างเชิงลึก การเรียนรู้แบบเสริมแรงเชิงลึก การแสดงผลข้อมูลสำหรับการเรียนรู้ของเครื่อง / Deep learning; deep sequence modeling; deep computer vision; deep generative models; recognition systems; deep reinforcement learning; data visualization for machine learning\nCLO1: อธิบายแนวคิดในการเรียนรู้เชิงลึก\nCLO2: ใช้เทคนิคการเรียนรู้เชิงลึกกับปัญหาในการสร้างแบบจำลองลำดับเชิงลึก\nCLO3: ใช้เทคนิคการแสดงผลข้อมูลเพื่อตีความและนำเสนอข้อมูลการเรียนรู้ของเครื่อง\nCLO4: ออกแบบและใช้งานระบบการรู้จำโดยใช้การเรียนรู้เชิงลึก\nCLO5: พัฒนาและประยุกต์ใช้โมเดลการเรียนรู้แบบเสริมแรงชิงลึก\nCLO6: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-303",
+   "title": "รายวิชา 04-624-303 การเรียนรู้เชิงลึกเบื้องต้น",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_303_Introduction_to_Deep_Learning.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-304-mixed-0",
+  "text": "รหัสวิชา 04-624-304 การรู้จำเสียงพูด (Speech Recognition) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nทบทวนคณิตศาสตร์ที่ใช้ในการรู้จำเสียงพูด การกำเนิดเสียงพูด การได้ยิน การวิเคราะห์เสียงพูด การให้รหัสเสียงพูด รหัสการทำนายเสียงพูดแบบเชิงเส้น การสังเคราะห์เสียงพูด และ การรู้จำเสียงพูดของมนุษย์ / A review of mathematics for speech recognition; pronunciation; hearing; speech analysis; speech encoding; linear speech prediction code; speech synthesis and human speech recognition\nCLO1: ประยุกต์ใช้ความรู้คณิตศาสตร์และหลักการทางวิศวกรรมในการวิเคราะห์และออกแบบระบบการรู้จำเสียงพูด\nCLO2: วิเคราะห์และพัฒนาโมเดลการทำนายเสียงพูดการสังเคราะห์เสียงพูดและการรู้จำเสียงพูดของมนุษย์\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ในการวิเคราะห์เสียงพูดและการพัฒนาระบบการรู้จำเสียงพูด",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-304",
+   "title": "รายวิชา 04-624-304 การรู้จำเสียงพูด",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_304_Speech_Recognition.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-305-mixed-0",
+  "text": "รหัสวิชา 04-624-305 ข้อมูลขนาดใหญ่ (Big Data) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-202 ระบบฐานข้อมูล (Database System)\nการวิเคราะห์ข้อมูลขนาดใหญ่ การแสดงผล ฐานข้อมูลแบบมีและไม่มี โครงสร้าง การออกแบบการทดลอง ฮาดู๊ป การสร้างแบบจำลองการทำนาย การประมาณค่า แบบจำลอง การจับกลุ่ม และการแยกแยะ การเรียนรู้แบบใช้ปัญหาเป็นฐานโดยเน้นที่ปัญหาทางธุรกิจ / Big data analytics; visualization; structured and unstructured databases; design of experiments; Hadoop; predictive modeling; model fitting; clustering and classification; problem-based learning style with integrated business applications\nCLO1: สามารถอธิบายรูปแบบการจัดการข้อมูลของฐานข้อมูลในลักษณะต่างๆ\nCLO2: เข้าใจองค์ประกอบของการประมวลผลข้อมูลขนาดใหญ่\nCLO3: เข้าใจระบบการทำงานของโปรแกรมที่ใช้จัดการข้อมูลขนาดใหญ่\nCLO4: สามารถสร้างแบบจำลองการทำนาย\nCLO5: สามารถจับกลุ่ม แยกแยะ สังเคราะห์ข้อมูล\nCLO6: สามารถวิเคราะห์ปัญหา การจัดการระบบฐานข้อมูลขนาดใหญ่ การใช้งานโปรแกรมจัดการข้อมูลขนาดใหญ่",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-305",
+   "title": "รายวิชา 04-624-305 ข้อมูลขนาดใหญ่",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_305_Big_Data.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-306-mixed-0",
+  "text": "รหัสวิชา 04-624-306 วิศวกรรมข้อมูล (Data Engineering) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-201 โครงสร้างข้อมูลและอัลกอริทึม (Data Structure and Algorithms)\nวิศวกรรมข้อมูล การตรวจวินิจฉัยข้อมูลและการมองภาพข้อมูล การทำความสะอาดข้อมูล การแปลงข้อมูล การประมวลผลคุณลักษณะคุณภาพข้อมูลและการตรวจสอบข้อมูล การบูรณาการข้อมูล วิศวกรรมข้อมูลขนาดใหญ่ ความปลอดภัยของข้อมูลและการกำกับดูแล / Data engineering; data exploration and data visualization; data cleaning; data transformation; data quality and auditing; data integration; big data engineering; data security and governance\nCLO1: อธิบายพื้นฐานและสถาปัตยกรรมในงานวิศวกรรมข้อมูลได้\nCLO2: พัฒนาและจัดการข้อมูลที่ปรับขนาดได้และเชื่อถือได้โดยใช้เครื่องมือที่เหมาะสม\nCLO3: สามารถใช้เทคโนโลยีข้อมูลขนาดใหญ่และใช้ประโยชน์จากทรัพยากรการประมวลผลแบบคลาวด์สำหรับการประมวลผลและการจัดเก็บข้อมูล\nCLO4: สามารถออกแบบและใช้โมเดลข้อมูลและฐานข้อมูลที่มีประสิทธิภาพสำหรับข้อมูลในงานประเภทต่าง ๆ\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-306",
+   "title": "รายวิชา 04-624-306 วิศวกรรมข้อมูล",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_306_Data_Engineering.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-307-mixed-0",
+  "text": "รหัสวิชา 04-624-307 การเรียนรู้ของเครื่องขนาดเล็กและการประมวลผลที่ขอบ (TinyML and Edge Computing) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-204 ไมโครคอนโทรลเลอร์และการเชื่อมต่อ (Microcontroller and Interfacing)\nการเรียนรู้ของเครื่องขนาดเล็ก อุปกรณ์ขอบอัจฉริยะที่สามารถประมวลผลด้วยพลังงานต่ำ การรวบรวมข้อมูลจากเซ็นเซอร์สำหรับการสร้างชุดข้อมูลเรียนรู้ การฝึกสอนด้วยหลักการเรียนรู้ของเครื่องและโครงข่ายการเรียนรู้เชิงลึกขนาดเล็ก การนำโมเดลไปใช้งานกับอุปกรณ์ขอบ การเพิ่มประสิทธิภาพของเรียนรู้ของเครื่องและโครงข่ายการเรียนรู้เชิงลึกขนาดเล็กที่ประมวลผลบนอุปกรณ์ขอบ / Tiny machine learning (TinyML); intelligent edge devices with low computing power; gathering large datasets from tremendous sensors; training extensive data using small machine learning or deep learning algorithms; deploying models on edge devices; improving the efficiency of small machine learning or deep learning\nCLO1: สามารถอธิบายอัลกอริทึมการเรียนรู้ของเครื่องที่ใช้ในงานการประมวลผลที่ขอบ\nCLO2: สามารถประยุกต์นำข้อมูลจากเซนเซอร์หรือรูปภาพมาฝึกสอนด้วยหลักการเรียนรู้ของเครื่อง\nCLO3: สามารถวิเคราะห์ปัญหาและเลือกใช้อัลกริทึมการเรียนรู้ของเครื่องขนาดเล็กที่เหมาะสมกับอุปกรณ์การประมวลที่ขอบแต่ละชนิดตามความเหมาะสม\nCLO4: สามารถใช้เครื่องมือที่เหมาะสมในการออกแบบและพัฒนาโปรแกรมสำหรับการเรียนรู้ของเครื่องขนาดเล็กและสามารถวิเคราะห์แนวทางการเพิ่มประสิทธิภาพในการประมวลผลการเรียนรู้ของเครื่องที่อุปกรณ์ประมวลผลที่ขอบ\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-307",
+   "title": "รายวิชา 04-624-307 การเรียนรู้ของเครื่องขนาดเล็กและการประมวลผลที่ขอบ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_307_TinyML_and_Edge_Computing.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-401-mixed-0",
+  "text": "รหัสวิชา 04-624-401 ปัญหาพิเศษทางปัญญาประดิษฐ์ (Special Problems in Artificial Intelligence) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับปัญญาประดิษฐ์ / Recent technology in Artificial Intelligence\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางปัญญาประดิษฐ์ได้\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับปัญหาพิเศษทางปัญญาประดิษฐ์ได้\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางปัญญาประดิษฐ์ได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-401",
+   "title": "รายวิชา 04-624-401 ปัญหาพิเศษทางปัญญาประดิษฐ์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_401_Special_Problems_in_Artificial_Intelligence.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-402-mixed-0",
+  "text": "รหัสวิชา 04-624-402 หัวข้อขั้นสูงทางปัญญาประดิษฐ์ (Advanced Topics in Artificial Intelligence) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nวิชาการใหม่ ๆ ปัญญาประดิษฐ์ / New academic study in Artificial Intelligence\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับหัวข้อขั้นสูงทางปัญญาประดิษฐ์\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับหัวข้อขั้นสูงทางปัญญาประดิษฐ์\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงทางปัญญาประดิษฐ์\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-402",
+   "title": "รายวิชา 04-624-402 หัวข้อขั้นสูงทางปัญญาประดิษฐ์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/ai/04_624_402_Advanced_Topics_in_Artificial_Intelligence.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-304-mixed-0",
+  "text": "รหัสวิชา 04-621-304 เซ็นเซอร์และตัวขับเคลื่อน (Sensors and Actuators) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเซ็นเซอร์และตัวกระตุ้นในงานวิศวกรรมคอมพิวเตอร์ การเชื่อมประสาน การเขียนโปรแกรมติดต่อและควบคุม การประมวลผลข้อมูลจากเซ็นเซอร์และตัวกระตุ้น การใช้เซ็นเซอร์และตัวกระตุ้นในการควบคุมและปรับความสามารถของระบบ การประยุกต์ใช้เซ็นเซอร์และตัวกระตุ้นในโครงการทางวิศวกรรมคอมพิวเตอร์ / Sensors and actuators in computer engineering; interfacing; programming for communication and control; processing data from sensors and actuators; utilizing sensors and actuators for system control and adjustment; applying sensors and actuators in computer engineering projects\nCLO1: อธิบายความเกี่ยวข้อง ผลกระทบของเซ็นเซอร์และตัวขับเคลื่อน เพื่อแก้ปัญหาการทำงานทางวิศวกรรมคอมพิวเตอร์ได้อย่างเหมาะสม\nCLO2: สามารถวิเคราะห์ และออกแบบระบบงานทางวิศวกรรมคอมพิวเตอร์ที่ใช้เซ็นเซอร์และตัวขับเคลื่อนได้อย่างเหมาะสม\nCLO3: สามารถนำเสนอผลการศึกษาค้นคว้าด้วยตนเองผ่านการนำเสนอด้วยวาจาประกอบการใช้เทคโนโลยีเซ็นเซอร์และตัวขับเคลื่อนสมัยใหม่ได้\nCLO4: ทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-304",
+   "title": "รายวิชา 04-621-304 เซ็นเซอร์และตัวขับเคลื่อน",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_304_Sensors_and_Actuators.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-305-mixed-0",
+  "text": "รหัสวิชา 04-621-305 การออกแบบระบบดิจิทัลและการทวนสอบ (Digital System Design and Verification) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ (Digital Circuit and Logic Design)\nการเขียนโปรแกรมภาษาพรรณนาฮาร์ดแวร์ที่ใช้สำหรับการออกแบบวงจรดิจิทัล โมดูลมาตรฐานสำหรับวงจรลำดับ วงจรลำดับแบบสมวารและอสมวาร การวิเคราะห์และสังเคราะห์วงจรลำดับแบบสมวาร การลดความซับซ้อนของวงจรลำดับ การออกแบบวงจรดิจิทัลโดยใช้อุปกรณ์ที่สามารถโปรแกรมได้ การทดสอบวงจรดิจิทัล การออกแบบวงจรดิจิทัลที่สามารถทดสอบและทวนสอบได้ / Programming hardware descriptive language used for digital circuit design; standard modules for sequential circuits; synchronous and asynchronous sequential circuit; analysis and synthesis of synchronous sequence circuits; simplifying sequential circuit; digital circuit design using programmable devices; digital circuit testing; tested and verified digital circuit design\nCLO1: สามารถออกแบบและทวนสอบระบบวงจรดิจิทัลและวงจรตรรกะขั้นสูง\nCLO2: สามารถวิเคราะห์ปัญหาและระบบวงจรจัดกลุ่มและวงจรลำดับและการเขียนโปรแกรมภาษาพรรณาฮาร์ดแวร์ที่ใช้สำหรับการออกแบบระบบดิจิทัลได้\nCLO3: สามารถใช้งานเครื่องมือและเลือกใช้ภาษาที่เกี่ยวข้องกับการออกแบบวงจรดิจิทัลได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO5: สามารถค้นหาสถาปัตยกรรมการออกแบบวงจรดิจิทัลใหม่ ๆ ได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-305",
+   "title": "รายวิชา 04-621-305 การออกแบบระบบดิจิทัลและการทวนสอบ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_305_Digital_System_Design_and_Verification.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-306-mixed-0",
+  "text": "รหัสวิชา 04-621-306 สถาปัตยกรรมคอมพิวเตอร์ขั้นสูง (Advanced Computer Architecture) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-301 องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ (Computer Organization and Architecture)\nสถาปัตยกรรมคอมพิวเตอร์ความเร็วสูง สถาปัตยกรรมแบบขนาน หน่วยความจำและระบบติดต่อกับภายนอก คอมพิวเตอร์ไปป์ไลน์และวิธีการ เวกเตอร์ ระบบแบบ SIMD และ MIMD ศึกษาคอมพิวเตอร์ที่ประมวลผลแบบขนานอย่างหนัก เครือข่ายที่เชื่อมต่อระหว่างกัน การจัดการเรื่องหน่วยความจำและปัญหาการทำงานไปพร้อมๆกัน อัลกอริทึมการควบคุมตัวประมวลหลายตัว ปัญหาเรื่องติดตาย การทำงานเข้าจังหวะกัน อัลกอริทึมแบบขนาน และการไหลของข้อมูลในคอมพิวเตอร์ / High-speed computer architecture; parallel architecture; memory and input/output system; pipelining and vector processing; SIMD and MIMD computers; massive parallel processing architecture; interconnection network; memory contention management; multiprocessor control algorithm; deadlock; synchronization; parallel algorithm; flow of data in computer\nCLO1: สามารถอธิบายความหมายของสถาปัตยกรรมคอมพิวเตอร์ขั้นสูง\nCLO2: สามารถประยุกต์ใช้สถาปัตยกรรมคอมพิวเตอร์ขั้นสูง สำหรับเป็นแนวทางในการออกแบบระบบคอมพิวเตอร์ขั้นสูงได้เหมาะสม\nCLO3: สามารถวิเคราะห์วิธีการแก้ปัญหาของสถาปัตยกรรมคอมพิวเตอร์ขั้นสูง\nCLO4: สามารถใช้สารสนเทศเพื่อการสืบค้นข้อมูลทางด้านสถาปัตยกรรมคอมพิวเตอร์ขั้นสูงได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-306",
+   "title": "รายวิชา 04-621-306 สถาปัตยกรรมคอมพิวเตอร์ขั้นสูง",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_306_Advanced_Computer_Architecture.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-307-mixed-0",
+  "text": "รหัสวิชา 04-621-307 ระบบสมองกลฝังตัว (Embedded Systems) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ (Digital Circuit and Logic Design)\nการผสมผสานฮาร์ดแวร์และซอฟต์แวร์เพื่อสร้างความสามารถในการคำนวณที่มีประสิทธิภาพและเฉพาะทาง สถาปัตยกรรมของไมโครคอนโทรลเลอร์ ระบบปฏิบัติการแบบเรียลไทม์ การเชื่อมต่อกับระบบภายนอก การประหยัดพลังงาน ความมีเสถียรภาพ การออกแบบแอปพลิเคชันฝังตัว / Integration of hardware and software to create efficient and specialized computing capabilities; architecture of microcontrollers; real-time operating systems; external system interfacing; energy efficiency; stability; design of embedded applications\nCLO1: สามารถประยุกต์ใช้หลักการและความรู้ทางวิศวกรรมคอมพิวเตอร์ในการออกแบบและพัฒนาระบบสมองกลฝังตัว รวมถึงการโปรแกรมไมโครคอนโทรลเลอร์และการเชื่อมต่ออุปกรณ์ต่าง ๆ ได้อย่างมีประสิทธิภาพ\nCLO2: สามารถวิเคราะห์ปัญหาที่เกิดขึ้นจากการทำงานของระบบสมองกลฝังตัว และใช้แนวคิดการคิดอย่างเป็นระบบในการหาวิธีแก้ไขปัญหาและปรับปรุงระบบ\nCLO3: สามารถใช้เครื่องมือทางด้านวิศวกรรมในการพัฒนา ทดสอบ และดูแลระบบสมองกลฝังตัวได้อย่างถูกต้องและเหมาะสม\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO5: สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-307",
+   "title": "รายวิชา 04-621-307 ระบบสมองกลฝังตัว",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_307_Embedded_Systems.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-401-mixed-0",
+  "text": "รหัสวิชา 04-621-401 ระบบปฏิบัติการแบบทันกาล (Real-Time Operating Systems) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nระบบปฏิบัติการแบบเรียลไทม์ (RTOS) สำหรับระบบสมองกลฝังตัว การจัดตารางงาน การสื่อสารระหว่างกระบวนการ กลไกการประสานงาน เงื่อนไขเวลาที่จำเป็นในการทำงานแบบเรียลไทม์ หลักการออกแบบและการนำระบบปฏิบัติการแบบเรียลไทม์ไปใช้ในแอปพลิเคชันต่าง ๆ / Real-time Operating System (RTOS) for embedded systems; task scheduling; inter-process communication; coordination mechanisms; essential timing conditions for real-time operation; principles of design and application of RTOS in various applications\nCLO1: สามารถอธิบายหลักการทำงานของระบบปฏิบัติการแบบทันกาล (Real-Time Operating Systems) รวมถึงแนวคิดในการจัดการเวลาตอบสนองของกระบวนการ การจัดการหน่วยความจำ และการกำหนดความสำคัญของงานในระบบ\nCLO2: สามารถออกแบบ ทดสอบ และตรวจสอบการทำงานของระบบปฏิบัติการแบบทันกาล เพื่อให้แน่ใจว่าระบบสามารถตอบสนองได้ตามข้อกำหนดของเวลาที่ตั้งไว้\nCLO3: นักศึกษาสามารถใช้เครื่องมือและซอฟต์แวร์ที่เกี่ยวข้องกับระบบปฏิบัติการแบบทันกาลได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-401",
+   "title": "รายวิชา 04-621-401 ระบบปฏิบัติการแบบทันกาล",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_401_Real-Time_Operating_Systems.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-402-mixed-0",
+  "text": "รหัสวิชา 04-621-402 อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม (Industrial Internet of Things) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-302 อินเตอร์เน็ตของสรรพสิ่ง (Internet of Things)\nหลักการอินเทอร์เน็ตของสรรพสิ่งและอินเทอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม สถาปัตยกรรมการเชื่อมประสานกับอุปกรณ์เซ็นเซอร์และตัวขับเคลื่อน การสื่อสารข้อมูลและโครงข่าย ความปลอดภัย มั่นคง ระบบนิเวศและแพลตฟอร์ม การบูรณาการข้อมูลและการวิเคราะห์ การแสดงภาพ / Fundamental of industrial internet of things; architecture; sensors and actuators interfacing; data communications and networking; safety and security; ecosystem and platforms; data integration and analytics; visualization\nCLO1: สามารถอธิบายและประยุกต์ใช้ สถาปัตยกรรม การเชื่อมประสานอุปกรณ์ เซ็นเซอร์ ตัวขับเคลื่อนและการสื่อสารข้อมูลและโครงข่าย ของอินเทอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรมได้\nCLO2: สามารถวิเคราะห์ ออกแบบ ใช้งานระบบอินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม ได้อย่างเป็นระบบ และแก้ปัญหาตามโจทย์ที่กำหนดได้\nCLO3: สามารถใช้เครื่องมือและซอฟต์แวร์พัฒนาระบบ อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรมได้อย่างเหมาะสม\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-402",
+   "title": "รายวิชา 04-621-402 อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_402_Industrial_Internet_of_Things.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-403-mixed-0",
+  "text": "รหัสวิชา 04-621-403 การออกแบบวงจรรวมแอนะล็อก (Analog Integrated Circuit Design) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-202 วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ (Electronics Circuits for Computer Engineering)\nหลักการทรานซิสเตอร์มอส พื้นที่การทำงาน แบบจำลองอย่างง่าย ผลกระทบจากการทำงานจริง ตัวจำลองกระแส ตัวขยายขั้นเดียว ตัวขยายความต่าง การตอบสนองความถี่ การป้อนกลับ ออปแอมป์ การวิเคราะห์สัญญาณรบกวน การวิเคราะห์กระแสตรง กระแสสลับ และเชิงเวลา กระบวนการผลิตซีมอส ขั้นตอนการออกแบบวงจรรวมซีมอสแบบแอนะล็อก / MOS transistor fundamental; regions of operation; simplified model; second-order effects; current mirrors; single stage amplifiers; differential amplifiers; frequency response; feedback; Opamps; noise analysis; DC, AC and transient analysis; CMOS fabrication process; analog CMOS IC design flow\nCLO1: สามารถอธิบายหลักการของสารกึ่งตัวนำ อธิบายกระบวนการผลิต หลักการทำงานของทรานซิสเตอร์มอส และขั้นตอนการออกแบบวงจรรวมได้\nCLO2: สามารถประยุกต์ใช้หลักการของทรานซิสเตอร์ในการออกแบบวงจรตัวจำลองกระแส ตัวขยายขั้นเดียว ตัวขยายความต่าง การตอบสนองความถี่ การป้อนกลับ ออปแอมป์ได้\nCLO3: สามารถวิเคราะห์การตอบสนองสภาวะคงตัวและการตอบสนองเชิงเวลาได้\nCLO4: สามารถใช้เครื่องมือที่เกี่ยวข้องกับการออกแบบวงจรรวมอนาล็อกได้\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-403",
+   "title": "รายวิชา 04-621-403 การออกแบบวงจรรวมแอนะล็อก",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_403_Analog_Integrated_Circuit_Design.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-404-mixed-0",
+  "text": "รหัสวิชา 04-621-404 การออกแบบวงจรรวมดิจิทัล (Digital Integrated Circuit Design) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ (Digital Circuit and Logic Design)\nหลักการทรานซิสเตอร์มอส การออกแบบลอจิกเกตซีมอสและการวางผัง กระบวนการผลิตซีมอส การวิเคราะห์เวลาและกำลัง เครื่องมือออกแบบวงจรรวม กลุ่มวงจรต่าง ๆ การเชื่อมต่อ วงจรเส้นทางข้อมูลและหน่วยประมวลผล วงจรอาร์เรย์และหน่วยความจำ การประกอบตัวถัง การออกแบบบเพื่อการทดสอบ / MOS transistor fundamental; CMOS logic gate design and layout; CMOS fabrication process; timing and power analysis; IC design tools; circuit families; interconnect; arithmetic and data path circuits; memories and array circuits; packaging; design for testability\nCLO1: สามารถอธิบายหลักการของสารกึ่งตัวนำ อธิบายกระบวนการผลิต หลักการทำงานของทรานซิสเตอร์มอส และขั้นตอนการออกแบบวงจรรวมได้\nCLO2: สามารถประยุกต์ใช้หลักการของทรานซิสเตอร์ในการออกแบบวงจรลอจิกเกต การเชื่อมต่อ วงจรเส้นทางข้อมูลและหน่วยประมวลผล วงจรอาร์เรย์และหน่วยความจำได้\nCLO3: สามารถวิเคราะห์เวลาและกำลังของวงจรและวิเคราะห์การปรับแต่งวงจรให้มีประสิทธิภาพตามที่กำหนดได้\nCLO4: สามารถใช้เครื่องมือที่เกี่ยวข้องกับการออกแบบวงจรรวมดิจิทัลได้\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-404",
+   "title": "รายวิชา 04-621-404 การออกแบบวงจรรวมดิจิทัล",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_404_Digital_Integrated_Circuit_Design.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-405-mixed-0",
+  "text": "รหัสวิชา 04-621-405 ปัญหาพิเศษทางคอมพิวเตอร์ฮาร์ดแวร์ (Special Problems in Computer Hardware) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับฮาร์ดแวร์คอมพิวเตอร์ / Recent technology in computer hardware\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่เกิดขึ้นในเนื้อหาที่เกี่ยวข้องกับรายวิชาปัญหาพิเศษทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-405",
+   "title": "รายวิชา 04-621-405 ปัญหาพิเศษทางคอมพิวเตอร์ฮาร์ดแวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_405_Special_Problems_in_Computer_Hardware.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-406-mixed-0",
+  "text": "รหัสวิชา 04-621-406 หัวข้อขั้นสูงทางคอมพิวเตอร์ฮาร์ดแวร์ (Advanced Topics in Computer Hardware) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nวิชาการใหม่ ๆ ฮาร์ดแวร์คอมพิวเตอร์ / New academic study in computer hardware\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับหัวข้อขั้นสูงทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงทางคอมพิวเตอร์ฮาร์ดแวร์\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-406",
+   "title": "รายวิชา 04-621-406 หัวข้อขั้นสูงทางคอมพิวเตอร์ฮาร์ดแวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/hardware/04_621_406_Advanced_Topics_in_Computer_Hardware.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-302-mixed-0",
+  "text": "รหัสวิชา 04-623-302 ข่ายงานบริเวณเฉพาะที่และข่ายงานบริเวณกว้างเบื้องต้น (Introduction to LAN and WAN) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-623-201 การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communication and Computer Networking)\nข่ายงานบริเวณเฉพาะที่และเครือข่ายงานบริเวณกว้าง สายสัญญาณและระบบการเดินสายสัญญาณ อุปกรณ์ทวนสัญญาณ อุปกรณ์หาเส้นทาง บริดจ์ สวิตซ์ สถาปัตยกรรมในข่ายงานบริเวณเฉพาะที่ เช่น อีเทอร์เน็ต โทเคนริง เอฟดีดีไอ เอทีเอ็ม โครงร่างของเครือข่ายและการออกแบบเครือข่ายเบื้องต้น การหาเส้นทางในข่ายงานบริเวณเฉพาะที่ เครือข่ายเสมือน โพรโทคอลต่างในระบบเครือข่ายท้องถิ่น เครือข่ายงานบริเวณกว้างเบื้องต้น สถาปัตยกรรมในเครือข่ายงานบริเวณกว้าง เช่น เฟรมรีเลย์ ไอเอสดีเอ็น เคเบิลโมเด็ม ดีเอสแอล / Local area network and wide area network; cabling and cabling system; repeater; router; bridge; switch; local area network architecture such as ethernet, token ring, FDDI, ATM; network topology and basic network design; routing in local area network; virtual LAN; network protocol in local area network; wide area network fundamentals; wide area network architecture such as frame relay, ISDN, cable modem, and DSL\nCLO1: สามารถอธิบายและประยุกต์ใช้หลักการข่านงานบริเวณเฉพาะที่และเครือข่ายงานบริเวณกว้าง และสถาปัตยกรรมในข่ายงานบริเวณเฉพาะที่\nCLO2: สามารถวิเคราะห์และแก้ไขปัญหาที่เกิดขึ้นเส้นทางสัญญาณและระบบการเดินสาย และออกแบบโครงร่างของเครือข่ายเบื้องต้น\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ทางด้านระบบข่ายงานบริเวณเฉพาะที่และข่ายงานบริเวณกว้างเบื้องต้น",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-302",
+   "title": "รายวิชา 04-623-302 ข่ายงานบริเวณเฉพาะที่และข่ายงานบริเวณกว้างเบื้องต้น",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_302_Introduction_to_LAN_and_WAN.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-303-mixed-0",
+  "text": "รหัสวิชา 04-623-303 เครือข่ายเซ็นเซอร์ไร้สาย (Wireless Sensor Network) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-623-201 การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communication and Computer Networking)\nสถาปัตยกรรมเครือข่ายเซ็นเซอร์ไร้สาย สถาปัตยกรรมเซ็นเซอร์ไร้สาย การออกแบบเครือข่ายเซ็นเซอร์ไร้สาย การประยุกต์ใช้งานเครือข่ายเซ็นเซอร์ไร้สาย โพรโทคอลควบคุมการเข้าถึงในเครือข่ายเซ็นเซอร์ไร้สาย เช่น IEEE 802.15.4 6LoWPAN โพรโทคอลหาเส้นทางในเครือข่ายเซ็นเซอร์ไร้สาย เช่น DSR AODV ระบบปฏิบัติการเครือข่ายเซ็นเซอร์ไร้สาย เช่น TinyOS Contiki / Wireless sensor network architecture; sensor architecture; wireless sensor network design; wireless sensor network applications; medium access control protocols in wireless sensor network such as IEEE 802.15.4, 6LoWPAN; routing protocols in wireless sensor network such as DSR, AODV; operating systems in wireless sensor network such as TinyOS Contiki\nCLO1: สามารถอธิบายและประยุกต์ใช้สถาปัตยกรรมเครือข่ายเซ็นเซอร์ไร้สาย และการใช้งานโพรโทคอลควบคุมการเข้าถึงในเครือข่ายเซ็นเซอร์ไร้สาย\nCLO2: สามารถวิเคราะห์และออกแบบเครือข่ายเซ็นเซอร์ไร้สาย\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ทางด้านเครือข่ายเซ็นเซอร์ไร้สาย",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-303",
+   "title": "รายวิชา 04-623-303 เครือข่ายเซ็นเซอร์ไร้สาย",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_303_Wireless_Sensor_Network.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-304-mixed-0",
+  "text": "รหัสวิชา 04-623-304 ความปลอดภัยไซเบอร์ (Cybersecurity) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-623-202 ระบบเครือข่ายแบบทีซีพีไอพี (TCP/IP Networks)\nการตระหนักรู้ด้านความมั่นคงทางไซเบอร์ รูปแบบภัยคุมคามทางไซเบอร์และการป้องกัน การรักษาความปลอดภัยไซเบอร์ในระบบเครือข่ายมีสายและเครือข่ายไร้สาย เทคโนโลยีการรักษาความมั่นคงปลอดภัยทางไซเบอร์ แนวคิดด้านความมั่นคงปลอดภัยแบบซีโรทรัสต์ ความรู้เบื้องต้นเกี่ยวกับการบริหารความเสี่ยง การประเมินความเสี่ยงระบบสารสนเทศ การประเมินตนเองตามมาตรฐานสากล ISO/IEC 27001 กฎหมายที่เกี่ยวข้องกับการรักษาความปลอดภัยระบบสารสนเทศ / Cybersecurity awareness; cybersecurity threats and counter measures; cybersecurity in wired and wireless networks; cybersecurity technologies; zero trust security concept; risk management fundamentals; risk assessment in IT, ISO/IEC 27001; cybersecurity laws and regulations\nCLO1: สามารถอธิบาย รูปแบบภัยคุมคามทางไซเบอร์และการป้องกัน การรักษาความปลอดภัยไซเบอร์ในระบบเครือข่ายที่มีสายและไร้สาย\nCLO2: สามารถวิเคราะห์และประเมินบริหารความเสี่ยง ประเมินความเสี่ยงระบบสารสนเทศที่เกิดขึ้นในเครือข่ายเบื้องต้น\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ และกฎหมายที่เกี่ยวข้องกับความปลอดภัยไซเบอร์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-304",
+   "title": "รายวิชา 04-623-304 ความปลอดภัยไซเบอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_304_Cybersecurity.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-305-mixed-0",
+  "text": "รหัสวิชา 04-623-305 ความมั่นคงในระบบเครือข่าย (Network Security) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-623-202 ระบบเครือข่ายแบบทีซีพีไอพี (TCP/IP Networks)\nการบุกรุกและการรักษาความมั่นคงในระบบเครือข่ายคอมพิวเตอร์ ประกอบด้วยระบบการรักษาความมั่นคงเบื้องต้น การเข้ารหัสลับ ทั้งในระบบกุญแจเดี่ยว และระบบกุญแจคู่ รวมไปถึงลายเซ็นดิจิทัล โดยครอบคลุมถึงการพิสูจน์สิทธิ์แบบต่าง ๆ การยืนยันตัวบุคคล การรับรองสิทธิ์ ใบรับรองสิทธิ์ และการบริหารระบบกุญแจรวม ระบบเมล์แบบปลอดภัย ระบบเครือข่ายไอพีที่มีการเข้ารหัส การบุกรุกที่อาจเกิดขึ้นในระบบเครือข่าย รูปแบบของการบุกรุก การป้องกันโดยใช้ระบบไฟล์วอลล์ และซอฟต์แวร์รักษาความมั่นคงต่าง ๆ / Intrusion and network security in computer networks, covering basic computer security, basic cryptography (both symmetric key and asymmetric key), digital signature, authentication, Kerberos, personal identifier, certificate and key management; mail security; IP security; web security; network intrusion; signature of attack; intrusion detection and prevention using firewall and other security software\nCLO1: สามารถอธิบาย รูปแบบการบุกรุกและการรักษาความมั่งคงในระบบเครือข่ายคอมพิวเตอร์\nCLO2: สามารถวิเคราะห์และประเมินบริหารความเสี่ยง การเข้ารหัสลับ การรับรองสิทธิ์ การบุกรุก เกิดขึ้นในเครือข่ายเบื้องต้น\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ และกฎหมายที่เกี่ยวข้องกับความมั่งคงในระบบเครือข่าย",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-305",
+   "title": "รายวิชา 04-623-305 ความมั่นคงในระบบเครือข่าย",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_305_Network_Security.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-401-mixed-0",
+  "text": "รหัสวิชา 04-623-401 ปัญหาพิเศษทางคอมพิวเตอร์เครือข่าย (Special Problems in Computer Network) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับเครือข่ายคอมพิวเตอร์ / Recent technology in computer network\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์เครือข่าย\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์เครือข่าย\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์เครือข่าย\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-401",
+   "title": "รายวิชา 04-623-401 ปัญหาพิเศษทางคอมพิวเตอร์เครือข่าย",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_401_Special_Problems_in_Computer_Network.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-402-mixed-0",
+  "text": "รหัสวิชา 04-623-402 หัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์เครือข่าย (Advanced Topics in Computer Network) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nวิชาการใหม่ ๆ เครือข่ายคอมพิวเตอร์ / New academic study in computer network\nCLO1: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์เครือข่าย\nCLO2: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์เครือข่าย\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถเรียนรู้เทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์เครือข่าย",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-402",
+   "title": "รายวิชา 04-623-402 หัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์เครือข่าย",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/network/04_623_402_Advanced_Topics_in_Computer_Network.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-304-mixed-0",
+  "text": "รหัสวิชา 04-622-304 การโปรแกรมเกม (Game Programming) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-203 การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming)\nทฤษฎีเกม การออกแบบและการพัฒนาเกมด้วยการใช้เครื่องมือพัฒนาเกมเช่น ยูนิตี้ หรือ อันเรียลเอ็นจิน การสร้างเกมในระบบความจริงเสมือน การใช้เอพีไอหรือไลบรารีเพื่อควบคุมและตรวจจับการกระทำของตัวละคร การตรวจจับการชนของวัตถุ การจัดการกับเหตุการณ์และการเคลื่อนไหวในเกม กระบวนการทดสอบและปรับปรุงเกม / Game theory; design and development with game development engine for instance Unity, Unreal Engine; game development in virtual reality (VR); using API or libraries for controlling and detecting players’ actions; object collision detection; game event control management; test and improvement the developed games\nCLO1: สามารถจัดเตรียมเนื้อหา รูปแบบการดำเนิน และวัตถุประสงค์ของเกมได้อย่างสัมพันธ์กัน\nCLO2: สามารถพัฒนาส่วนของโปรแกรมที่ได้รับมอบหมายและนำมาประกอบรวมกันเพื่อให้ได้งานที่สมบูรณ์ได้\nCLO3: อธิบายการเชื่อมโยงความสัมพันธ์ของแต่ละองค์ประกอบ พร้อมสาธิตการทำงานของเกมได้\nCLO4: สามารถวิเคราะห์ ร่างภาพ จำแนกความแตกต่างของของตัวละคร ไอเท็ม สภาพแวดล้อม สถานการณ์และทรัพยากรได้\nCLO5: ผู้เรียนสามารถใช้เครื่องมือในการพัฒนาโปรแกรมตามที่ได้รับมอบหมายได้\nCLO6: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-304",
+   "title": "รายวิชา 04-622-304 การโปรแกรมเกม",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_304_Game_Programming.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-305-mixed-0",
+  "text": "รหัสวิชา 04-622-305 การเขียนโปรแกรมบนระบบยูนิกซ์ (Unix System Programming) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nระบบปฏิบัติการเสมือนยูนิกซ์และการเขียนโปรแกรมในระดับของระบบปฏิบัติการ ประกอบด้วยการเขียนโปรแกรมเชลล์ การใช้งานซิสเต็มคอลล์ ระบบไฟล์และไดเร็กทอรีประมวลผลไฟล์ การสร้างโพรเซส การควบคุมโพรเซส การส่งสัญญาณ การติดต่อกับเทอร์มินอล การสร้างเดมอนโพรเซส และการติดต่อระหว่างโปรแกรม / UNIX-Like operating system with an emphasis on programming at the system level including shells and shell script programming; system calls; file and directory systems; file processing; process; process control; terminal I/O; daemon process; interprocess communication\nCLO1: สามารถอธิบายการทำงานของระบบปฏิบัติการเบื้องต้นได้\nCLO2: เข้าใจการทำงานของ Shell ในชนิดต่างๆ\nCLO3: เข้าใจการทำงาน UNIX Process แบบเบื้องหน้า และเบื้องหลัง\nCLO4: สามารถใช้คำสั่งจัดการ และกำหนดสิทธิ์การเข้าถึง ไฟล์ และโฟลเดอร์\nCLO5: สามารถเขียนโปรแกรม และกำหนดให้ Shell ทำงาน และตั้งเวลาทำงานอัตโนมัติ\nCLO6: สามารถเขียน Socket Program เพื่อติดต่อกับระบบภายนอก\nCLO7: สามารถวิเคราะห์ ออกแบบ และพัฒนาShell ตามโจทย์ปัญหา พร้อมนำเสนอ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-305",
+   "title": "รายวิชา 04-622-305 การเขียนโปรแกรมบนระบบยูนิกซ์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_305_Unix_System_Programming.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-306-mixed-0",
+  "text": "รหัสวิชา 04-622-306 การเขียนโปรแกรมคอมพิวเตอร์ขั้นสูง (Advanced Computer Programming) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์ (Computer Programming)\nภาษาซีชาร์ป การโปรแกรมแบบตัวอักษร การโปรแกรมแบบกราฟิก การโปรแกรมเชิงเหตุการณ์ การโปรแกรมเชิงวัตถุ การเขียนโปรแกรมประยุกต์สำหรับวินโดวส์ การเขียนโปรแกรมประยุกต์สำหรับเว็บ การเขียนโปรแกรมประยุกต์เพื่อเชื่อมต่อ ฐานข้อมูล การประสานข้อมูลด้วยโปรแกรม การประสานแบบ SOAP และการประสานแบบ RESTful / C sharp language; text-based programming; graphics-based programming; object-oriented programming; event driven programming; Windows application development; web application development; database, API, SOAP and RESTful application development\nCLO1: มีเข้าใจไวยกรณ์ภาษา C#\nCLO2: เข้าใจส่วนติดต่อกับผู้ใช้โปรแกรม และการแสดงผลการทำงานแบบ Text Mode และ Graphics Mode\nCLO3: สามารถเขียนโปรแกรมแบบ Window\nCLO4: สามารถเขียนโปรแกรมเชื่อมต่อระบบฐานข้อมูล\nCLO5: สามารถเขียนโปรแกรมแบบ Web\nCLO6: สามารถเขียนโปรแกรมแบบ Web Service ในรูปแบบ XML SOAP และ RESTful\nCLO7: สามารถวิเคราะห์ ออกแบบ และพัฒนา โปรแกรม ด้วยภาษา C# ตามโจทย์ปัญหา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-306",
+   "title": "รายวิชา 04-622-306 การเขียนโปรแกรมคอมพิวเตอร์ขั้นสูง",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_306_Advanced_Computer_Programming.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-307-mixed-0",
+  "text": "รหัสวิชา 04-622-307 การทดสอบซอฟต์แวร์ (Software Testing) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nการทดสอบซอฟต์แวร์ ระดับการทดสอบ ชนิดการทดสอบ เทคนิคการทดสอบ การตรวจสอบ การสร้างการทดสอบ เครื่องมือในการทดสอบ การวางแผนและการจัดการการทดสอบ วิธีเชิงรูปนัย การวิเคราะห์คุณภาพซอฟต์แวร์ / Software testing; test levels; test types; testing techniques; inspection; test implementation; test tools; test planning and management; formal methods; software quality analysis\nCLO1: สามารถอธิบายรูปแบบการทดสอบซอฟต์แวร์ในตามวัตถุประสงค์การออกแบบซอฟต์แวร์\nCLO2: สามารถอธิบายกายภาพของหลักการทดสอบซอฟต์แวร์\nCLO3: สามารถประยุกต์ใช้หลักการทดสอบซอฟต์แวร์สำหรับเป็นแนวทางในการออกแบบระบบซอฟต์แวร์ขั้นสูงได้อย่างเหมาะสม\nCLO4: สามารถวิเคราะห์ปัญหา ดำเนินการปรับปรุงประสิทธิภาพระบบซอฟต์แวร์ที่ได้ทำการทดสอบ และนำเสนอ\nCLO5: สามารถยืนยันผลการทดสอบซอฟต์แวร์ ที่เป็นไปตามหลักวิชาการได้ถูกต้อง",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-307",
+   "title": "รายวิชา 04-622-307 การทดสอบซอฟต์แวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_307_Software_Testing.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-308-mixed-0",
+  "text": "รหัสวิชา 04-622-308 กระบวนการพัฒนาซอฟต์แวร์ (Software Development Process) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-301 การพัฒนาเว็บเต็มรูปแบบ (Full-stack Web Development)\nการจัดการประสิทธิภาพของแอปพลิเคชันและการบูรณาการอย่างต่อเนื่อง กลยุทธ์การใช้งานอย่างต่อเนื่อง การเขียนโปรแกรม และการพัฒนาเว็บ สแต็กเทคโนโลยี / Application performance management and continuous integration; continuous deployment strategies; programming and web development; technology stack\nCLO1: สามารถประยุกต์ใช้หลักการและเทคนิคในการจัดการประสิทธิภาพของแอปพลิเคชันและการบูรณาการอย่างต่อเนื่องโดยใช้สแต็กเทคโนโลยี\nCLO2: สามารถบูรณาการความรู้ในการพัฒนาแอปพลิเคชันและเว็บเพื่อแก้ไขปัญหาทางวิศวกรรมและสนับสนุนการพัฒนาที่ยั่งยืน\nCLO3: วิเคราะห์และพัฒนากลยุทธ์การใช้งานอย่างต่อเนื่องและการเขียนโปรแกรมที่มีประสิทธิภาพ\nCLO4: สามารถวิเคราะห์และประเมินความเหมาะสมของเครื่องมือ ทรัพยากร เทคโนโลยีที่ต้องใช้กับโครงการ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-308",
+   "title": "รายวิชา 04-622-308 กระบวนการพัฒนาซอฟต์แวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_308_Software_Development_Process.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-401-mixed-0",
+  "text": "รหัสวิชา 04-622-401 ระบบฐานข้อมูลขั้นสูง (Advanced Database System) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): 04-622-202 ระบบฐานข้อมูล (Database System)\nระบบจัดการฐานข้อมูลแบบสัมพันธ์ โครงสร้างและส่วนประกอบ ฐานข้อมูลระดับกายภาพ กลไกในการเข้าถึงฐานข้อมูล การประมวลคำถาม การประมวลกลุ่มคำสั่ง การคืนสภาพข้อมูล การใช้ข้อมูลร่วมกัน การปรับปรุงประสิทธิภาพของระบบ ระบบฐานข้อมูลแบบไม่สัมพันธ์เบื้องต้น / Relational database management system; structure and components; physical database; access mechanisms; query processing; transaction processing; recovery control; concurrency control; database performance tuning; introduction to non-relational database\nCLO1: สามารถอธิบายรูปแบบการจัดการข้อมูลของฐานข้อมูลขั้นสูง\nCLO2: สามารถอธิบายกายภาพของระบบฐานข้อมูลขั้นสูง\nCLO3: สามารถอธิบายวิธีการประมวลคำสั่งจัดการฐานข้อมูล\nCLO4: สามารถดำเนินการสำรองข้อมูล และกู้คืนสภาพข้อมูล\nCLO5: สามารถจำลองสถานการณ์ทางธุรกิจ การตรวจสอบปัญหาระบบ และการแก้ไข\nCLO6: สามารถวิเคราะห์ปัญหา ดำเนินการปรับปรุงประสิทธิภาพระบบ และนำเสนอ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-401",
+   "title": "รายวิชา 04-622-401 ระบบฐานข้อมูลขั้นสูง",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_401_Advanced_Database_System.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-402-mixed-0",
+  "text": "รหัสวิชา 04-622-402 ฐานข้อมูลไม่สัมพันธ์ (Non-Relational Database) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nแนวคิดหลักและลักษณะของฐานข้อมูลไม่สัมพันธ์ ความแตกต่างจากฐานข้อมูลเชิงสัมพันธ์ ชนิดของการจัดเก็บ การรวมตัวแบบข้อมูล ฐานข้อมูลแบบ key-value ฐานข้อมูลแบบ document ฐานข้อมูลแบบ column-oriented ฐานข้อมูลแบบ graph การแปลงโครงสร้าง การประยุกต์ใช้งาน NoSQL / NoSQL concepts and characteristics of non-relational databases; differences from relational databases; NoSQL storage types; aggregate data models; implementation of NoSQL; key- value databases; document database; column-oriented database; graph databases; schema migration; NoSQL database application\nCLO1: สามารถอธิบายรูปแบบการจัดการข้อมูลของฐานข้อมูลไม่สัมพันธ์\nCLO2: สามารถอธิบายกายภาพของระบบฐานข้อมูลไม่สัมพันธ์\nCLO3: สามารถอธิบายวิธีการประมวลคำสั่งจัดการฐานข้อมูลไม่สัมพันธ์\nCLO4: สามารถดำเนินการสำรองข้อมูล และกู้คืนสภาพข้อมูล\nCLO5: นักศึกษาประยุกต์ใช้ฐานข้อมูลไม่สัมพันธ์สำหรับเป็นแนวทางในการออกแบบระบบฐานข้อมูลคอมพิวเตอร์ขั้นสูงได้อย่างเหมาะสม\nCLO6: สามารถวิเคราะห์ปัญหา ดำเนินการ ปรับปรุงประสิทธิภาพระบบ และนำเสนอ",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-402",
+   "title": "รายวิชา 04-622-402 ฐานข้อมูลไม่สัมพันธ์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_402_Non-Relational_Database.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-403-mixed-0",
+  "text": "รหัสวิชา 04-622-403 ปัญหาพิเศษทางคอมพิวเตอร์ซอฟต์แวร์ (Special Problems in Computer Software) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับซอฟต์แวร์คอมพิวเตอร์ / Recent technology in computer software\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์ซอฟต์แวร์\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์ซอฟต์แวร์\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับปัญหาพิเศษทางคอมพิวเตอร์ซอฟต์แวร์\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-403",
+   "title": "รายวิชา 04-622-403 ปัญหาพิเศษทางคอมพิวเตอร์ซอฟต์แวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_403_Special_Problems_in_Computer_Software.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-404-mixed-0",
+  "text": "รหัสวิชา 04-622-404 หัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์ซอฟต์แวร์ (Advanced Topics in Computer Software) หน่วยกิต 3(x-x)\nประเภท: กลุ่มวิชาเลือก | ชั้นปี: N/A (elective) | ภาคการศึกษา: N/A\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nวิชาการใหม่ ๆ ซอฟต์แวร์คอมพิวเตอร์ / New academic study in computer software\nCLO1: สามารถอธิบายเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์ซอฟต์แวร์\nCLO2: สามารถประยุกต์ใช้ความรู้ที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์ซอฟต์แวร์\nCLO3: สามารถวิเคราะห์และประเมินปัญหาที่ในเนื้อหาที่เกี่ยวข้องกับหัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์ซอฟต์แวร์\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-404",
+   "title": "รายวิชา 04-622-404 หัวข้อขั้นสูงเกี่ยวกับคอมพิวเตอร์ซอฟต์แวร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/electives/software/04_622_404_Advanced_Topics_in_Computer_Software.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-201-mixed-0",
+  "text": "รหัสวิชา 04-620-201 ปฏิบัติการควบคุมเวอร์ชัน (Version Control Laboratory) หน่วยกิต 1(0-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nปฏิบัติการการควบคุมเวอร์ชัน พื้นฐานคำสั่งลินุกซ์ เชลล์สคริปต์ การติดตั้งเครื่องมือควบคุมเวอร์ชัน พื้นที่เก็บข้อมูล การเปลี่ยนแปลง คำสั่งพื้นฐานเช่น คอมมิท พุช พูล พูลรีเควส การเมิร์จ การบรานช์ การทำงานร่วมกัน กรณีศึกษาการควบคุมเวอร์ชันและการใช้ปัญญาประดิษฐ์ช่วยทำงาน / Laboratories on version control; basic Linux command; shell script; tool installation; repositories; changes; basic commands: commit, push, pull; pull request; merging; branching; collaboration; case study in version control and AI-assisted working\nCLO1: สามารถประยุกต์ใช้งานคำสั่งพื้นฐานลินุกซ์และเชลล์สคริปต์ได้\nCLO2: สามารถประยุกต์ใช้งานคำสั่งพื้นฐานการควบคุมเวอร์ชันได้\nCLO3: สามารถวิเคราะห์ปัญหาในการ ควบคุมเวอร์ชันเพื่อการทำงานร่วมกันได้\nCLO4: สามารถใช้งานเครื่องมือและปัญญาประดิษฐ์ที่เกี่ยวข้องกับการควบคุมเวอร์ชันได้\nCLO5: สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-201",
+   "title": "รายวิชา 04-620-201 ปฏิบัติการควบคุมเวอร์ชัน",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_620_201_Version_Control_Laboratory.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-620-202-mixed-0",
+  "text": "รหัสวิชา 04-620-202 ปฏิบัติการโปรแกรมภาษาไพธอน (Python Programming Laboratory) หน่วยกิต 1(0-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์ (Computer Programming)\nปฏิบัติการการโปรแกรมภาษาไพธอน ตัวแปร ชนิดตัวแปร สมการ ตัวดำเนินการสตริง โครงสร้างข้อมูล ลิสต์ ทูเปิล ดิคชันนารี เซ็ต เงื่อนไข การทำซ้ำ ฟังก์ชัน การรองรับความผิดพลาด ออบเจ็กต์และคลาส การอ่านและเขียนไฟล์ การประยุกต์ใช้งานภาษาไพธอน / Laboratories on Python programming; variables; types; expressions; string operations; data structures; lists; tuples; dictionaries; sets; conditions; loops; functions; exception handling; objects; classes; file reading and writing; applications of Python programming\nCLO1: สามารถเขียนโปรแกรมเพื่อแก้ไขปัญหาที่ได้รับหมอบหมายด้วยหลักการเขียนโปรแกรมภาษาไพธอนได้\nCLO2: สามารถวิเคราะห์ปัญหาความซับซ้อนและสามารถแก้ไขปัญหา หรือความผิดพลาดด้วยตนเองได้จนสามารถพัฒนาโปรแกรมขนาดเล็กด้วยตนเองได้\nCLO3: สามารถใช้งานเครื่องมือ หรือไลบรารี่สำหรับการพัฒนาโปรแกรมด้วยภาษาไพธอนได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-620-202",
+   "title": "รายวิชา 04-620-202 ปฏิบัติการโปรแกรมภาษาไพธอน",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_620_202_Python_Programming_Laboratory.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-101-mixed-0",
+  "text": "รหัสวิชา 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์ (Computer Programming) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 1 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nแนวคิดระบบคอมพิวเตอร์และการประมวลผลข้อมูลเบื้องต้น อันตรกิริยาระหว่างฮาร์ดแวร์และซอฟต์แวร์ ผังงาน วิธีการออกแบบและพัฒนาโปรแกรม การเขียนโปรแกรมแบบโครงสร้าง แถวลำดับ แถวลำดับหลายมิติ อักขระ ฟังก์ชัน และการฝึกฝนการเขียนโปรแกรมคอมพิวเตอร์ภาษาระดับสูง การทดสอบและแก้ไขจุดบกพร่อง / Concepts and components of computer and data processing; hardware and software interaction; flowchart; program design and development methodology; structured programming; array; multi-dimension array; string; function and practices on high-level language programming; program testing and fixing syntax errors\nCLO1: สามารถอธิบายเกี่ยวกับระบบคอมพิวเตอร์ฮาร์ดแวร์และซอฟต์แวร์เบื้องต้นและเขียนโปรแกรมคอมพิวเตอร์ได้",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-101",
+   "title": "รายวิชา 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_621_101_Computer_Programming.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-201-mixed-0",
+  "text": "รหัสวิชา 04-621-201 วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ (Electrical Circuits for Computer Engineering) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nคำนิยามและหน่วยทางไฟฟ้า เครื่องมือวัดทางไฟฟ้าและความผิดพลาดจากการวัด ตัวต้านทาน วงจรตัวต้านทาน กฎของโอห์ม กฎของเคอร์ชอฟ ตัวแบ่งแรงดัน การวิเคราะห์โหนดและเมช ตัวเก็บประจุ ตัวเหนี่ยวนำ วงจรอนุพันธ์อันดับหนึ่งและอันดับสอง การตอบสนองแบบสเตป การวิเคราะห์วงจรไฟฟ้ากระแสสลับแบบสถานะคงตัว / Electrical definition and units; electrical measuring instrument; errors of measurement; resistors; resistor circuit; Ohm’s law; Kirchhoff’s laws; voltage divider; node and mesh analysis; capacitor; inductor; first order and second order circuits; AC sinusoidal steady state analysis\nCLO1: สามารถอธิบายคำศัพท์และทฤษฎีทางไฟฟ้าได้\nCLO2: รู้จักอุปกรณ์ทางไฟฟ้าเช่น ตัวต้านทาน ตัวเหนี่ยวนำ และตัวเก็บประจุ\nCLO3: สามารถประยุกต์ใช้อุปกรณ์ทางไฟฟ้าได้\nCLO4: มีทักษะในการวิเคราะห์วงจรไฟฟ้ากระแสตรงและกระแสสลับ\nCLO5: สามารถใช้เครื่องมือทางไฟฟ้าได้อย่างถูกต้องปลอดภัย",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-201",
+   "title": "รายวิชา 04-621-201 วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_621_201_Electrical_Circuits_for_Computer_Engineering.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-202-mixed-0",
+  "text": "รหัสวิชา 04-621-202 วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ (Electronics Circuits for Computer Engineering) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเครื่องมือวัดทางอิเล็กทรอนิกส์ หลักการสารกึ่งตัวนำ ไดโอด การวิเคราะห์และการประยุกต์ใช้งานทรานซิสเตอร์บีเจทีและมอส วงจรขยาย วงจรสะท้อนกระแส แหล่งจ่ายกำลัง ออสซิเลเตอร์ ซ็อกเก็ตและตัวเชื่อมต่อ การออกแบบแผงวงจร / Electronics equipment and Instruments; semiconductor concept; diode; analysis and applications of BJT and MOS transistors; operational amplifier; current mirror; power supply; oscillator; sockets and connectors; printed circuit board design\nCLO1: สามารถอธิบายคุณสมบัติและหลักการทำงานของสารกึ่งตัวนำและอุปกรณ์สารกึ่งตัวนำ เช่น ไดโอด ทรานซิสเตอร์ ได้\nCLO2: สามารถอธิบายหลักการทำงานของวงจรสารกึ่งตัวนำ เช่น วงจรไบอัสทรานซิสเตอร์ วงจรขยาย วงจรสะท้อนกระแส แหล่งจ่ายกำลังได้\nCLO3: สามารถประยุกต์ใช้งานอุปกรณ์สารกึ่งตัวนำได้\nCLO4: สามารถวิเคราะห์วงจรอิเล็กทรอนิกส์ได้\nCLO5: สามารถใช้เครื่องมือและซอฟต์แวร์ทางอิเล็กทรอนิกส์ได้อย่างถูกต้องปลอดภัย\nCLO6: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO7: สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-202",
+   "title": "รายวิชา 04-621-202 วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-203-mixed-0",
+  "text": "รหัสวิชา 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ (Digital Circuit and Logic Design) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nระบบตัวเลข วงจรพื้นฐานทางดิจิทัลและวงจรตรรก ตารางความจริง คณิตศาสตร์บูลลีน แผนผังแบบคาร์โนห์ การลดรูปสมการทางดิจิทัล อุปกรณ์และโมดูลดิจิทัลพื้นฐาน การสร้างวงจรดิจิทัลด้วยอุปกรณ์พื้นฐานและโมดูลดิจิทัลพื้นฐาน การออกแบบวงจรจัดกลุ่มและวงจรลำดับ วงจรคำนวณทางคณิตศาสตร์และตรรกศาสตร์เบื้องต้น วงจรฟลิปฟลอป วงจรนับ วงจรชิฟรีจิสเตอร์ การเขียนโปรแกรมภาษาพรรณนาฮาร์ดแวร์เบื้องต้น / Numeric systems; basic digital circuits and logic circuits; truth tables; Boolean algebra; Karnaugh Map; digital equation reduction; basic digital devices and basic digital modules; digital circuits implementation with basic digital device and basic digital modules; combination and sequential logic circuit design; basic arithmetic and logical unit circuits; flip-flop circuit; counting circuit; shift register circuit; basic hardware descriptive language programming\nCLO1: สามารถออกแบบบวงจรดิจิทัลและวงจรตรรกะ ด้วยตารางความจริง คณิตศาสตร์บลูลีน แผนผังแบบคาร์โนห์\nCLO2: สามารถวิเคราะห์ปัญหาและออกแบบวงจรจัดกลุ่มและวงจรลำดับและการเขียนโปรแกรมภาษาพรรณนาฮาร์ดแวร์ที่ใช้สำหรับการออกแบบวงจรดิจิทัลได้\nCLO3: สามารถใช้งานเครื่องมือและเลือกใช้ภาษาที่เกี่ยวข้องกับการออกแบบวงจรดิจิทัลได้\nCLO4: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-203",
+   "title": "รายวิชา 04-621-203 การออกแบบวงจรดิจิทัลและตรรกะ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_621_203_Digital_Circuit_and_Logic_Design.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-621-204-mixed-0",
+  "text": "รหัสวิชา 04-621-204 ไมโครคอนโทรลเลอร์และการเชื่อมต่อ (Microcontroller and Interfacing) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์ (Computer Programming)\nไมโครคอนโทรลเลอร์สมัยใหม่ การเขียนโปรแกรมสำหรับไมโครคอนโทรลเลอร์ ด้านเข้าและด้านออกของไมโครคอนโทรลเลอร์ หน่วยความจำ การแปลงสัญญาณ แอนะล็อกและดิจิทัล การเชื่อมประสานกับเซ็นเซอร์และตัวขับเคลื่อน การสื่อสารแบบอนุกรม การพัฒนาแอปพลิเคชันสำหรับไมโครคอนโทรลเลอร์ / Modern microcontrollers; programming for microcontrollers; microcontroller’s inputs and outputs; memories; DAC and ADC; sensors and actuators interfacing; serial communication; application development for microcontroller\nCLO1: สามารถอธิบายสถาปัตยกรรมและการเชื่อมประสานอุปกรณ์ เซ็นเซอร์ ตัวขับเคลื่อนได้\nCLO2: สามารถประยุกต์ใช้งานไมโครคอนโทรลเลอร์ร่วมกับเซ็นเซอร์และตัวขับเคลื่อนได้\nCLO3: สามารถวิเคราะห์ ออกแบบ ใช้งานไมโครคอนโทรลเลอร์ได้อย่างเป็นระบบและแก้ปัญหาตามโจทย์ที่กำหนดได้\nCLO4: สามารถใช้เครื่องมือและซอฟต์แวร์ที่เกี่ยวข้องกับไมโครคอนโทรลเลอร์ได้อย่างเหมาะสมและถูกต้อง\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-621-204",
+   "title": "รายวิชา 04-621-204 ไมโครคอนโทรลเลอร์และการเชื่อมต่อ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_621_204_Microcontroller_and_Interfacing.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-201-mixed-0",
+  "text": "รหัสวิชา 04-622-201 โครงสร้างข้อมูลและอัลกอริทึม (Data Structure and Algorithms) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): 04-621-101 การเขียนโปรแกรมคอมพิวเตอร์ (Computer Programming)\nนิยาม และบทบาทของอัลกอริทึมและโครงสร้างข้อมูล การวิเคราะห์อัลกอริทึมขั้นพื้นฐานอัลกอริทึมแบบเรียกตัวเอง และแบบทำซ้ำ อัลกอริทึมที่ใช้ร่วมกับการสร้างโครงสร้างข้อมูล สแตก คิว ลิงก์ลิสต์  ต้นไม้แบบทวิภาค ต้นไม้แบบเอวีแอล ต้นไม้แบบบี ฮีพ และกราฟ อัลกอริทึมการเรียงลำดับและการค้นหา แนวทางในการแก้ปัญหาแบบต่างๆ เช่นอัลกอริทึมแบบละโมภ อัลกอริทึมแบบแบ่งแยกและเอาชนะ และอัลกอริทึมแบบย้อนรอย / Data structure definitions; algorithm definition; basic algorithmic analysis; iterative and recursive algorithms; stack; queue; linked lists; binary trees; AVL tree; B-tree; heap; graphs; searching algorithms and analysis; sorting algorithms and analysis; hash tables; greedy algorithm; divide and conquer algorithm; backtracking\nCLO1: บรรยายนิยามและความหมายของชนิดข้อมูลและโครงสร้างข้อมูลแบบต่าง ๆ\nCLO2: อธิบายหลักการและทฤษฎีการดำเนินการกับข้อมูลพื้นฐาน\nCLO3: ประยุกต์ใช้หลักการของวิธีเรียงลำดับข้อมูลและการค้นหาข้อมูลได้\nCLO4: วิเคราะห์และหาประสิทธิภาพของอัลกอริทึมได้\nCLO5: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-201",
+   "title": "รายวิชา 04-622-201 โครงสร้างข้อมูลและอัลกอริทึม",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_622_201_Data_Structure_and_Algorithms.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-622-202-mixed-0",
+  "text": "รหัสวิชา 04-622-202 ระบบฐานข้อมูล (Database System) หน่วยกิต 3(2-3)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 2\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nแนวคิดและสถาปัตยกรรมของระบบฐานข้อมูลเชิงสัมพันธ์ แบบจำลองข้อมูลด้วยวิธีแผนภาพอีอาร์ การออกแบบฐานข้อมูลเชิงสัมพันธ์ ภาษาเรียกค้นฐานข้อมูล วิธีการนอร์มัลไลเซชัน การประมวลผลธุรกรรม ฐานข้อมูลแบบไม่สัมพันธ์เบื้องต้น / Relational database system concepts and architecture; entity-relationship data model; relational database design; structure query languages; normalization technique; transaction processing; introduction to non-relational database\nCLO1: สามารถอธิบายรูปแบบการจัดการข้อมูลของฐานข้อมูลเชิงสัมพันธ์และขั้นตอนการประมวลผลธุรกรรม\nCLO2: สามารถวิเคราะห์ความต้องการจัดเก็บเป็นฐานข้อมูลเชิงสัมพันธ์\nCLO3: สามารถออกแบบแผนภาพความสัมพันธ์ข้อมูลและจัดทำพจนานุกรมข้อมูล\nCLO4: จัดทำระบบฐานข้อมูลเชิงสัมพันธ์ตั้งแต่การ วิเคราะห์ ออกแบบ นำโครงสร้างและข้อมูลที่ออกแบบเข้าระบบ และนำเสนอ\nCLO5: สามารถใช้ภาษาจัดการฐานข้อมูลเชิงสัมพันธ์และโปรแกรมจัดการฐานข้อมูลเชิงสัมพันธ์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-622-202",
+   "title": "รายวิชา 04-622-202 ระบบฐานข้อมูล",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_622_202_Database_System.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-623-201-mixed-0",
+  "text": "รหัสวิชา 04-623-201 การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ (Data Communication and Computer Networking) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nการสื่อสารข้อมูล โมเดลโอเอสไอ ลักษณะของสัญญาณ การเข้ารหัสสัญญาณและการกล้ำสัญญาณ การส่งข้อมูลที่เป็นดิจิทัล อุปกรณ์เชื่อมต่อ สายสัญญาณ ตัวกลางที่ใช้ในการสื่อสาร การมัลติเพล็กซ์ข้อมูล การเข้ารหัสข้อมูล การตรวจสอบและแก้ไขข้อผิดพลาดในการส่งข้อมูล การควบคุมการส่งข้อมูล การสื่อสารระบบไร้สาย ระบบเครือข่าย และอุปกรณ์ที่ใช้ในการเชื่อมต่อเครือข่าย อัลกอริทึมการหาเส้นทาง กลวิธีควบคุมความคับคั่ง มาตรฐานและตัวอย่างเครือข่าย คุณภาพการให้บริการ มาตรฐานและรายละเอียดตัวอย่างโพรโทคอลนำส่งข้อมูล เช่น ทีซีพี ยูดีพี การประเมินประสิทธิภาพเครือข่าย และระบบการรักษาความมั่นคงผ่านเครือข่ายเบื้องต้น / Data communication; OSI model; signal characteristics; encoding and modulating; transmission of digital data; communication interface device; transmission line; communication media; data multiplexing; data coding; error detection and correction; data link control; wireless communication system; networking and internetworking devices; routing algorithm; congestion control methodologies; standards and examples of networking; transport layer design issues; quality of services; standards and examples of transport protocols such as TCP and UDP; network performance evaluation and fundamental network security\nCLO1: สามารถอธิบายและประยุกต์แนวคิดพื้นฐานของการสื่อสารข้อมูล\nCLO2: สามารถวิเคราะห์ลักษณะการส่งสัญญาณการสื่อสารข้อมูลสำหรับอุปกรณ์ในเครือข่ายที่แตกต่างกัน เพื่อประสิทธิภาพของเครือข่ายที่เกิดขึ้น\nCLO3: แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา\nCLO4: สามารถปรับตัวและเรียนรู้เทคโนโลยีใหม่ ๆ ที่เกี่ยวข้องกับ การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-623-201",
+   "title": "รายวิชา 04-623-201 การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_623_201_Data_Communication_and_Computer_Networking.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "COURSE-04-624-201-mixed-0",
+  "text": "รหัสวิชา 04-624-201 ทฤษฎีการคำนวณ (Theory of Computation) หน่วยกิต 3(3-0)\nประเภท: กลุ่มวิชาพื้นฐาน | ชั้นปี: 2 | ภาคการศึกษา: 1\nวิชาบังคับก่อน (Prerequisites): ไม่มี (None)\nเซต ความสัมพันธ์ ฟังก์ชัน วิธีการพิสูจน์ เวกเตอร์และเมทริกซ์ กราฟและแผนภาพต้นไม้ ทฤษฎีจำนวนเบื้องต้นและการนับ การจัดหมู่ ความสัมพันธ์เวียนเกิด พีชคณิตบูลีน ภาษารูปนัยและไวยากรณ์ เครื่องจักรสถานะแบบจำกัด เครื่องจักรของทัวริง / Sets; relations; functions; methods of proof; vector and matrix; graphs and trees; introduction to number theory and counting; combinatorics; recurrence relations; Boolean algebra; formal languages and grammars; finite state machines; Turing machine\nCLO1: ประยุกต์ใช้ความรู้เรื่องเซต ความสัมพันธ์ ฟังก์ชัน วิธีการพิสูจน์ ความสัมพันธ์เวียนเกิด เวกเตอร์และเมทริกซ์ ตลอดจนกราฟและแผนภาพต้นไม้ ในเชิงทฤษฎี เพื่อแก้ไขปัญหาด้านวิศวกรรมคอมพิวเตอร์ได้\nCLO2: ประยุกต์ใช้และคิดวิเคราะห์อย่างเป็นระบบในทฤษฎีจำนวนเบื้องต้น การนับ การจัดหมู่ พีชคณิตบูลีน และกราฟแบบระบุทิศทาง เพื่อแก้ไขปัญหาและเป็นพื้นฐานในการพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์\nCLO3: คิดวิเคราะห์อย่างเป็นระบบในการออกแบบแบบจำลองด้วยภาษารูปนัยและไวยากรณ์ เครื่องจักรสถานะแบบจำกัด และเครื่องจักรของทัวริง เพื่อเป็นแนวทางในการพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างเป็นขั้นตอน\nCLO4: อธิบายและแสดงออกถึงจรรยาบรรณวิชาชีพ (การไม่คัดลอกผลงาน) และปฏิบัติงานที่ได้รับมอบหมายด้วยความตรงต่อเวลา",
+  "lang": "mixed",
+  "metadata": {
+   "doc_id": "COURSE-04-624-201",
+   "title": "รายวิชา 04-624-201 ทฤษฎีการคำนวณ",
+   "source_url": "https://github.com/thanasinb/CPE_RMUTT68/blob/main/courses/foundation/04_624_201_Theory_of_Computation.md",
+   "page": null,
+   "category": "course",
+   "published_at": "2026-11-12",
+   "effective_date": "2025-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2026-01-th-0",
+  "text": "ข้อ 5 นักศึกษาต้องลงทะเบียนเรียนภายใน 2 สัปดาห์แรกของภาคการศึกษาปกติ ผ่านระบบทะเบียนออนไลน์\nข้อ 6 ในภาคการศึกษาปกติ นักศึกษาลงทะเบียนได้ไม่น้อยกว่า 9 หน่วยกิต และไม่เกิน 22 หน่วยกิต\nข้อ 7 ในภาคฤดูร้อน นักศึกษาลงทะเบียนได้ไม่เกิน 9 หน่วยกิต\nข้อ 8 การเพิ่ม-ถอนรายวิชาทำได้ภายใน 2 สัปดาห์แรกของภาคการศึกษา โดยไม่ปรากฏรายวิชาในใบแสดงผลการเรียน\nข้อ 9 การลงทะเบียนล่าช้าทำได้ในสัปดาห์ที่ 3 โดยต้องชำระค่าปรับวันละ 100 บาท",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "REG-2026-01",
+   "title": "ระเบียบมหาวิทยาลัยว่าด้วยการลงทะเบียนเรียน ระดับปริญญาตรี พ.ศ. 2569",
+   "source_url": "",
+   "page": 2,
+   "category": "regulation",
+   "published_at": "2026-05-15",
+   "effective_date": "2026-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2026-01-en-0",
+  "text": "Article 5. Students must register within the first 2 weeks of a regular semester through the online registration system.\nArticle 6. In a regular semester, students may register for no fewer than 9 and no more than 22 credits.\nArticle 7. In the summer session, students may register for no more than 9 credits.\nArticle 8. Courses may be added or dropped within the first 2 weeks of the semester without appearing on the transcript.\nArticle 9. Late registration is allowed in week 3 with a fine of 100 baht per day.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "REG-2026-01",
+   "title": "University Regulation on Undergraduate Registration B.E. 2569 (2026)",
+   "source_url": "",
+   "page": 2,
+   "category": "regulation",
+   "published_at": "2026-05-15",
+   "effective_date": "2026-06-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2019-01-th-0",
+  "text": "ข้อ 6 ในภาคการศึกษาปกติ นักศึกษาลงทะเบียนได้ไม่เกิน 21 หน่วยกิต\nข้อ 9 การลงทะเบียนล่าช้าต้องชำระค่าปรับวันละ 50 บาท",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "REG-2019-01",
+   "title": "ระเบียบมหาวิทยาลัยว่าด้วยการลงทะเบียนเรียน ระดับปริญญาตรี พ.ศ. 2562 (ยกเลิกแล้ว)",
+   "source_url": "",
+   "page": 2,
+   "category": "regulation",
+   "published_at": "2019-06-01",
+   "effective_date": "2019-06-01",
+   "expired_date": "2026-05-31",
+   "status": "cancelled",
+   "superseded_by": "REG-2026-01",
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2019-01-en-0",
+  "text": "Article 6. In a regular semester, students may register for no more than 21 credits.\nArticle 9. Late registration carries a fine of 50 baht per day.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "REG-2019-01",
+   "title": "University Regulation on Undergraduate Registration B.E. 2562 (2019) (cancelled)",
+   "source_url": "",
+   "page": 2,
+   "category": "regulation",
+   "published_at": "2019-06-01",
+   "effective_date": "2019-06-01",
+   "expired_date": "2026-05-31",
+   "status": "cancelled",
+   "superseded_by": "REG-2026-01",
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "ANN-2026-07-th-0",
+  "text": "ค่าธรรมเนียมการศึกษา (ค่าเทอม) แบบเหมาจ่ายระดับปริญญาตรี ภาคเรียนที่ 2/2569 คือ 18,000 บาทต่อภาคเรียน\nนักศึกษาต้องชำระค่าธรรมเนียม (จ่ายค่าเทอม) ภายในวันที่ 30 พฤศจิกายน 2569 ผ่าน QR Code ในระบบทะเบียน หรือเคาน์เตอร์ธนาคาร\nนักศึกษาที่ชำระหลังกำหนดต้องเสียค่าปรับ 500 บาท และอาจถูกระงับการลงทะเบียน\nนักศึกษาที่มีความจำเป็นสามารถยื่นคำร้องขอผ่อนชำระได้ที่กองคลังภายในวันที่ 20 พฤศจิกายน 2569",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "ANN-2026-07",
+   "title": "ประกาศมหาวิทยาลัย เรื่อง การชำระค่าธรรมเนียมการศึกษา ภาคเรียนที่ 2/2569",
+   "source_url": "",
+   "page": 1,
+   "category": "announcement",
+   "published_at": "2026-11-01",
+   "effective_date": "2026-11-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "ANN-2026-07-en-0",
+  "text": "The flat-rate undergraduate tuition fee for semester 2/2026 is 18,000 baht per semester.\nStudents must pay by 30 November 2026 via the QR code in the registration system or at a bank counter.\nLate payment incurs a 500 baht fine and may result in registration being suspended.\nStudents in need may request an installment plan at the Finance Division by 20 November 2026.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "ANN-2026-07",
+   "title": "Announcement: Tuition Fee Payment for Semester 2/2026",
+   "source_url": "",
+   "page": 1,
+   "category": "announcement",
+   "published_at": "2026-11-01",
+   "effective_date": "2026-11-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "HB-2026-01-th-0",
+  "text": "นักศึกษาจะสำเร็จการศึกษาได้เมื่อเรียนครบตามหลักสูตร และได้เกรดเฉลี่ยสะสมไม่ต่ำกว่า 2.00\nนักศึกษาต้องผ่านการทดสอบภาษาอังกฤษ (English Exit Exam) ก่อนสำเร็จการศึกษา\nเกียรตินิยมอันดับหนึ่ง: เกรดเฉลี่ยสะสมไม่ต่ำกว่า 3.60 และไม่เคยได้เกรด F หรือเรียนซ้ำรายวิชาใด\nเกียรตินิยมอันดับสอง: เกรดเฉลี่ยสะสมไม่ต่ำกว่า 3.25 และไม่เคยได้เกรด F หรือเรียนซ้ำรายวิชาใด",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "HB-2026-01",
+   "title": "คู่มือนักศึกษา ระดับปริญญาตรี ปีการศึกษา 2569",
+   "source_url": "",
+   "page": 32,
+   "category": "handbook",
+   "published_at": "2026-07-01",
+   "effective_date": "2026-07-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "HB-2026-01-en-0",
+  "text": "Students graduate after completing the program requirements with a cumulative GPA of at least 2.00.\nStudents must pass the English Exit Exam before graduation.\nFirst-class honors: cumulative GPA of at least 3.60, with no F grade and no repeated course.\nSecond-class honors: cumulative GPA of at least 3.25, with no F grade and no repeated course.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "HB-2026-01",
+   "title": "Undergraduate Student Handbook 2026",
+   "source_url": "",
+   "page": 32,
+   "category": "handbook",
+   "published_at": "2026-07-01",
+   "effective_date": "2026-07-01",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2026-03-th-0",
+  "text": "ข้อ 4 นักศึกษาขอลาพักการศึกษาได้ครั้งละไม่เกิน 2 ภาคการศึกษาปกติติดต่อกัน\nข้อ 5 ต้องยื่นคำร้องผ่านระบบทะเบียนก่อนเปิดภาคการศึกษา โดยได้รับความเห็นชอบจากอาจารย์ที่ปรึกษา\nข้อ 6 นักศึกษาที่ลาพักต้องชำระค่ารักษาสภาพนักศึกษาภาคการศึกษาละ 1,000 บาท\nข้อ 7 ระยะเวลาที่ลาพักจะนับรวมอยู่ในระยะเวลาการศึกษาตามหลักสูตร",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "REG-2026-03",
+   "title": "ระเบียบมหาวิทยาลัยว่าด้วยการลาพักการศึกษา พ.ศ. 2569",
+   "source_url": "",
+   "page": 3,
+   "category": "regulation",
+   "published_at": "2026-03-10",
+   "effective_date": "2026-03-10",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "REG-2026-03-en-0",
+  "text": "Article 4. Students may take a leave of absence for up to 2 consecutive regular semesters at a time.\nArticle 5. Requests must be submitted through the registration system before the semester starts, with the advisor's approval.\nArticle 6. Students on leave must pay a status maintenance fee of 1,000 baht per semester.\nArticle 7. The leave period counts toward the maximum study duration of the program.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "REG-2026-03",
+   "title": "University Regulation on Leave of Absence B.E. 2569 (2026)",
+   "source_url": "",
+   "page": 3,
+   "category": "regulation",
+   "published_at": "2026-03-10",
+   "effective_date": "2026-03-10",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "ANN-2026-09-th-0",
+  "text": "เปิดรับสมัครทุนการศึกษาระหว่างวันที่ 1-20 ธันวาคม 2569 ผ่านระบบบริการนักศึกษา\nผู้สมัครต้องมีเกรดเฉลี่ยสะสมไม่ต่ำกว่า 2.75 และไม่เคยถูกลงโทษทางวินัย\nทุนประเภทเรียนดีมีมูลค่า 20,000 บาทต่อปีการศึกษา\nประกาศรายชื่อผู้ได้รับทุนภายในวันที่ 15 มกราคม 2570",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "ANN-2026-09",
+   "title": "ประกาศ เรื่อง การรับสมัครทุนการศึกษา ประจำปีการศึกษา 2569",
+   "source_url": "",
+   "page": 1,
+   "category": "announcement",
+   "published_at": "2026-10-20",
+   "effective_date": "2026-10-20",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "ANN-2026-09-en-0",
+  "text": "Scholarship applications are open from 1 to 20 December 2026 through the student services portal.\nApplicants need a cumulative GPA of at least 2.75 and no disciplinary record.\nThe academic excellence scholarship is worth 20,000 baht per academic year.\nRecipients will be announced by 15 January 2027.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "ANN-2026-09",
+   "title": "Announcement: Scholarship Applications for Academic Year 2026",
+   "source_url": "",
+   "page": 1,
+   "category": "announcement",
+   "published_at": "2026-10-20",
+   "effective_date": "2026-10-20",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "public",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "INT-2026-02-th-0",
+  "text": "เจ้าหน้าที่กองคลังพิจารณาคำร้องขอผ่อนชำระภายใน 5 วันทำการ โดยอนุมัติได้ไม่เกิน 3 งวด",
+  "lang": "th",
+  "metadata": {
+   "doc_id": "INT-2026-02",
+   "title": "แนวปฏิบัติภายใน เรื่อง การพิจารณาคำร้องขอผ่อนชำระค่าธรรมเนียม (สำหรับเจ้าหน้าที่)",
+   "source_url": "",
+   "page": 1,
+   "category": "handbook",
+   "published_at": "2026-10-25",
+   "effective_date": "2026-10-25",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "staff",
+   "faculty": "all"
+  }
+ },
+ {
+  "chunk_id": "INT-2026-02-en-0",
+  "text": "Finance staff review installment requests within 5 working days and may approve at most 3 installments.",
+  "lang": "en",
+  "metadata": {
+   "doc_id": "INT-2026-02",
+   "title": "Internal Guideline: Reviewing Tuition Installment Requests (staff only)",
+   "source_url": "",
+   "page": 1,
+   "category": "handbook",
+   "published_at": "2026-10-25",
+   "effective_date": "2026-10-25",
+   "expired_date": null,
+   "status": "active",
+   "superseded_by": null,
+   "access_level": "staff",
+   "faculty": "all"
+  }
+ }
+]
