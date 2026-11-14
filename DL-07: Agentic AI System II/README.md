@@ -57,14 +57,34 @@ web_agent_predic.bat     :: first run creates .venv and installs packages, then 
 The 54 offline tests pass. The 8 end-to-end tests call the real APIs and fail while the Open-Meteo hourly quota is used up. The rules are tested with small, hand-made scenarios, so the tests do not prove the system is accurate in real conditions.
 
 ----
+
+----
 ## Data Sources
 
-- Weather, rain, wind, PM2.5, river discharge, place search: [Open-Meteo](https://open-meteo.com) — free for non-commercial use (CC BY 4.0). It has hourly/daily limits; when the limit is reached the map shows a message and retries.
-- Earthquakes: [USGS Earthquake Hazards Program](https://earthquake.usgs.gov) (public domain).
-- Storms, floods, wildfires, volcanoes, droughts: [GDACS](https://www.gdacs.org) and [NASA EONET](https://eonet.gsfc.nasa.gov).
-- Rain radar: [RainViewer](https://www.rainviewer.com). Routing: [OSRM demo server](https://project-osrm.org). Geocoding and nearby hospitals: [Nominatim](https://nominatim.org) (max 1 request/second) — map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL).
-- Basemaps: [OpenFreeMap](https://openfreemap.org) (OpenMapTiles / OpenStreetMap) and Esri World Imagery for the satellite view.
-- Optional LLM: Llama models through the [Groq](https://groq.com) free tier.
-- Safety guidance in `06_risk_knowledge_services/knowledge/` is a **general summary written for this project**. The severity thresholds and emergency numbers are **defaults**. Check them against official sources (TMD, DDPM, Pollution Control Department) before real use.
-- Earthquakes cannot be predicted: the system only shows official events, estimated shaking and statistical aftershock probabilities.
+All APIs below are free. **Only the Llama API (Groq) needs an API key, and it is optional.** Every other API works without a key or sign-up.
+
+| API | Used for | Used in | API key | Link |
+|---|---|---|---|---|
+| Open-Meteo Forecast | Temperature, rain, wind, gusts, visibility (hourly, 3 days) | 04, 05 | No key | [docs](https://open-meteo.com/en/docs) |
+| Open-Meteo Air Quality | PM2.5 / PM10 forecast | 04, 05 | No key | [docs](https://open-meteo.com/en/docs/air-quality-api) |
+| Open-Meteo Flood (GloFAS) | River discharge forecast | 04 | No key | [docs](https://open-meteo.com/en/docs/flood-api) |
+| Open-Meteo Geocoding | Place search (Thai/English) | 04 | No key | [docs](https://open-meteo.com/en/docs/geocoding-api) |
+| USGS Earthquake API | Earthquake feeds and nearby search | 04 | No key | [docs](https://earthquake.usgs.gov/fdsnws/event/1/) · [feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) |
+| GDACS API | Tropical cyclones (with track), floods, wildfires, volcanoes, droughts | 04 | No key | [site](https://www.gdacs.org) · [API](https://www.gdacs.org/gdacsapi/swagger/index.html) |
+| NASA EONET v3 | Open wildfires, severe storms, volcanoes | 04 | No key | [docs](https://eonet.gsfc.nasa.gov/docs/v3) |
+| RainViewer | Rain radar tiles | 01, 04 | No key | [docs](https://www.rainviewer.com/api.html) |
+| OSRM demo server | Driving routes and alternatives | 04 | No key | [docs](https://project-osrm.org/docs/v5.24.0/api/) |
+| Nominatim (OpenStreetMap) | Reverse geocoding, nearby hospitals/police/fire stations (max 1 request/second) | 04 | No key | [docs](https://nominatim.org/release-docs/latest/api/Overview/) · [usage policy](https://operations.osmfoundation.org/policies/nominatim/) |
+| OpenFreeMap | Basemap styles (streets, night) | 01 | No key | [site](https://openfreemap.org) |
+| Esri World Imagery | Satellite basemap | 01 | No key | [info](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9) |
+| MapLibre GL JS (CDN) | Globe / map rendering in the browser | 01 | No key | [docs](https://maplibre.org/maplibre-gl-js/docs/) |
+| **Groq — Llama API** (optional) | Understand questions (03), word explanations (07) | 03, 07 | **Yes — free key** | [get a key](https://console.groq.com/keys) · [docs](https://console.groq.com/docs/openai) · [models](https://console.groq.com/docs/models) |
+
+
+----
+## Summary
+
+Agent II is a study project for the course *Advanced Topic in Computer Software* (DL-07: Agentic AI System II): an AI travel-safety and emergency assistant built from nine microservice modules. It shows a globe-to-street hazard map, assesses risk along a route at arrival time, and gives one explainable recommendation with sources. It uses Python (FastAPI, SQLite), a MapLibre GL web page, free public data APIs, rule-based risk and decision logic, a simple Disaster RAG, and an optional free Llama API. It was made for learning only, is not for commercial use, and is not an official warning service. In a real emergency, follow official sources.
+
+
 
