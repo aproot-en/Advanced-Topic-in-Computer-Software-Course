@@ -1,0 +1,11 @@
+# Python dependencies for modules 02, 03 and the interim *_lite packages (04/06/07)
+fastapi==0.120.4
+uvicorn[standard]==0.38.0
+httpx==0.28.1
+pydantic==2.12.3
+pydantic-settings==2.11.0
+sse-starlette==3.0.3
+# tests
+pytest==8.4.2
+pytest-asyncio==1.2.0
+respx==0.22.0
