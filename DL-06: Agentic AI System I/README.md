@@ -2,10 +2,7 @@
 
 # 06-ProJ: AI smart university assistant
 
-A Thai/English multi-agent RAG chat assistant for university students. It answers questions about the
-**B.Eng. Computer Engineering curriculum (RMUTT, revised 2568)**, registration, tuition and scholarships,
-and **every answer cites its source documents**. The AI parts use **Python + PyTorch** and run locally
-(no API key needed).
+A Thai/English multi-agent RAG chat assistant for university students. It answers questions about the **B.Eng. Computer Engineering curriculum (RMUTT, revised 2568)**, registration, tuition and scholarships, and **every answer cites its source documents**. The AI parts use **Python + PyTorch** and run locally.
 
 ![UniRAG web app](web_app_UniRAG.png)
 
@@ -23,7 +20,7 @@ and **every answer cites its source documents**. The AI parts use **Python + PyT
 08_monitoring_deployment/   # /metrics, evaluation gate (evaluate.py)
 09_backend/                 # Shared code, run scripts, tests, .env
 web_app_std.bat             # Start / stop the whole system
-prompt_pj.txt               # PATCH 1-8 design plan
+
 ```
 
 Each stage folder also has `01_env.txt`, `02_step.txt` and `03_process.txt` (requirements, workflow, techniques).
