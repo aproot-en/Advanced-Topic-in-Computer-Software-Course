@@ -4,9 +4,6 @@
 
 A Thai/English multi-agent RAG chat assistant for university students. It answers questions about the **B.Eng. Computer Engineering curriculum (RMUTT, revised 2568)**, registration, tuition and scholarships, and **every answer cites its source documents**. The AI parts use **Python + PyTorch** and run locally.
 
-![UniRAG web app](web_app_UniRAG.png)
-
-----
 ## Structure
 
 ```text
@@ -43,6 +40,9 @@ web_app_std.bat stop     :: stop the system
 
 **API key (optional):** open `09_backend/.env`, paste your key into
 `### OPENAI_API_KEY=...`, remove `### `, then restart. Without a key, answers are taken directly from the documents.
+
+
+![UniRAG web app](web_app_UniRAG.png)
 
 ----
 ## Evaluation
