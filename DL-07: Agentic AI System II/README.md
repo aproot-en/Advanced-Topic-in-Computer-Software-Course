@@ -2,7 +2,7 @@
 
 # 07-ProJ: AI smart travel & emergency assistant
 
-A Thai/English travel-safety assistant with a **global hazard map**. The map opens as a 3D globe and zooms down to a street map. It shows **weather, rain, wind, storms, floods, wildfires, earthquakes and PM2.5** with a 72-hour forecast timeline. You can plan a trip and get **one clear recommendation**: travel normally, change route, delay, or avoid. Every answer shows its reasons, sources and data freshness. All data comes from **free public APIs**. An optional free **Llama API** helps understand Thai/English questions. Safety decisions always come from tested rules, never from the LLM.
+A Thai/English travel-safety assistant with a *global hazard map*. The map opens as a 3D globe and zooms down to a street map. It shows *weather, rain, wind, storms, floods, wildfires, earthquakes and PM2.5* with a 72-hour forecast timeline. You can plan a trip and get *one clear recommendation*: travel normally, change route, delay, or avoid. Every answer shows its reasons, sources and data freshness. All data comes from *free public APIs*. An optional free *Llama API* helps understand Thai/English questions. Safety decisions always come from tested rules, never from the LLM.
 
 ## Structure
 
