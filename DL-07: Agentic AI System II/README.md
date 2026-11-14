@@ -25,10 +25,6 @@ Each stage folder also has `01_env.txt`, `02_step.txt` and `03_process.txt` (req
 ----
 ## How to Run
 
-Requirements: Windows, Python 3.10+ (or `uv`, which installs Python 3.12 automatically), and an internet connection for the free APIs. Node.js is not needed.
-
-Source code: [Advanced-Topic-in-Computer-Software-Course / DL-07: Agentic AI System II](https://github.com/aproot-en/Advanced-Topic-in-Computer-Software-Course/tree/main/DL-07%3A%20Agentic%20AI%20System%20II)
-
 ```bash
 git clone https://github.com/aproot-en/Advanced-Topic-in-Computer-Software-Course.git
 cd "Advanced-Topic-in-Computer-Software-Course/DL-07: Agentic AI System II"
