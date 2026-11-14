@@ -40,8 +40,6 @@ web_agent_predic.bat     :: first run creates .venv and installs packages, then 
 **Llama API key (optional, free):** create a key at [console.groq.com](https://console.groq.com) and make a file `.env` in the project root with
 `LLM_API_KEY=...` (see `09_backend/.env.example`), then restart. Without a key, the system uses rules and templates only.
 
-**Docker (prepared, not used yet):** `docker compose -f 09_backend/docker-compose.yml up -d --build`
-
 ![Agent II web app](web_app_predic.png)
 
 ----
